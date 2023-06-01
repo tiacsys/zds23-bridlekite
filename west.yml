@@ -11,6 +11,6 @@ manifest:
     - name: tiacsys
       url-base: https://github.com/tiacsys
   self:
-    path: zds-spxrjs-template
+    path: zds23-bridlekite
     west-commands: scripts/west-commands.yml
     import: submanifests

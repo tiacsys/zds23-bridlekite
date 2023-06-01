@@ -12,7 +12,7 @@ manifest:
       url-base: https://github.com/tiacsys
   projects:
     - name: sphinx_static
-      path: zds-spxrjs-template/source/_static
+      path: zds23-bridlekite/source/_static
       remote: tiacsys
       repo-path: sphinx_static
       revision: iotmplabs

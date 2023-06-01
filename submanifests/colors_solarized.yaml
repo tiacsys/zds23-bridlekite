@@ -7,7 +7,7 @@ manifest:
   version: "0.13"
   projects:
     - name: colors_solarized
-      path: zds-spxrjs-template/tools/colors_solarized
+      path: zds23-bridlekite/tools/colors_solarized
       url: https://github.com/altercation/solarized.git
       revision: 62f656a02f93c5190a8753159e34b385588d5ff3
       groups:

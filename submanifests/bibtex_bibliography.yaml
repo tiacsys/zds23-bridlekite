@@ -12,7 +12,7 @@ manifest:
       url-base: https://github.com/tiacsys
   projects:
     - name: bibtex_bibliography
-      path: zds-spxrjs-template/source/_bibliography
+      path: zds23-bridlekite/source/_bibliography
       remote: tiacsys
       repo-path: bibtex_bibliography
       revision: iotmplabs

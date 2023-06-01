@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "zds-spxrjs-template"
+name = "zds23-bridlekite"
 version = "0.0.0"
 description = "ZDS Sphinx/RevealJS Template."
 authors = ["TiaC Systems"]

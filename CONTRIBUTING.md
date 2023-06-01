@@ -115,15 +115,15 @@ $ sudo apt install --yes $(cat dpkg-python3-reqirements.txt)
 ```bash
 $ sudo apt install --yes \
        $(git archive \
-             --remote=ssh://git@github.com:tiacsys/zds-spxrjs-template.git \
+             --remote=ssh://git@github.com:tiacsys/zds23-bridlekite.git \
              --format=tar main dpkg-tools-reqirements.txt 2>/dev/null | tar xO)
 $ sudo apt install --yes \
        $(git archive \
-             --remote=ssh://git@github.com:tiacsys/zds-spxrjs-template.git \
+             --remote=ssh://git@github.com:tiacsys/zds23-bridlekite.git \
              --format=tar main dpkg-nodejs-reqirements.txt 2>/dev/null | tar xO)
 $ sudo apt install --yes \
        $(git archive \
-             --remote=ssh://git@github.com:tiacsys/zds-spxrjs-template.git \
+             --remote=ssh://git@github.com:tiacsys/zds23-bridlekite.git \
              --format=tar main dpkg-python3-reqirements.txt 2>/dev/null | tar xO)
 ```
 
@@ -141,7 +141,7 @@ $ sudo apt install --yes $(cat dpkg-spelling-reqirements.txt)
 ```bash
 $ sudo apt install --yes \
        $(git archive \
-             --remote=ssh://git@github.com:tiacsys/zds-spxrjs-template.git \
+             --remote=ssh://git@github.com:tiacsys/zds23-bridlekite.git \
              --format=tar main dpkg-spelling-reqirements.txt 2>/dev/null | tar xO)
 ```
 
@@ -159,7 +159,7 @@ $ sudo apt install --yes $(cat dpkg-latex-reqirements.txt)
 ```bash
 $ sudo apt install --yes \
        $(git archive \
-             --remote=ssh://git@github.com:tiacsys/zds-spxrjs-template.git \
+             --remote=ssh://git@github.com:tiacsys/zds23-bridlekite.git \
              --format=tar main dpkg-latex-reqirements.txt 2>/dev/null | tar xO)
 ```
 
@@ -187,7 +187,7 @@ Ready to contribute? Here's how to set yourself up for local development.
 1. Create a west workspace from your fork locally:
 
    ```bash
-   $ west init --manifest-url git@github.com:tiacsys/zds-spxrjs-template.git \
+   $ west init --manifest-url git@github.com:tiacsys/zds23-bridlekite.git \
                --manifest-rev main
    $ west update
    ```
@@ -195,7 +195,7 @@ Ready to contribute? Here's how to set yourself up for local development.
 1. Install the project dependencies with [Poetry](https://python-poetry.org):
 
    ```bash
-   $ cd zds-spxrjs-template
+   $ cd zds23-bridlekite
    $ pip3 install --use-pep517 --isolated --no-cache 'sphinxcontrib-asciinema==0.3.5'
    $ poetry install --no-root
    ```
@@ -273,7 +273,7 @@ Ready to contribute? Here's how to set yourself up for local development.
 
    ```
    $ make latexpdf
-   $ xdg-open build/latex/zds-spxrjs-template.pdf
+   $ xdg-open build/latex/zds23-bridlekite.pdf
    ```
 
 1. Commit your changes and push your branch to GitLab:
@@ -325,7 +325,7 @@ Release workflow in GitLab. The next version will be based on
 [python-semantic-release](https://python-semantic-release.readthedocs.io/en/latest/index.html)
 via a GitLab action.~~ **NOT YET**
 
-[gh-issues]: https://github.com/tiacsys/zds-spxrjs-template/issues
+[gh-issues]: https://github.com/tiacsys/zds23-bridlekite/issues
 [inclusion of content based on tags]: https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html#tags
 [rst-doc]: https://docutils.sourceforge.io/rst.html
 [rst-primer]: https://www.sphinx-doc.org/en/master/usage/restructuredtext

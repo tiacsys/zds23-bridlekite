@@ -89,7 +89,7 @@ decktape_size = '1125x795'  # DIN A4
 # Define basic strings that will be used in the dictionary of external sites.
 # gxp/GXP stands for GitX (Hub/Lab) Pages
 gxp_base = 'https://github.com/tiacsys/'
-gxp_slug = 'zds-spxrjs-template'
+gxp_slug = 'zds23-bridlekite'
 gxp_name = publisher + ', ' + doctype + ', ' + project
 
 if on_rtd:
@@ -123,7 +123,7 @@ subtitle = doctype
 
 # Single target file names
 namespace = 'net.tiac-systems.doc.presentation.template.spxrjs.zds.' + version + '.'
-basename = 'zds-spxrjs-template'
+basename = 'zds23-bridlekite'
 
 logcfg.info(project + ' ' + release, color='yellow')
 
@@ -352,7 +352,7 @@ linkcheck_workers = 10
 linkcheck_anchors = False
 linkcheck_ignore = [
     'https://www.reportlab.com/dev/docs/',
-    'https://github.com/tiacsys/zds-spxrjs-template/',
+    'https://github.com/tiacsys/zds23-bridlekite/',
     'http://localhost:\d+/',
 ]
 
