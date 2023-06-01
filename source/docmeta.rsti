@@ -1,0 +1,101 @@
+.. Never add or change more than meta informations (ex. LaTeX formatting),
+   instead edit content in files:
+   docsummary.rst
+
+.. Abstract:
+
+.. |dm_abstract| replace:: This document is an effort by |author|
+   and aims to improve technical understanding and usage of describe
+   piece of tools and frameworks. *In short words:* |about|
+
+.. Status:
+
+.. |dm_status| replace:: |docstat|
+
+.. Copyright, License, Credits:
+
+.. |dm_copyright| replace::
+   Copyright |copy| |copyright| |nbsp| |---| |nbsp| All rights reserved.
+
+.. |dm_license| replace::
+   This work is licensed under the |CC-BY-NC-ND-4.0|. For details of the
+   terms and definitions, representations, warranties and disclaimer see
+   the file |LICENSE| that comes with the documentation and/or read the
+   online version (`CC-BY-NC-ND-4.0`_).
+
+.. |dm_licbmpil| image:: https://licensebuttons.net/l/by-nc-nd/4.0/80x15.png
+   :alt: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+   :target: https://creativecommons.org/licenses/by-nc-nd/4.0/
+   :height: 10pt
+   :align: top
+
+.. |dm_licbmp| image:: https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png
+   :alt: Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+   :target: https://creativecommons.org/licenses/by-nc-nd/4.0/
+   :height: 30pt
+   :align: top
+
+.. |dm_credits| replace::
+   See the file |CREDITS| that comes with the documentation for a list of
+   all well known contributors.
+
+.. Organization:
+
+.. |dm_organization| replace:: |publisher|
+.. |dm_address| replace:: |contactaddr|
+.. |dm_contact| replace:: |contactemail|
+.. |dm_landing| replace:: |contactweb|
+
+.. Authors:
+
+.. |dm_authors| replace:: |author|
+
+.. |snlz| replace:: Stephan Linz
+.. |snlz_role| replace:: Senior EOSS Engineer
+.. |snlz_email| replace:: stephan.linz@navimatix.de
+.. |snlz_contact| replace:: |snlz| <|snlz_email|>
+.. echo -n "stephan.linz@navimatix.de" | md5sum
+.. https://www.gravatar.com/avatar/f411da43e07e01f1ae227e4e7c1dbb23?s=460
+.. https://avatars.githubusercontent.com/u/5664060
+.. https://media.licdn.com/dms/image/C4D03AQGt4Ataz7d3IA/profile-displayphoto-shrink_200_200/0/1516867438654?e=1680739200&v=beta&t=2yMJfrLiilYc1uE2LYTjHnxEZoNUveQ-i_no5NWLlqQ
+.. |snlz_photo| image:: /_extra/1516867438654.jpg
+   :class: profile
+
+.. |tskr| replace:: Tobias Kästner
+.. |tskr_role| replace:: Staff Engineer
+.. |tskr_email| replace:: tobias.kaestner@ul.com
+.. |tskr_contact| replace:: |tskr| <|tskr_email|>
+.. echo -n "tobias.kaestner.jena@googlemail.com" | md5sum
+.. https://www.gravatar.com/avatar/00a8791590e1d6b4463959190d0bf574?s=460
+.. https://avatars.githubusercontent.com/u/1242890
+.. https://media.licdn.com/dms/image/C4E03AQFc7ZwiMRASGw/profile-displayphoto-shrink_200_200/0/1663526424313?e=1680739200&v=beta&t=F8GnCzSYSVJAOcwqM6XjSbs1RJc6uvTcU6lw5UduG-4
+.. |tskr_photo| image:: /_extra/1663526424313.jpg
+   :class: profile
+
+.. Licenses:
+
+.. _`CC-BY-NC-ND-4.0`: https://creativecommons.org/licenses/by-nc-nd/4.0/
+.. |CC-BY-NC-ND-4.0| replace::
+   Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+
+.. Preample
+
+.. |GXP_LATEST| replace:: |gxp_name_e| |nbsp| |---| |nbsp| :strong:`LATEST`
+.. |GXP_LATEST_RVJS| replace:: :tcs.gxp.dir:`online presentation <revealjs>`
+.. |GXP_LATEST_SLDK| replace:: :tcs.gxp.file:`printable presentation <-slides.pdf>`
+.. |GXP_LATEST_HTML| replace:: :tcs.gxp.dir:`online document <html>`
+.. |GXP_LATEST_PDF| replace:: :tcs.gxp.file:`printable document <-handbook.pdf>`
+
+.. Downloads and References:
+
+.. spelling:word-list::
+
+   Stephan Linz
+   Tobias Kästner
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

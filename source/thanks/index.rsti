@@ -1,0 +1,42 @@
+.. Never add or change more than content, instead edit structure in files:
+   index.rst or revealjs.rsti
+
+#############################
+Thank you for your attention!
+#############################
+
+.. revealjs-section::
+   :data-state: title
+
+Your presenters were:
+
+.. tabularcolumns:: C{50mm}C{50mm}
+.. list-table::
+   :class: longtable profile
+   :align: center
+   :widths: 50 50
+   :header-rows: 0
+   :stub-columns: 0
+
+   * - |tskr_photo|
+     - |snlz_photo|
+   * - | |tskr|
+       | |tskr_email|
+     - | |snlz|
+       | |snlz_email|
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Organization:  |dm_organization|
+   :Landing:       |dm_landing|
+   :Contact:       |dm_contact|
+   :Address:       |dm_address|
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

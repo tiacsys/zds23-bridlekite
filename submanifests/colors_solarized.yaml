@@ -1,0 +1,14 @@
+# The west submanifests file for "Solarized" color sets.
+#
+# Copyright (c) 2022-2023 TiaC Systems
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+manifest:
+  version: "0.13"
+  projects:
+    - name: colors_solarized
+      path: zds-spxrjs-template/tools/colors_solarized
+      url: https://github.com/altercation/solarized.git
+      revision: 62f656a02f93c5190a8753159e34b385588d5ff3
+      groups:
+        - sphinx

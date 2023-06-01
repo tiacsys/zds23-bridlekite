@@ -1,0 +1,48 @@
+:topic: |title| |--| |subtitle|
+
+.. _home:
+
+#######
+|title|
+#######
+
+.. revealjs-section::
+   :data-state: title
+
+.. ...........................................................................
+
+.. include:: /revealjs/greeting.rsti
+.. include:: /revealjs/presenters.rsti
+.. TOO MUCH: .. include:: /revealjs/what-for-who.rsti
+.. TOO MUCH: .. include:: /revealjs/prerequisites.rsti
+
+.. ...........................................................................
+
+.. include:: /revealjs/materials.rsti
+
+.. ...........................................................................
+
+.. only:: not without_rtd
+
+   .. include:: /rtd/revealjs.rsti
+
+.. only:: not without_thanks
+
+   .. include:: /thanks/revealjs.rsti
+
+.. ...........................................................................
+
+.. toctree::
+   :caption: Lists and References
+   :titlesonly:
+   :hidden:
+
+   glossary
+   bibliography
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

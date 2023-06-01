@@ -1,0 +1,60 @@
+name: Publish
+
+on:
+  workflow_run:
+    workflows: ["Build", "Remove"]
+    types: [completed]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Slug
+        uses: rlespinasse/github-slug-action@v4
+
+      - name: Download
+        uses: actions/github-script@v6
+        with:
+          script: |
+            var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               run_id: ${{ github.event.workflow_run.id }},
+            });
+            var matchArtifact = artifacts.data.artifacts.filter((artifact) => {
+              return artifact.name == "doc"
+            })[0];
+            var download = await github.rest.actions.downloadArtifact({
+               owner: context.repo.owner,
+               repo: context.repo.repo,
+               artifact_id: matchArtifact.id,
+               archive_format: 'zip',
+            });
+            var fs = require('fs');
+            fs.writeFileSync('${{github.workspace}}/doc.zip', Buffer.from(download.data));
+
+      - name: Upload
+        env:
+          HOST: ${{ secrets.TSN_BRIDLE_DOCROOT_HOST }}
+          PORT: ${{ secrets.TSN_BRIDLE_DOCROOT_PORT }}
+          USER: ${{ secrets.TSN_BRIDLE_DOCROOT_USER }}
+          KEY: ${{ secrets.TSN_BRIDLE_DOCROOT_KEY }}
+          INBOX: ${{ secrets.TSN_BRIDLE_DOCROOT_INBOX }}
+        run: |
+          unzip doc.zip
+          mkdir -p ~/.ssh && \
+            ssh-keyscan -p ${PORT} ${HOST} >> ~/.ssh/known_hosts
+          touch ~/.ssh/private && \
+            chmod 600 ~/.ssh/private && \
+            echo -e "${KEY}" > ~/.ssh/private
+          # Don't upload the archive and workflow metadata
+          files=$(ls -I doc.zip -I pr.txt)
+          for file in ${files}; do
+            scp -i ~/.ssh/private "${file}" "scp://${USER}@${HOST}:${PORT}/${INBOX}/${file}"
+          done

@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "zds-spxrjs-template"
+version = "0.0.0"
+description = "ZDS Sphinx/RevealJS Template."
+authors = ["TiaC Systems"]
+license = "LICENSE"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+sphinx = "^5"
+sphinx-immaterial = "^0"
+sphinx-revealjs = "^2"
+sphinxcontrib-spelling = "^7"
+gitpython = "^3"
+semver = "^2"
+west = ">=0.14"
+sphinxcontrib-bibtex = "^2"
+sphinx-rtd-theme = "^1"
+nodeenv = "^1"
+sphinxcontrib-sass = "^0"
+sphinxcontrib-svg2pdfconverter = "^1"
+sphinxcontrib-imagesvg = "^0"
+sphinx-selective-exclude = "^1"
+sphinxcontrib-svgbob = "^0"
+sphinxcontrib-asciinema = "^0"
+sphinxext-remoteliteralinclude = "^0"
+sphinxcontrib-video = {git = "https://github.com/tiacsys/sphinxcontrib-video.git", rev = "iotmplabs"}
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^2"
+asciinema = "^2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

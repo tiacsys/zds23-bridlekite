@@ -1,0 +1,21 @@
+# The west submanifests file for Sphinx static components.
+#
+# Copyright (c) 2022-2023 TiaC Systems
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+manifest:
+  version: "0.13"
+  defaults:
+    remote: tiacsys
+  remotes:
+    - name: tiacsys
+      url-base: https://github.com/tiacsys
+  projects:
+    - name: sphinx_static
+      path: zds-spxrjs-template/source/_static
+      remote: tiacsys
+      repo-path: sphinx_static
+      revision: iotmplabs
+      submodules: true
+      groups:
+        - sphinx

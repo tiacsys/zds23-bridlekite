@@ -1,0 +1,20 @@
+# The west submanifests file for Sphinx glossary artefacts.
+#
+# Copyright (c) 2022-2023 TiaC Systems
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+manifest:
+  version: "0.13"
+  defaults:
+    remote: tiacsys
+  remotes:
+    - name: tiacsys
+      url-base: https://github.com/tiacsys
+  projects:
+    - name: sphinx_glossary
+      path: zds-spxrjs-template/source/_glossary
+      remote: tiacsys
+      repo-path: sphinx_glossary
+      revision: iotmplabs
+      groups:
+        - sphinx

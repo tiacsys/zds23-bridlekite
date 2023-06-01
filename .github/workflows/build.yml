@@ -1,0 +1,90 @@
+name: Build
+
+on:
+  workflow_dispatch: # And manually on button click
+  push:
+    tags:
+      - 'v*'
+    branches:
+      - main
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/tiacsys/readourdocs-docker-images:main
+      options: --user root
+      env:
+        # doesn't work, see: https://github.com/actions/runner/issues/863
+        HOME: /home/docs
+
+    steps:
+      - name: Slug
+        uses: rlespinasse/github-slug-action@v4
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Workarounds
+        run: |
+          # https://github.com/actions/runner/issues/863#issuecomment-1027721398
+          echo "HOME=/home/docs" >> ${GITHUB_ENV}
+
+      - name: Environment
+        run: |
+          git config --global --add safe.directory ${GITHUB_WORKSPACE}
+
+          asdf info
+          asdf list
+
+          asdf local python ${ROD_PYTHON_VERSION_310}
+          asdf reshim python
+
+          rm -rf ../.west && west init -l .
+          west update
+
+          poetry config virtualenvs.in-project true
+          poetry env use python
+          source $(poetry env info --path)/bin/activate
+
+          pip3 install --use-pep517 --isolated --no-cache 'sphinxcontrib-asciinema==0.3.5'
+          poetry install --no-root
+
+          nodeenv --node=lts --python-virtualenv --prebuilt --requirements=nodeenv-reqirements.txt
+
+      - name: Lint
+        run: |
+          source $(poetry env info --path)/bin/activate
+
+          make SPHINXTAGS="-t html" spelling
+          make clean
+
+          make SPHINXTAGS="-t revealjs" spelling
+          make clean
+
+      - name: Build
+        run: |
+          source $(poetry env info --path)/bin/activate
+
+          make revealjs
+          make revealjspdf
+
+      - name: Archive
+        working-directory: build
+        run: |
+          # synopsys: publish2 docroot <slug> <archive>
+          #   <archive> := doc_build_<GITHUB_RUN_ID_from_doc-build>.tgz
+          mkdir doc && cd doc
+          archive="doc_build_${GITHUB_RUN_ID}.tgz"
+          tar -C ../revealjs -zcf ${archive} .
+          echo "publish2 docroot ${GITHUB_REPOSITORY_NAME_PART_SLUG} ${archive}" > "monitor_${GITHUB_RUN_ID}.txt"
+
+      - name: Upload
+        uses: actions/upload-artifact@v3
+        with:
+          name: doc
+          path: build/doc

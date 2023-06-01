@@ -1,0 +1,49 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Section Title 2.4
+=================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d.
+
+Sub-Section Title 2.4.1
+-----------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+Sub-Section Title 2.4.2
+-----------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+Sub-Section Title 2.4.3
+-----------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+Sub-Section Title 2.4.4
+-----------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

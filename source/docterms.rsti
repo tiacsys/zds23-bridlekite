@@ -1,0 +1,74 @@
+.. Don't change this file, instead edit content in files:
+   glossary/*.rsti
+
+.. include:: /_glossary/common-terms-docterms.rsti
+.. include:: /_glossary/programming-languages-docterms.rsti
+.. include:: /_glossary/technologies-docterms.rsti
+.. include:: /_glossary/abbreviations.rsti
+
+.. Local Abbreviations:
+
+.. generally
+
+.. |app|        replace:: :abbr:`app (application)`
+.. |app_|       replace:: :abbr:`application (app)`
+.. |BOM|        replace:: :abbr:`BOM (Bill of Material)`
+.. |BOM_|       replace:: :abbr:`Bill of Material (BOM)`
+.. |BSP|        replace:: :abbr:`BSP (Board Support Package)`
+.. |BSP_|       replace:: :abbr:`Board Support Package (BSP)`
+.. |CD|         replace:: :abbr:`CD (Continuous Deployment / Delivery)`
+.. |CD_|        replace:: :abbr:`Continuous Deployment / Delivery (CD)`
+.. |CI|         replace:: :abbr:`CI (Continuous Integration)`
+.. |CI_|        replace:: :abbr:`Continuous Integration (CI)`
+.. |CLI|        replace:: :abbr:`CLI (Command Line Interface)`
+.. |CLI_|       replace:: :abbr:`Command Line Interface (CLI)`
+.. |DVCS|       replace:: :abbr:`DVCS (Distributed Version Controll Systems)`
+.. |DVCS_|      replace:: :abbr:`Distributed Version Controll Systems (DVCS)`
+.. |HAL|        replace:: :abbr:`HAL (Hardware Abstraction Layer)`
+.. |HAL_|       replace:: :abbr:`Hardware Abstraction Layer (HAL)`
+.. |HCMP|       replace:: :abbr:`HCMP (Hardware Configuration Management Plan)`
+.. |HCMP_|      replace:: :abbr:`Hardware Configuration Management Plan (HCMP)`
+.. |HIL|        replace:: :abbr:`HIL (Hardware-in-the-Loop)`
+.. |HIL_|       replace:: :abbr:`Hardware-in-the-Loop (HIL)`
+.. |RCS|        replace:: :abbr:`RCS (Revision Controll Systems)`
+.. |RCS_|       replace:: :abbr:`Revision Controll Systems (RCS)`
+.. |SBOM|       replace:: :abbr:`SBOM (Software Bill of Material)`
+.. |SBOM_|      replace:: :abbr:`Software Bill of Material (SBOM)`
+.. |SCMP|       replace:: :abbr:`SCMP (Software Configuration Management Plan)`
+.. |SCMP_|      replace:: :abbr:`Software Configuration Management Plan (SCMP)`
+.. |SCMS|       replace:: :abbr:`SCMS (Software Configuration Management System)`
+.. |SCMS_|      replace:: :abbr:`Software Configuration Management System (SCMS)`
+.. |SDK|        replace:: :abbr:`SDK (Software Development Kit)`
+.. |SDK_|       replace:: :abbr:`Software Development Kit (SDK)`
+
+.. specifically
+
+.. |Binutils|   replace:: :abbr:`Binutils (GNU Assembler and Linker)`
+.. |Binutils_|  replace:: :abbr:`GNU Assembler and Linker (Binutils)`
+.. |GCC|        replace:: :abbr:`GCC (GNU C/C++ Compiler)`
+.. |GCC_|       replace:: :abbr:`GNU C/C++ Compiler (GCC)`
+.. |GDB|        replace:: :abbr:`GDB (GNU Debugger)`
+.. |GDB_|       replace:: :abbr:`GNU Debugger (GDB)`
+.. |J-Link|     replace:: :abbr:`J-Link (SEGGER On-Chip-Debugger)`
+.. |J-Link_|    replace:: :abbr:`SEGGER On-Chip-Debugger (J-Link)`
+.. |MR|         replace:: :abbr:`MR (Merge Request)`
+.. |MR_|        replace:: :abbr:`Merge Request (MR)`
+.. |OCD|        replace:: :abbr:`OCD (On-Chip-Debugger)`
+.. |OCD_|       replace:: :abbr:`On-Chip-Debugger (OCD)`
+.. |OpenOCD|    replace:: :abbr:`OpenOCD (Open On-Chip-Debugger)`
+.. |OpenOCD_|   replace:: :abbr:`Open On-Chip-Debugger (OpenOCD)`
+.. |PR|         replace:: :abbr:`PR (Pull Request)`
+.. |PR_|        replace:: :abbr:`Pull Request (PR)`
+.. |PyOCD|      replace:: :abbr:`PyOCD (Python On-Chip-Debugger)`
+.. |PyOCD_|     replace:: :abbr:`Python On-Chip-Debugger (PyOCD)`
+
+.. spelling:word-list::
+
+   app
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

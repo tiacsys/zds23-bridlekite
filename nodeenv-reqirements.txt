@@ -1,0 +1,3 @@
+svg-term-cli@2.1.1
+corepack@0.14.2
+decktape@3.5.0

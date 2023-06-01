@@ -1,0 +1,17 @@
+.. Never add or change more than content.
+
+.. Readers' Prerequisites: Configuration and Build Tools
+
+.. revealjs-fragments::
+
+   * :strong:`Kconfig` with :strong:`Device Tree` and the source code
+   * :strong:`CMake` with :strong:`Ninja` and the build steps
+   * Triad: :code:`config` |CRT| :code:`make` |CRT| :code:`install` (flash)
+   * Canadian Cross: :code:`build` |CRT| :code:`host` |CRT| :code:`target`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

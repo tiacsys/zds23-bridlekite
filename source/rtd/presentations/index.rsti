@@ -1,0 +1,136 @@
+.. Never add or change more than content, instead edit structure in files:
+   index.rst or revealjs.rsti
+
+Presentations
+=============
+
+.. revealjs-section::
+   :data-state: talks
+
+* Zephyr Developer Summit (2023): https://www.zephyrproject.org/zephyr-developer-summit-2023/
+* Zephyr Developer Summit (2022): https://www.zephyrproject.org/event/zephyr-developer-summit-2/
+* Zephyr Open Source Summit (2021): https://www.zephyrproject.org/zephyr-oss-elc-sept-2021/
+* Zephyr Testing Mini-Conference (2021): https://zephyrproject.org/zephyr-testing/
+
+.. ...........................................................................
+
+Common (not only for newbies)
+-----------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. ...........................................................................
+
+* *Lauren Murphy* *(Intel)*:
+  |Zephyr and You: A Developer Environment for Newcomers (2022)|_
+  (Recording: https://youtu.be/mQxh_UGA_Ik)
+
+.. ...........................................................................
+
+Testing
+-------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. ...........................................................................
+
+* *Yuval Peress* *(Google)*:
+  |Zephyr Unit Tests and Emulators at Google (2022)|_
+  (Recording: https://youtu.be/WmAgXYTj4Fg)
+* *Aastha Grover* *(Intel)*:
+  |Twister: A Test Utility for Contributors (2022)|_
+  (Recording: https://youtu.be/v0bRUYay_Ng)
+* *Maciej Perkowski* *(Nordic Semiconductor)*:
+  |Twister V2: New Framework for Testing Based on Pytest (2022)|_
+  (Recording: https://youtu.be/7lacLd9OlUc),
+  Issue: https://github.com/zephyrproject-rtos/zephyr/issues/42458,
+  Git: https://github.com/zephyrproject-rtos/twister
+* *Maciej Perkowski* *(Nordic Semiconductor)*, *Chen Peng* *(Intel)*,
+  *Shihao Shen* *(Intel)*, *Steven Wang* *(Intel)*:
+  |Zephyr Testing Mini-Conference (2021)|_
+  (Recording: https://youtu.be/aa135Qp6Eak)
+
+.. |Zephyr and You: A Developer Environment for Newcomers (2022)|
+   replace:: :strong:`Zephyr and You: A Developer Environment for Newcomers (2022)`
+.. _`Zephyr and You: A Developer Environment for Newcomers (2022)`:
+   https://sched.co/10CEO
+
+.. |Zephyr Unit Tests and Emulators at Google (2022)|
+   replace:: :strong:`Zephyr Unit Tests and Emulators at Google (2022)`
+.. _`Zephyr Unit Tests and Emulators at Google (2022)`:
+   https://sched.co/10CDK
+
+.. |Twister: A Test Utility for Contributors (2022)|
+   replace:: :strong:`Twister: A Test Utility for Contributors (2022)`
+.. _`Twister: A Test Utility for Contributors (2022)`:
+   https://sched.co/10CDQ
+
+.. |Twister V2: New Framework for Testing Based on Pytest (2022)|
+   replace:: :strong:`Twister V2: New Framework for Testing Based on Pytest (2022)`
+.. _`Twister V2: New Framework for Testing Based on Pytest (2022)`:
+   https://sched.co/10CEU
+
+.. |Zephyr Testing Mini-Conference (2021)|
+   replace:: :strong:`Zephyr Testing Mini-Conference (2021)`
+.. _`Zephyr Testing Mini-Conference (2021)`:
+   https://zephyrproject.org/zephyr-testing
+
+.. ...........................................................................
+
+Development
+-----------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. ...........................................................................
+
+* *Gerard Marull Paretas* *(Nordic Semiconductor)*:
+  |Mastering Zephyr Driver Development (2022)|_
+  (Recording: https://youtu.be/o-f2qCd2AXo),
+  Git: https://github.com/teslabs/zds-2022-drivers
+  V1: :cite:`marullparetas2022mzddv1`
+  V2: :cite:`marullparetas2022mzddv2`
+* *Gerard Marull Paretas* *(Nordic Semiconductor)*:
+  |Deep dive into pin control in Zephyr (2022)|_
+  (Recording: https://youtu.be/bcTekbGN-Pk),
+  Git: https://github.com/teslabs/zds-2022-drivers
+  :cite:`marullparetas2022ddipcz`
+* *Martí Bolívar* *(Nordic Semiconductor)*:
+  |Zephyr Devicetree Mysteries (2022)|_
+  (Recording: https://youtu.be/w8GgP3h0M8M)
+* *Martí Bolívar* *(Nordic Semiconductor)*:
+  |A deep dive into the Zephyr 2.5 (and 2.6) device model (2021)|_
+  (Recording: https://youtu.be/sWaxQyIgEBY)
+  :cite:`martibolivarnordic2021ddizdm`
+
+.. |Mastering Zephyr Driver Development (2022)|
+   replace:: :strong:`Mastering Zephyr Driver Development (2022)`
+.. _`Mastering Zephyr Driver Development (2022)`:
+   https://github.com/teslabs/zds-2022-drivers/releases/latest
+
+.. |Deep dive into pin control in Zephyr (2022)|
+   replace:: :strong:`Deep dive into pin control in Zephyr (2022)`
+.. _`Deep dive into pin control in Zephyr (2022)`:
+   https://github.com/teslabs/zds-2022-pinctrl/releases/latest
+
+.. |Zephyr Devicetree Mysteries (2022)|
+   replace:: :strong:`Zephyr Devicetree Mysteries (2022)`
+.. _`Zephyr Devicetree Mysteries (2022)`:
+   https://sched.co/10CEm
+
+.. |A deep dive into the Zephyr 2.5 (and 2.6) device model (2021)|
+   replace:: :strong:`A deep dive into the Zephyr 2.5 (and 2.6) device model (2021)`
+.. _`A deep dive into the Zephyr 2.5 (and 2.6) device model (2021)`:
+   https://drive.google.com/file/d/1bZQpNwX6Fs8L3b6OTBBY0pehgwtsNMMO/preview
+
+.. ...........................................................................
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

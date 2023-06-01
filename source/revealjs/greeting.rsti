@@ -1,0 +1,47 @@
+.. Never add or change more than meta informations (ex. LaTeX formatting),
+   instead edit structure and formattings in files:
+   index.rstr
+
+|version|
+
+.. TOO MUCH: :raw-html:`<small>`
+.. TOO MUCH: |dm_status|
+.. TOO MUCH: :raw-html:`</small>`
+
+-----
+
+.. TOO MUCH: :Abstract: .. include:: /docshow.rsti
+
+|nbsp|
+
+|nbsp|
+
+:|headline|:
+
+|nbsp|
+
+|nbsp|
+
+|nbsp|
+
+|nbsp|
+
+Zephyr® Project Developer Summit 2023
+
+June 26-30, 2023 | Prague, Czech Republic + Virtual
+
+-----
+
+:raw-html:`<small>`
+*build with Sphinx, presented with Reveal.js*
+:raw-html:`<br />`
+|dm_copyright|
+|nbsp| |---| |nbsp| `CC-BY-NC-ND-4.0`_
+:raw-html:`</small>`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

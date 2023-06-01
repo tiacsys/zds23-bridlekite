@@ -1,0 +1,7 @@
+aspell
+aspell-de
+aspell-en
+enchant-2
+wamerican-huge
+wgerman-medical
+wngerman

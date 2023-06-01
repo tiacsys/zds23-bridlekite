@@ -1,0 +1,20 @@
+# The west submanifests file for Sphinx template components.
+#
+# Copyright (c) 2022-2023 TiaC Systems
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+manifest:
+  version: "0.13"
+  defaults:
+    remote: tiacsys
+  remotes:
+    - name: tiacsys
+      url-base: https://github.com/tiacsys
+  projects:
+    - name: sphinx_templates
+      path: zds-spxrjs-template/source/_templates
+      remote: tiacsys
+      repo-path: sphinx_templates
+      revision: iotmplabs
+      groups:
+        - sphinx

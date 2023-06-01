@@ -1,0 +1,9 @@
+latexmk
+texlive-fonts-extra
+texlive-fonts-recommended
+texlive-lang-english
+texlive-lang-european
+texlive-pictures
+texlive-science
+texlive-xetex
+xindy

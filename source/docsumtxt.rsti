@@ -1,0 +1,52 @@
+.. Don't change this file, instead edit content in files:
+   docmeta.rsti, docaudience.rsti, and docinvolcomps.rsti
+
+:Abstract:      |dm_abstract|
+
+                .. rubric:: Involved Components
+
+                .. include:: /docinvolcomps.rsti
+
+:Audience:      .. include:: /docaudience.rsti
+:Status:        |dm_status|
+:Version:       |version|
+:Release:       |release|
+:Date:          |today|
+:Authors:       |dm_authors|
+
+                * |tskr_contact|
+                * |snlz_contact|
+
+:Copyright:     |dm_copyright|
+:License:       |dm_license|
+                |dm_licbmpil|
+:Credits:       |dm_credits|
+:Organization:  |dm_organization|
+:Landing:       |dm_landing|
+:Contact:       |dm_contact|
+:Address:       |dm_address|
+
+.. only:: mpulnx
+
+   .. image:: /_images/mpul-nx.*
+      :alt: The UL Method Park and Navimarix logo.
+      :align: right
+
+.. only:: mpul
+
+   .. image:: /_images/mpul.*
+      :alt: The UL Method Park logo.
+      :align: right
+
+.. only:: nx
+
+   .. image:: /_images/nx.*
+      :alt: The Navimarix logo.
+      :align: right
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

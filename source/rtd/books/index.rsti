@@ -1,0 +1,354 @@
+.. Never add or change more than content, instead edit structure in files:
+   index.rst or revealjs.rsti
+
+Books
+=====
+
+.. revealjs-section::
+   :data-state: books
+
+-----
+
+*You really don't need a spacial book about Zephyr. However, you may need a
+mix of books for foundational knowledge on OS development, C and embedded
+systems because that's required to understand Zephyr.*
+
+-----
+
+.. ...........................................................................
+
+Embedded Systems and underlying knowledge
+-----------------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. tabularcolumns:: C{38mm}C{38mm}C{38mm}C{38mm}
+.. list-table:: Books with and about Zephyr and essential tools
+   :class: longtable
+   :align: center
+   :widths: 38 38 38 38
+   :header-rows: 0
+   :stub-columns: 0
+
+   * - :raw-html:`<small>`
+       |9783895765001|
+       :cite:`vervloesem2022devbtle`
+       (|9781785289736_web|_/|9781785289736_git|_)
+       :raw-html:`</small>`
+     - |nbsp|
+     - |nbsp|
+     - |nbsp|
+   * - :raw-html:`<small>`
+       |B0B5JT7KSY|
+       :cite:`schroeder2022modembfwinfra`
+       :raw-html:`</small>`
+     - :raw-html:`<small>`
+       |9781803239729|
+       :cite:`bernergilor2022cmakebp`
+       :raw-html:`</small>`
+     - :raw-html:`<small>`
+       |9781930934313|
+       :cite:`martinhoffman2015mastcmake`
+       (|9781930934313_web|_/|9781930934313_git|_)
+       :raw-html:`</small>`
+     - :raw-html:`<small>`
+       |9781793008770|
+       :cite:`hasecke2019sphinx`
+       :raw-html:`</small>`
+
+.. ...........................................................................
+
+.. |978-3895765001| replace:: :emphasis:`978-3895765001`
+.. _`978-3895765001`: https://www.elektor.com/develop-your-own-bluetooth-low-energy-applications
+.. |9783895765001| replace:: :strong:`2022` (257 pages)
+   :raw-html:`<br />` |9781785289736_cover|
+   :raw-html:`<br />` |978-3895765001|_
+   :raw-html:`<br />`
+.. |9781785289736_cover| image:: https://www.elektormagazine.com/assets/upload/images/42/20220617123929_Develop-your-own-Bluetooth-Low-Energy-applications---LoRes.png
+   :alt: Develop your own Bluetooth Low Energy Applications (ISBN: 978-3895765001)
+   :width: 150
+   :height: 195
+.. |9781785289736_web| replace:: :emphasis:`web`
+.. _`9781785289736_web`: https://koen.vervloesem.eu/books/develop-your-own-bluetooth-low-energy-applications
+.. |9781785289736_git| replace:: :emphasis:`git`
+.. _`9781785289736_git`: https://github.com/koenvervloesem/bluetooth-low-energy-applications
+
+.. |978-1793008770| replace:: :emphasis:`978-1793008770`
+.. _`978-1793008770`: https://www.amazon.com/dp/1793008779
+.. |9781793008770| replace:: :strong:`2019` (282 pages)
+   :raw-html:`<br />` |9781793008770_cover|
+   :raw-html:`<br />` |978-1793008770|_
+   :raw-html:`<br />`
+.. |9781793008770_cover| image:: https://m.media-amazon.com/images/I/41YCMuAjxFL.jpg
+   :alt: Software-Dokumentation mit Sphinx (ISBN: 978-1793008770)
+   :width: 150
+   :height: 195
+
+.. |978-1930934313| replace:: :emphasis:`978-1930934313`
+.. _`978-1930934313`: https://www.amazon.com/dp/1930934319
+.. |9781930934313| replace:: :strong:`2015` (706 pages)
+   :raw-html:`<br />` |9781930934313_cover|
+   :raw-html:`<br />` |978-1930934313|_
+   :raw-html:`<br />`
+.. |9781930934313_cover| image:: https://m.media-amazon.com/images/I/71rY+Eu33UL.jpg
+   :alt: Mastering CMake 3.1 (ISBN: 978-1930934313)
+   :width: 150
+   :height: 195
+.. |9781930934313_web| replace:: :emphasis:`web`
+.. _`9781930934313_web`: https://cmake.org/cmake/help/book/mastering-cmake
+.. |9781930934313_git| replace:: :emphasis:`git`
+.. _`9781930934313_git`: https://gitlab.kitware.com/cmake/mastering-cmake
+
+.. |978-1803239729| replace:: :emphasis:`978-1803239729`
+.. _`978-1803239729`: https://www.packtpub.com/product/cmake-best-practices/9781803239729
+.. |9781803239729| replace:: :strong:`2022` (406 pages)
+   :raw-html:`<br />` |9781803239729_cover|
+   :raw-html:`<br />` |978-1803239729|_
+   :raw-html:`<br />`
+.. |9781803239729_cover| image:: https://m.media-amazon.com/images/I/616PkzIgiOL.jpg
+   :alt: CMake Best Practices (ISBN: 978-1803239729)
+   :width: 150
+   :height: 195
+
+.. |ASIN-B0B5JT7KSY| replace:: :emphasis:`ASIN-B0B5JT7KSY`
+.. _`ASIN-B0B5JT7KSY`: https://www.amazon.com/dp/B0B5JT7KSY
+.. |B0B5JT7KSY| replace:: :strong:`2022` (165 pages)
+   :raw-html:`<br />` |B0B5JT7KSY_cover|
+   :raw-html:`<br />` |ASIN-B0B5JT7KSY|_
+   :raw-html:`<br />`
+.. |B0B5JT7KSY_cover| image:: https://m.media-amazon.com/images/I/41lbqXOoPjL.jpg
+   :alt: Modern Embedded Firmware Infrastructure (ISBN: ASIN-B0B5JT7KSY)
+   :width: 150
+   :height: 195
+
+.. ...........................................................................
+
+.. TOO MUCH: .. revealjs-break::
+.. TOO MUCH:    :data-auto-animate:
+
+.. TOO MUCH: .. tabularcolumns:: C{38mm}C{38mm}C{38mm}C{38mm}
+.. TOO MUCH: .. list-table:: Books essential about ARM Cortex-M
+.. TOO MUCH:    :class: longtable
+.. TOO MUCH:    :align: center
+.. TOO MUCH:    :widths: 38 38 38 38
+.. TOO MUCH:    :header-rows: 0
+.. TOO MUCH:    :stub-columns: 0
+
+.. TOO MUCH:    * - :raw-html:`<small>`
+.. TOO MUCH:        |9780323854948|
+.. TOO MUCH:        :cite:`martin2022dgarmcortexm`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780128207352|
+.. TOO MUCH:        :cite:`yiu2020dgarmcortexm23m33`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780128032770|
+.. TOO MUCH:        :cite:`yiu2015dgarmcortexm0m0p`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780124080829|
+.. TOO MUCH:        :cite:`yiu2013dgarmcortexm3m4`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:    * - |nbsp|
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780128214695|
+.. TOO MUCH:        :cite:`martin2016seciotdevarmcortexm33`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780128036983|
+.. TOO MUCH:        :cite:`pyeatt2016modasmarm`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9780982692677|
+.. TOO MUCH:        :cite:`zhu2023esarmcortexmasmc`
+.. TOO MUCH:        :raw-html:`</small>`
+
+.. TOO MUCH: .. ...........................................................................
+
+.. TOO MUCH: .. |978-0323854948| replace:: :emphasis:`978-0323854948`
+.. TOO MUCH: .. _`978-0323854948`: https://www.elsevier.com/books/the-designers-guide-to-the-cortex-m-processor-family/martin/978-0-323-85494-8
+.. TOO MUCH: .. |9780323854948| replace:: :strong:`2022` (648 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780323854948_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0323854948|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780323854948_cover| image:: https://m.media-amazon.com/images/I/61vh2b01GkL.jpg
+.. TOO MUCH:    :alt: The Designer's Guide to the Cortex-M Processor Family (ISBN: 978-0323854948)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0128207352| replace:: :emphasis:`978-3895765001`
+.. TOO MUCH: .. _`978-0128207352`: https://shop.elsevier.com/books/definitive-guide-to-arm-cortex-m23-and-cortex-m33-processors/yiu/978-0-12-820735-2
+.. TOO MUCH: .. |9780128207352| replace:: :strong:`2020` (928 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780128207352_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0128207352|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780128207352_cover| image:: https://m.media-amazon.com/images/I/71Oz5lhJVuL.jpg
+.. TOO MUCH:    :alt: Definitive Guide to Arm Cortex-M23 and Cortex-M33 Processors (ISBN: 978-0128207352)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0128032770| replace:: :emphasis:`978-0128032770`
+.. TOO MUCH: .. _`978-0128032770`: https://www.elsevier.com/books/the-definitive-guide-to-arm-cortex-m0-and-cortex-m0-processors/yiu/978-0-12-803277-0
+.. TOO MUCH: .. |9780128032770| replace:: :strong:`2015` (778 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780128032770_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0128032770|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780128032770_cover| image:: https://m.media-amazon.com/images/I/41ycilkahIL.jpg
+.. TOO MUCH:    :alt: The Definitive Guide to Arm Cortex-M0 and Cortex-M0+ Processors (ISBN: 978-0128032770)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0124080829| replace:: :emphasis:`978-0124080829`
+.. TOO MUCH: .. _`978-0124080829`: https://www.elsevier.com/books/the-definitive-guide-to-arm-cortex-m3-and-cortex-m4-processors/yiu/978-0-12-408082-9
+.. TOO MUCH: .. |9780124080829| replace:: :strong:`2013` (864 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780124080829_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0124080829|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780124080829_cover| image:: https://m.media-amazon.com/images/I/41GdduPWZIL.jpg
+.. TOO MUCH:    :alt: The Definitive Guide to Arm Cortex-M3 and Cortex-M4 Processors (ISBN: 978-0124080829)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0128214695| replace:: :emphasis:`978-0128214695`
+.. TOO MUCH: .. _`978-0128214695`: https://www.elsevier.com/books/designing-secure-iot-devices-with-the-arm-platform-security-architecture-and-cortex-m33/martin/978-0-12-821469-5
+.. TOO MUCH: .. |9780128214695| replace:: :strong:`2016` (496 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780128214695_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0128214695|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780128214695_cover| image:: https://m.media-amazon.com/images/I/61RocFCC+gL.jpg
+.. TOO MUCH:    :alt: Designing Secure IoT Devices with the Arm Platform Security Architecture and Cortex-M33 (ISBN: 978-0128214695)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0128036983| replace:: :emphasis:`978-0128036983`
+.. TOO MUCH: .. _`978-0128036983`: https://shop.elsevier.com/books/modern-assembly-language-programming-with-the-arm-processor/pyeatt/978-0-12-803698-3
+.. TOO MUCH: .. |9780128036983| replace:: :strong:`2016` (504 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780128036983_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0128036983|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780128036983_cover| image:: https://m.media-amazon.com/images/I/51852Hoa+lL.jpg
+.. TOO MUCH:    :alt: Modern Assembly Language Programming with the ARM Processor (ISBN: 978-0128036983)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-0982692677| replace:: :emphasis:`978-0982692677`
+.. TOO MUCH: .. _`978-0982692677`: https://web.eece.maine.edu/~zhu/book
+.. TOO MUCH: .. |9780982692677| replace:: :strong:`2023` (730 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9780982692677_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-0982692677|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9780982692677_cover| image:: https://web.eece.maine.edu/~zhu/book/zhu_book_front_cover_v4.png
+.. TOO MUCH:    :alt: Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C (ISBN: 978-0982692677)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. ...........................................................................
+
+.. TOO MUCH: .. revealjs-break::
+.. TOO MUCH:    :data-auto-animate:
+
+.. TOO MUCH: .. tabularcolumns:: C{38mm}C{38mm}C{38mm}C{38mm}
+.. TOO MUCH: .. list-table:: Mostly free books available from Arm Ltd.
+.. TOO MUCH:    :class: longtable
+.. TOO MUCH:    :align: center
+.. TOO MUCH:    :widths: 38 38 38 38
+.. TOO MUCH:    :header-rows: 0
+.. TOO MUCH:    :stub-columns: 0
+
+.. TOO MUCH:    * - :raw-html:`<small>`
+.. TOO MUCH:        |9781911531418|
+.. TOO MUCH:        :cite:`arm2022bgdesaarmcortexm`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9781911531333|
+.. TOO MUCH:        :cite:`arm2021fsocdarmcortexm`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9781911531180|
+.. TOO MUCH:        :cite:`yiu2019socdarmcortexmrb`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9781911531166|
+.. TOO MUCH:        :cite:`arm2018dsparmcortexm`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:    * - |nbsp|
+.. TOO MUCH:      - :raw-html:`<small>`
+.. TOO MUCH:        |9781911531036|
+.. TOO MUCH:        :cite:`arm2017esfarmcortexm0kl25z`
+.. TOO MUCH:        :raw-html:`</small>`
+.. TOO MUCH:      - |nbsp|
+.. TOO MUCH:      - |nbsp|
+
+.. TOO MUCH: .. ...........................................................................
+
+.. TOO MUCH: .. |978-1911531418| replace:: :emphasis:`978-1911531418`
+.. TOO MUCH: .. _`978-1911531418`: https://www.arm.com/resources/education/books/designing-embedded-systems
+.. TOO MUCH: .. |9781911531418| replace:: :strong:`2022` (620 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9781911531418_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-1911531418|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9781911531418_cover| image:: https://m.media-amazon.com/images/I/615TeYOV0WL.jpg
+.. TOO MUCH:    :alt: A Beginner’s Guide to Designing Embedded System Applications on Arm Cortex-M Microcontrollers (ISBN: 978-1911531418)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-1911531333| replace:: :emphasis:`978-1911531333`
+.. TOO MUCH: .. _`978-1911531333`: https://www.arm.com/resources/education/books/fundamentals-soc
+.. TOO MUCH: .. |9781911531333| replace:: :strong:`2021` (660 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9781911531333_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-1911531333|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9781911531333_cover| image:: https://m.media-amazon.com/images/I/71t7lhTjFgL.jpg
+.. TOO MUCH:    :alt: Fundamentals of System-on-Chip Design on Arm Cortex-M Microcontrollers (ISBN: 978-1911531333)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-1911531180| replace:: :emphasis:`978-1911531180`
+.. TOO MUCH: .. _`978-1911531180`: https://www.arm.com/resources/education/books/soc-reference-book
+.. TOO MUCH: .. |9781911531180| replace:: :strong:`2019` (334 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9781911531180_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-1911531180|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9781911531180_cover| image:: https://m.media-amazon.com/images/I/71QSEnVVILL.jpg
+.. TOO MUCH:    :alt: System-on-Chip Design with Arm Cortex-M Processors Reference Book (ISBN: 978-1911531180)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-1911531166| replace:: :emphasis:`978-1911531166`
+.. TOO MUCH: .. _`978-1911531166`: https://www.arm.com/resources/education/books/dsptextbook
+.. TOO MUCH: .. |9781911531166| replace:: :strong:`2018` (354 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9781911531166_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-1911531166|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9781911531166_cover| image:: https://m.media-amazon.com/images/I/61lC6J9tPGL.jpg
+.. TOO MUCH:    :alt: Digital Signal Processing using Arm Cortex-M based Microcontrollers (ISBN: 978-1911531166)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. TOO MUCH: .. |978-1911531036| replace:: :emphasis:`978-1911531036`
+.. TOO MUCH: .. _`978-1911531036`: https://www.arm.com/resources/education/books/efficient-embedded-systems
+.. TOO MUCH: .. |9781911531036| replace:: :strong:`2017` (316 pages)
+.. TOO MUCH:    :raw-html:`<br />` |9781911531036_cover|
+.. TOO MUCH:    :raw-html:`<br />` |978-1911531036|_
+.. TOO MUCH:    :raw-html:`<br />`
+.. TOO MUCH: .. |9781911531036_cover| image:: https://m.media-amazon.com/images/I/712pNLlC3HL.jpg
+.. TOO MUCH:    :alt: Embedded Systems Fundamentals with ARM Cortex-M based Microcontrollers (ISBN: 978-1911531036)
+.. TOO MUCH:    :width: 150
+.. TOO MUCH:    :height: 195
+
+.. ...........................................................................
+
+.. |spare_book| replace:: :emphasis:`missing one?` :raw-html:`<br />` |question_mark|
+.. |question_mark| image:: /_images/qm.*
+   :alt: Question Mark
+   :width: 95
+   :height: 150
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

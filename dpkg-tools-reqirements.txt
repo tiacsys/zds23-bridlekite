@@ -1,0 +1,9 @@
+build-essential
+bzip2
+curl
+graphviz
+imagemagick
+librsvg2-bin
+pdf2svg
+poppler-utils
+tar

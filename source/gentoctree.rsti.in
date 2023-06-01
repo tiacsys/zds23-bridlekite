@@ -1,0 +1,49 @@
+.. Never add or change more than structure in this template file
+
+.. toctree::
+   :caption: Table of Contents:
+   :numbered: 2
+   :maxdepth: 4
+   :hidden:
+   :includehidden:
+
+   {rtd}
+   {thanks}
+
+.. ...........................................................................
+
+:raw-latex:`\appendix`
+
+.. toctree::
+   :caption: Appendices
+   :titlesonly:
+   :hidden:
+
+   appendix
+   glossary
+
+
+.. ...........................................................................
+
+.. toctree::
+   :caption: Lists and References
+   :titlesonly:
+   :hidden:
+
+   acronyms
+   {indexlol}
+   {indexlot}
+   {indexlof}
+   {indexloe}
+   {indexlod}
+   {indexloi}
+   bibliography
+
+.. ...........................................................................
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

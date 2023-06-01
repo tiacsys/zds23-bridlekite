@@ -1,0 +1,35 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+exclude: "CHANGELOG.md"
+default_stages: [commit]
+
+repos:
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v2.37.1
+    hooks:
+      - id: commitizen
+        stages: [commit-msg]
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: check-added-large-files
+        args: ['--maxkb=10240']
+      - id: check-builtin-literals
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-toml
+      - id: check-xml
+      - id: check-yaml
+      - id: debug-statements
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        exclude: ".gitignore"
+  - repo: https://github.com/executablebooks/mdformat
+    rev: 0.7.16
+    hooks:
+      - id: mdformat        # CommonMark compliant Markdown formatter
+        additional_dependencies:
+          - mdformat-gfm    # plugin for GitHub Flavored Markdown (GFM)
+          - mdformat-myst   # plugin for Markedly Structured Text (MyST)
+          - mdformat-black  # plugin for Blacken Python code blocks

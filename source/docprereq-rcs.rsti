@@ -1,0 +1,23 @@
+.. Never add or change more than content.
+
+.. Readers' Prerequisites: Revision Controll Systems
+
+.. revealjs-fragments::
+
+   * :strong:`Git`, :blue:`for all relevant and seriously projects`
+   * :strong:`Principals of work` with |RCS| and |DVCS|
+   * :strong:`Collaboration work` with |DVCS| over |MR| or |PR|
+   * :strikethrough-red:`Subversion or CVS/VCS or Bazaar`
+     :yellow:`lack of cooperation`
+   * :strikethrough-red:`Mercurial or Fossil`
+     :yellow:`lack of dissemination`
+   * :strikethrough-red:`Propritary RCS or DVCS`
+     |nbsp| |--| |nbsp| pay-wall, leads to
+     :yellow:`lack of scaling, weak cooperation and low dissemination`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

@@ -1,0 +1,16 @@
+# The west manifest file for ZDS Sphinx/RevealJS slide sets.
+#
+# Copyright (c) 2022-2023 TiaC Systems
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
+manifest:
+  version: "0.13"
+  defaults:
+    remote: tiacsys
+  remotes:
+    - name: tiacsys
+      url-base: https://github.com/tiacsys
+  self:
+    path: zds-spxrjs-template
+    west-commands: scripts/west-commands.yml
+    import: submanifests

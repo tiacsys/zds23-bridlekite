@@ -1,0 +1,17 @@
+.. Never add or change more than content.
+
+.. Readers' Prerequisites:
+
+.. revealjs-fragments::
+
+   * Revision Controll Systems
+   * Configuration and Build Tools
+   * Development and Quality Assurance
+   * Scripting
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

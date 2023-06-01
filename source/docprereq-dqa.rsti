@@ -1,0 +1,30 @@
+.. Never add or change more than content.
+
+.. Readers' Prerequisites: Development and Quality Assurance
+
+.. revealjs-fragments::
+
+   * Source :strong:`code development`
+     |---| understanding the |GCC| & |Binutils|
+   * Source :strong:`code debugging`
+     |---| understanding the |GDB| & |OCD|
+   * Source :strong:`code testing`
+     |---| understanding the :strong:`Test Pyramid` according to M. Fauler:
+
+     * code level: unit (functional) tests
+     * service level: component (behavior) tests
+     * system level: integration (behavior) tests
+
+   * Modern :strong:`operating system architecture`
+     |---| understanding:
+
+     * resource management: for time, events, and memory
+     * device management: driver abstraction models
+     * system interfaces: system calls and communication
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
