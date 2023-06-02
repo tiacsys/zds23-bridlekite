@@ -5,7 +5,7 @@ pushd %~dp0
 REM Command file for Sphinx documentation
 
 if "%SPHINXTAGS%" == "" (
-	set SPHINXTAGS=-t tiac
+	set SPHINXTAGS=-t nx
 )
 if "%SPHINXOPTS%" == "" (
 	set SPHINXOPTS=-v -W --keep-going
