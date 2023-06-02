@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "zds23-bridlekite"
 version = "0.0.0"
-description = "ZDS Sphinx/RevealJS Template."
-authors = ["TiaC Systems"]
+description = "ZDS32 A Bridle for Your Kite."
+authors = ["Navimatix GmbH"]
 license = "LICENSE"
 readme = "README.md"
 

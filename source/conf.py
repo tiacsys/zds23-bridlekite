@@ -67,8 +67,8 @@ else:
     contactemail = 'info@tiac-systems.net'
     contactweb = 'https://tiac-systems.net'
 
-project = 'The Title Of The Presentation'
-headline = 'The Optional Headline'
+project = 'A Bridle for Your Kite'
+headline = 'Best Practices for Downstream Development with Zephyr'
 category = 'Presentation'
 doctype = 'Handbook'
 docstat = 'preliminary (:emphasis:`some mature, much in progress`)'
