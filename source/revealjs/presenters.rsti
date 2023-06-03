@@ -5,6 +5,9 @@
 About us:
 =========
 
+.. revealjs-section::
+   :data-auto-animate:
+
 .. tabularcolumns:: C{50mm}L{50mm}L{50mm}
 .. list-table::
    :class: longtable profile
