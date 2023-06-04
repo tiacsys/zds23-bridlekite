@@ -8,257 +8,262 @@ What We Want To Talk
    :data-auto-animate:
 
 .. container:: flex-container
+   :name: bridle-overview-downstream
 
    .. container:: pct95
 
-      .. raw:: html
+      .. only:: statcont
 
-         <span class="fragment"></span>
-         <span class="fragment"></span>
-         <span class="fragment"></span>
-         <span class="fragment"></span>
-         <span class="fragment"></span>
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-static.svg
+            :tagtype: object
 
-         <div data-animate data-src="_static/revealjs/what-we-want-to-talk-noglyphs.svg">
-         <!--
-         {
-           "setup": [
-             { "element": "#apps_loose", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#boards_shields_loose", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#subsys_loose", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#tools_loose", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#apps_line", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#boards_shields_line", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#subsys_line", "modifier": "opacity", "parameters": [ 0 ] },
-             { "element": "#tools_line", "modifier": "opacity", "parameters": [ 0 ] },
-             { "modifier": "text",
-               "parameters": [
-                 "I wanna kiting\nwith Zephyr!", {
-                   "id": "wanna_play",
-                   "opacity": "1",
-                   "x": "1880", "y": "180",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "Let's read Zephyr\ndocumentation.", {
-                   "id": "getting_started",
-                   "opacity": "0",
-                   "x": "1880", "y": "180",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "Okay, got it.\nI'll add my ideas.", {
-                   "id": "my_ideas",
-                   "opacity": "0",
-                   "x": "1880", "y": "180",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "Oh no, not yet\nanother fork!\nI don't like it.\nI need a …", {
-                   "id": "my_kite_line",
-                   "opacity": "0",
-                   "x": "1880", "y": "120",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "… and some knots\nfor a proper\nBridle Point.", {
-                   "id": "my_bridle_point",
-                   "opacity": "0",
-                   "x": "1880", "y": "160",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "Greate, now I'm\nready for professional\nproduct development\nwith Zephyr.", {
-                   "id": "my_product",
-                   "opacity": "0",
-                   "x": "1880", "y": "120",
-                   "text-anchor": "middle",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "• consequent follow-up the Open-Closed Principle", {
-                   "id": "bridle_ocp",
-                   "opacity": "0",
-                   "x": "100", "y": "750",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "• product / workflow: following foreign Life-Cycle / Release Management", {
-                   "id": "bridle_lcm",
-                   "opacity": "0",
-                   "x": "100", "y": "825",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "• loosely coupled with Zephyr: maintain own Zephyr Module", {
-                   "id": "bridle_mod",
-                   "opacity": "0",
-                   "x": "100", "y": "900",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "• extends the framework: West / CMake / Kconfig / modules", {
-                   "id": "bridle_ext",
-                   "opacity": "0",
-                   "x": "100", "y": "975",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             { "modifier": "text",
-               "parameters": [
-                 "• expands the code base: ARCH / SOC / DTS / drivers / boards / tests / apps", {
-                   "id": "bridle_exp",
-                   "opacity": "0",
-                   "x": "100", "y": "1050",
-                   "font-family": "DejaVu Sans Condensed",
-                   "font-style": "italic",
-                   "font-size": "48",
-                   "fill": "firebrick"
-                 }
-               ]
-             },
-             {
-               "element": "#Ribbons",
-               "modifier": "attr",
-               "parameters": [ { "class": "fragment", "data-fragment-index": "0" } ]
-             },
-             {
-               "element": "#MyOwn",
-               "modifier": "attr",
-               "parameters": [ { "class": "fragment", "data-fragment-index": "1" } ]
-             },
-             {
-               "element": "#KiteLine",
-               "modifier": "attr",
-               "parameters": [ { "class": "fragment", "data-fragment-index": "2" } ]
-             },
-             {
-               "element": "#Bridle",
-               "modifier": "attr",
-               "parameters": [ { "class": "fragment", "data-fragment-index": "3" } ]
-             },
-             {
-               "element": "#Downstream",
-               "modifier": "attr",
-               "parameters": [ { "class": "fragment", "data-fragment-index": "4" } ]
-             }
-           ],
-           "animation": [
-             [],
-             [
-               { "element": "#wanna_play", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
-               { "element": "#getting_started", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] }
-             ],
-             [
-               { "element": "#getting_started", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
-               { "element": "#my_ideas", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
-               { "element": "#apps_loose", "modifier": "opacity", "duration": 6000, "parameters": [ 1 ] },
-               { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#hals", "modifier": "opacity", "parameters": [ 0.33 ] },
-               { "element": "#bootloader", "modifier": "opacity", "parameters": [ 0.33 ] },
-               { "element": "#subsys_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#libs", "modifier": "opacity", "parameters": [ 0.33 ] },
-               { "element": "#tools_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#tools", "modifier": "opacity", "parameters": [ 0.33 ] }
-             ],
-             [
-               { "element": "#my_ideas", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
-               { "element": "#my_kite_line", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] }
-             ],
-             [
-               { "element": "#my_kite_line", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
-               { "element": "#my_bridle_point", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
-               { "element": "#tools_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
-               { "element": "#tools_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
-               { "element": "#subsys_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
-               { "element": "#subsys_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
-               { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
-               { "element": "#boards_shields_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
-               { "element": "#apps_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
-               { "element": "#apps_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
-               { "element": "#myown_text", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] }
-             ],
-             [
-               { "element": "#my_bridle_point", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
-               { "element": "#my_product", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
-               { "element": "#bridle_ocp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#bridle_lcm", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#bridle_mod", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#bridle_ext", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-               { "element": "#bridle_exp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] }
-             ]
-           ]
-         }
-         -->
-         </div>
+         Overview what Bridle is
 
-.. .. include:: /revealjs/materials/what-we-want-to-talk/section-1.rsti
-.. .. include:: /revealjs/materials/what-we-want-to-talk/section-2.rsti
-.. .. include:: /revealjs/materials/what-we-want-to-talk/section-3.rsti
-.. .. include:: /revealjs/materials/what-we-want-to-talk/section-4.rsti
+      .. only:: not statcont
+
+         .. raw:: html
+
+            <span class="fragment"></span>
+            <span class="fragment"></span>
+            <span class="fragment"></span>
+            <span class="fragment"></span>
+            <span class="fragment"></span>
+
+            <div data-animate data-src="_static/revealjs/what-we-want-to-talk-noglyphs.svg">
+            <!--
+            {
+              "setup": [
+                { "element": "#apps_loose", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#boards_shields_loose", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#subsys_loose", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#tools_loose", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#apps_line", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#boards_shields_line", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#subsys_line", "modifier": "opacity", "parameters": [ 0 ] },
+                { "element": "#tools_line", "modifier": "opacity", "parameters": [ 0 ] },
+                { "modifier": "text",
+                  "parameters": [
+                    "I wanna kiting\nwith Zephyr!", {
+                      "id": "wanna_play",
+                      "opacity": "1",
+                      "x": "1880", "y": "180",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "Let's read Zephyr\ndocumentation.", {
+                      "id": "getting_started",
+                      "opacity": "0",
+                      "x": "1880", "y": "180",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "Okay, got it.\nI'll add my ideas.", {
+                      "id": "my_ideas",
+                      "opacity": "0",
+                      "x": "1880", "y": "180",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "Oh no, not yet\nanother fork!\nI don't like it.\nI need a …", {
+                      "id": "my_kite_line",
+                      "opacity": "0",
+                      "x": "1880", "y": "120",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "… and some knots\nfor a proper\nBridle Point.", {
+                      "id": "my_bridle_point",
+                      "opacity": "0",
+                      "x": "1880", "y": "160",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "Greate, now I'm\nready for professional\nproduct development\nwith Zephyr.", {
+                      "id": "my_product",
+                      "opacity": "0",
+                      "x": "1880", "y": "120",
+                      "text-anchor": "middle",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "• consequent follow-up the Open-Closed Principle", {
+                      "id": "bridle_ocp",
+                      "opacity": "0",
+                      "x": "100", "y": "750",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "• product / workflow: following foreign Life-Cycle / Release Management", {
+                      "id": "bridle_lcm",
+                      "opacity": "0",
+                      "x": "100", "y": "825",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "• loosely coupled with Zephyr: maintain own Zephyr Module", {
+                      "id": "bridle_mod",
+                      "opacity": "0",
+                      "x": "100", "y": "900",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "• extends the framework: West / CMake / Kconfig / modules", {
+                      "id": "bridle_ext",
+                      "opacity": "0",
+                      "x": "100", "y": "975",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                { "modifier": "text",
+                  "parameters": [
+                    "• expands the code base: ARCH / SOC / DTS / drivers / boards / tests / apps", {
+                      "id": "bridle_exp",
+                      "opacity": "0",
+                      "x": "100", "y": "1050",
+                      "font-family": "DejaVu Sans Condensed",
+                      "font-style": "italic",
+                      "font-size": "48",
+                      "fill": "firebrick"
+                    }
+                  ]
+                },
+                {
+                  "element": "#Ribbons",
+                  "modifier": "attr",
+                  "parameters": [ { "class": "fragment", "data-fragment-index": "0" } ]
+                },
+                {
+                  "element": "#MyOwn",
+                  "modifier": "attr",
+                  "parameters": [ { "class": "fragment", "data-fragment-index": "1" } ]
+                },
+                {
+                  "element": "#KiteLine",
+                  "modifier": "attr",
+                  "parameters": [ { "class": "fragment", "data-fragment-index": "2" } ]
+                },
+                {
+                  "element": "#Bridle",
+                  "modifier": "attr",
+                  "parameters": [ { "class": "fragment", "data-fragment-index": "3" } ]
+                },
+                {
+                  "element": "#Downstream",
+                  "modifier": "attr",
+                  "parameters": [ { "class": "fragment", "data-fragment-index": "4" } ]
+                }
+              ],
+              "animation": [
+                [],
+                [
+                  { "element": "#wanna_play", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
+                  { "element": "#getting_started", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] }
+                ],
+                [
+                  { "element": "#getting_started", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
+                  { "element": "#my_ideas", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
+                  { "element": "#apps_loose", "modifier": "opacity", "duration": 6000, "parameters": [ 1 ] },
+                  { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#hals", "modifier": "opacity", "parameters": [ 0.33 ] },
+                  { "element": "#bootloader", "modifier": "opacity", "parameters": [ 0.33 ] },
+                  { "element": "#subsys_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#libs", "modifier": "opacity", "parameters": [ 0.33 ] },
+                  { "element": "#tools_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#tools", "modifier": "opacity", "parameters": [ 0.33 ] }
+                ],
+                [
+                  { "element": "#my_ideas", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
+                  { "element": "#my_kite_line", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] }
+                ],
+                [
+                  { "element": "#my_kite_line", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
+                  { "element": "#my_bridle_point", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
+                  { "element": "#tools_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
+                  { "element": "#tools_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
+                  { "element": "#subsys_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
+                  { "element": "#subsys_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
+                  { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
+                  { "element": "#boards_shields_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
+                  { "element": "#apps_loose", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] },
+                  { "element": "#apps_line", "modifier": "opacity", "duration": 0, "parameters": [ 1 ] },
+                  { "element": "#myown_text", "modifier": "opacity", "duration": 0, "parameters": [ 0 ] }
+                ],
+                [
+                  { "element": "#my_bridle_point", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
+                  { "element": "#my_product", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
+                  { "element": "#bridle_ocp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#bridle_lcm", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#bridle_mod", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#bridle_ext", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#bridle_exp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] }
+                ]
+              ]
+            }
+            -->
+            </div>
 
 .. Local variables:
    coding: utf-8
