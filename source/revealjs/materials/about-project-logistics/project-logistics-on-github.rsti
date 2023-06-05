@@ -61,37 +61,13 @@ Project Logistics on GitHub
    z = { fill: #af7fe4; stroke: #7929d2; }
    b = { fill: #15729d; stroke: #154099; }
 
-Sub-Section Title 1.2.1
------------------------
+On Premise HIL Infrastructure
+-----------------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-t.b.d
-
-Sub-Section Title 1.2.2
------------------------
-
-.. revealjs-section::
-   :data-auto-animate:
-
-t.b.d
-
-Sub-Section Title 1.2.3
------------------------
-
-.. revealjs-section::
-   :data-auto-animate:
-
-t.b.d
-
-Sub-Section Title 1.2.4
------------------------
-
-.. revealjs-section::
-   :data-auto-animate:
-
-t.b.d
+.. image:: /_images/revealjs/on-premise-hil-infrastructure.*
 
 .. Local variables:
    coding: utf-8
