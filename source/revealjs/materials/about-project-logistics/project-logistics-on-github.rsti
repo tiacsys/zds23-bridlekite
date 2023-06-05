@@ -20,10 +20,10 @@ Project Logistics on GitHub
 
    ""
                                             "Zephyr Project"    "Wei GitHub Action"                             "Read-The-Docs"
-                                            .-----------------. .-----------------.                                   _   __   ,-.
-                                            | {u,o}   *--*--* | | {u,o}   *--*--* |                                  |=| [__]  `-'
-                                     MAJOR  |             \   | |             \   | … "and other upstreams"          |_| \⠶⠶⠶\ /|\
-                                            | "zephyr"     *  | | "git-sync"   *  |                                             |
+     "URLs:"                                .-----------------. .-----------------.                                   _   __   ,-.
+     "• github.com/tiacsys/zephyr"          | {g,o}   *--*--* | | {g,o}   *--*--* |                                  |=| [__]  `-'
+     "• github.com/tiacsys/bridle"   MAJOR  |             \   | |             \   | … "and other upstreams"          |_| \⠶⠶⠶\ /|\
+     "• pypi.org/project/sphinx-tsn-theme"  | "zephyr"     *  | | "git-sync"   *  |                                             |
                                             '-----------------' '-----------------'                                     ^      / \
                                                           o "PULL"  o                                                   |
                                   .~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
@@ -34,7 +34,7 @@ Project Logistics on GitHub
                                   !  ||  `> '  "PULL/PUSH"| "needed"|      ╰┴┴╯  ||      | "forked-git" *  | ! !    .--+ main +--.          !
                                   !  ++-------------------|---------|---^--------++      '-----------------' ! !   /    \    /    \         !
                                   !                       |         |   !                         ^          ! !  + v3.3 +--+ v3.4 +--.     !
-                                  !  "github.com/tiac"    V "PUSH"  V   !                         |          ! !   \    /    \    /    \    !
+                                  !  "github.com/tiacsys" V "PUSH"  V   !                         |          ! !   \    /    \    /    \    !
                                   !         .-----------------. .-------!---------.        .------'-----.    ! !    +--+ v3.1 +--+ v3.2 +   !
                                   !         | {z,o}   *--*--* | |         *--*--* |       /  organization\   ! !   /    \    /    \    /    !
                                   !  MIRROR |             \   | |             \   |       \       secrets/   ! !  + v2.7 +--+ v3.0 +--+     !
@@ -52,12 +52,12 @@ Project Logistics on GitHub
     ! |  "DUT: TiaC Magpie"   | ! !                  .----!----.   ||    . <.    ||<---# |         *--*--* | ! !  ++---------------------++ !
     ! '-----------------------' ! !                  | pypi.org )<-++-o (    ) <-++----o | "sphinx-"   \   | ! !                            !
     ! "On Premise HIL"          ! !                  '---------'   ||    `> '    ||      | "tsn-theme"  *  | ! !  "On Premise Web Server"   !
-    ! "Infrastructure"          ! !                                ++------------++      '-----------------' ! !                            !
+    ! "Infrastructure"    {g,o} ! !                                ++------------++      '-----------------' ! !                      {g,o} !
     '~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 
    # Legend:
    o = { fill-opacity: 0.33; stroke-opacity: 0.166 }
-   u = { fill: #d3d3d3; stroke-dasharray: 4; }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
    z = { fill: #af7fe4; stroke: #7929d2; }
    b = { fill: #15729d; stroke: #154099; }
 
@@ -68,6 +68,74 @@ On Premise HIL Infrastructure
    :data-auto-animate:
 
 .. image:: /_images/revealjs/on-premise-hil-infrastructure.*
+
+Next generation – currently work in progress – will use |LabGRID|_ and |USB/IP|_.
+
+.. |LabGRID| replace:: :emphasis:`LabGRID`
+.. _`LabGRID`: https://labgrid.readthedocs.io/
+
+.. |USB/IP| replace:: :emphasis:`USB/IP`
+.. _`USB/IP`: https://usbip.sourceforge.net/
+
+On Premise Web Server
+---------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. container:: flex-container
+
+   .. container:: pct80
+
+      .. svgbob::
+         :font-family: "DejaVu Sans Condensed"
+         :font-size: 14
+         :scale: 10.0
+         :align: center
+
+         ""
+           .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+           !"Documentation Build"          "GitHub Workflows"      "Documentation Publish"!
+           !++-------------------------------------++              ++-------------------++!
+           !||  ___________      ________________  ||  _________   || +---------------+ ||!
+           !|| |"<archive>"\    |"monitor_ID.txt"\ || |"doc.zip"\  || |"ROBOT:"       | ||!
+           !|| +------------+   +-----------------+|| +----------+ || |"URL to PR"    | ||!
+           !|| ├─"bridle/"                         |+------------->|| +---------------+ ||!
+           !|| ├─"zephyr/"        "publish2"       ||              ||                   ||!
+           !|| ├─"kconfig/"       "<catalog>"      ||              || +---------------+ ||!
+           !|| ├─"devicetree/"    "<version>"      ||              || |"SCP to INBOX" | ||!
+           !|| ├─"versions.json"  "<archive>"      ||              || |"at Web Server"| ||!
+           !|| └─"index.html"                      ||              || +---------------+ ||!
+           !++-------------------------------------++              ++-----------+-------++!
+           !"<catalog> := {preview|development|approved}"           _________   |         !
+           !"<version> := {latest|<branch>|REF-<branch|tag>}"      |"doc.zip"\  |         !
+           !"<archive> := doc_ID.tgz"                              +----------+ |    {g,o}!
+           '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~'
+                      +---------------------------------------------------------+
+           .~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+           !          V    "Apache/Let's Encryps Lx-Container w/SSH Daemon"               !
+           !++------------------++          _________      ______                         !
+           !||"monitor cron job"||      .->|"DOCROOT"\  .-|"doc/"\                        !
+           !|+------------------+|      |  +----------+ | +-------+                       !   ===\
+           !||"• unzip"    ( <. ||"SYNC"|  ├─"doc/" ----' ├─"latest/" <-- "main"          !   ===/
+           !||"• parse"     `> )|+------'  ├─"ghpr/"      ├─"3.3/"    <-- "v3.3-branch"   !
+           !||"• sync docroot"  ||         ├─"ghpreview/" ├─"3.3.0/"  <-- "v3.3.0"        !
+           !++------------------++                        ├─"………"                         !
+           '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+         # Legend:
+         o = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+         g = { fill: #d3d3d3; stroke-dasharray: 4; }
+
+      .. rst-class:: left-justified legend
+
+         :build:   https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-build.yml
+         :publish: https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-publish.yml
+         :monitor: https://bridle.tiac-systems.net/.inbox/.note-monitor.txt
+
+   .. container:: pct20
+
+      .. image:: /_images/revealjs/on-premise-web-server.*
 
 .. Local variables:
    coding: utf-8

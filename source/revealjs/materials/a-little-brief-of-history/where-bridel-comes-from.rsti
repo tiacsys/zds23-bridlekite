@@ -23,7 +23,7 @@ Where Bridel comes from
 
       .. container:: pct33
 
-         .. image:: https://bridle.tiac-systems.net/doc/latest/bridle/_static/images/bridle.png
+         .. image:: https://bridle.tiac-systems.net/doc/3.3/bridle/_static/images/bridle.png
             :height: 100px
 
          :Spring 2021:
@@ -32,9 +32,15 @@ Where Bridel comes from
             **Bridle** was born – and established the **GitHub workflow**
             by reusing best practices (as Zephyr and Nordic did and does).
 
+         .. rst-class:: left-justified legend
+
+            .. note::
+
+               |Zephyr Example Application|_ was created too.
+
       .. container:: pct33
 
-         .. image:: https://bridle.tiac-systems.net/doc/latest/bridle/_static/images/tiac.png
+         .. image:: https://bridle.tiac-systems.net/doc/3.3/bridle/_static/images/tiac.png
             :height: 100px
 
          :Summer 2021:
@@ -94,7 +100,7 @@ Where Bridle is today
          :2022 – FOUNDING:
 
             * growing up the **project logistics** on GitHub
-            * refine Nordic's idea of doc-sets (more later).
+            * refine Nordic's idea of **doc-sets** (more later).
             * start to establish and document Bridle's |Development Model|_
             * define a first rudimentary |Contribution Workflow|_
 
@@ -105,7 +111,8 @@ Where Bridle is today
             * *feasibility*: transpose **system architectural definitions**
               by using **DeviceTree Nexus Nodes** and **Stacked Shields**
             * *feasibility*: create **shield test suites** on CMake level
-            * *teaching*: Bridle is now part in the daily work with students
+            * *teaching*: Bridle is now part in trainings and daily work
+              with colleagues, partners and students
 
 .. |nRF Connect SDK| replace:: :emphasis:`nRF Connect SDK`
 .. _`nRF Connect SDK`:
