@@ -1,13 +1,65 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-Section Title 1.2
-=================
+Project Logistics on GitHub
+===========================
 
 .. revealjs-section::
    :data-auto-animate:
 
-t.b.d.
+.. .. image:: /_images/revealjs/tool-landscape-on-github.*
+   :name: tool-landscape-on-github
+   :align: center
+   :scale: 50%
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+                                            "Zephyr Project"    "Wei GitHub Action"                             "Read-The-Docs"
+                                            .-----------------. .-----------------.                                   _   __   ,-.
+                                            | {u,o}   *--*--* | | {u,o}   *--*--* |                                  |=| [__]  `-'
+                                     MAJOR  |             \   | |             \   | … "and other upstreams"          |_| \⠶⠶⠶\ /|\
+                                            | "zephyr"     *  | | "git-sync"   *  |                                             |
+                                            '-----------------' '-----------------'                                     ^      / \
+                                                          o "PULL"  o                                                   |
+                                  .~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+                                  !  "TiaC Systems"       |         |                                        !  "https://bridle.tiac-systems.net/"
+                                  !  ++-------------------|---------|------------++ AUTO .-----------------. ! .~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+                                  !  ||  . <. worker      | "REBASE"|matrix╭┬┬╮  ||<---# |         *--*--* | ! !         .--.               !
+                                  !  || (    ) "every 2h" | "when"  |      ├┼┼┤<-++----o | "sync-"     \   | ! !        /    \              !
+                                  !  ||  `> '  "PULL/PUSH"| "needed"|      ╰┴┴╯  ||      | "forked-git" *  | ! !    .--+ main +--.          !
+                                  !  ++-------------------|---------|---^--------++      '-----------------' ! !   /    \    /    \         !
+                                  !                       |         |   !                         ^          ! !  + v3.3 +--+ v3.4 +--.     !
+                                  !  "github.com/tiac"    V "PUSH"  V   !                         |          ! !   \    /    \    /    \    !
+                                  !         .-----------------. .-------!---------.        .------'-----.    ! !    +--+ v3.1 +--+ v3.2 +   !
+                                  !         | {z,o}   *--*--* | |         *--*--* |       /  organization\   ! !   /    \    /    \    /    !
+                                  !  MIRROR |             \   | |             \   |       \       secrets/   ! !  + v2.7 +--+ v3.0 +--+     !
+     "HW-In-the-Loop (HIL)"       !         | "zephyr"     *  | | "git-sync"   *  |        `------.-----'    ! !   \    /    \    /    \    !
+    .~~~~~~~~~~~~~~~~~~~~~~~~~~~. !         '-----------------' '-----------------'               |          ! !    '--+ v2.5 +--+ v2.6 +   !
+    ! "Raspberry Pi 4B (8GB)"   ! !                       o "west update"                         V          ! !        \    /    \    /    !
+    ! ++--------------------++  ! !  ++-------------------|----------------------++   PR .-----------------. ! !         '--'      '--'     !
+    ! ||  . <."self hosted" ||  ! !  ||  . <. worker      |  ╭┬┬┬╮"west manifest"||<---# | {b,o}   *--*--* | ! !              ^             !
+    ! || (    ) "GH action" ||<-+-+->|| (    ) "HIL TEST" '->├┼┼┼┤<--------------++----o |             \   | ! !              |"SYNC"       !
+    ! ||  `> '     "runner" ||  ! !  ||  `> '  "QA & DOCSETS"╰┴┴┴╯  "doc-publish"||      | "bridle"     *  | ! !              |             !
+    ! ++----------|------|--++  ! !  ++-------------------^-------------|--------++      '-----------------' ! !  ++----------'----------++ !
+    !    .---.  .---.  .---.    ! !                       !"Python"     |"doc-artefact + monitor ctrl. file" ! !  ||  . <. monitor       || !
+    ! .--+PWR+--+USB+--+SWD+--. ! !                       !"Virtual Env"'------------------------------------+-+->|| (    ) "every 2min" || !
+    ! |  '---'  '---'  '---'  | ! !                       !        ++------------++   PR .-----------------. ! !  ||  `> '  "UNPACK/SYNC"|| !
+    ! |  "DUT: TiaC Magpie"   | ! !                  .----!----.   ||    . <.    ||<---# |         *--*--* | ! !  ++---------------------++ !
+    ! '-----------------------' ! !                  | pypi.org )<-++-o (    ) <-++----o | "sphinx-"   \   | ! !                            !
+    ! "On Premise HIL"          ! !                  '---------'   ||    `> '    ||      | "tsn-theme"  *  | ! !  "On Premise Web Server"   !
+    ! "Infrastructure"          ! !                                ++------------++      '-----------------' ! !                            !
+    '~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+
+   # Legend:
+   o = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   u = { fill: #d3d3d3; stroke-dasharray: 4; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }
 
 Sub-Section Title 1.2.1
 -----------------------

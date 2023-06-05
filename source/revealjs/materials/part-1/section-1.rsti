@@ -1,45 +1,127 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-Section Title 1.1
-=================
+Where Bridel comes from
+=======================
 
 .. revealjs-section::
    :data-auto-animate:
 
-t.b.d.
+.. rst-class:: left-justified
 
-Sub-Section Title 1.1.1
------------------------
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. image:: https://www.nordicsemi.com/-/media/Images/Products/SDKs/nRFConnectSDK_new.png
+            :height: 100px
+
+         :2020:
+
+            Started with a **Proof-Of-Concept on local machine**, inspirited
+            by Nordic's |nRF Connect SDK v1.2|_.
+
+      .. container:: pct33
+
+         .. image:: https://bridle.tiac-systems.net/doc/latest/bridle/_static/images/bridle.png
+            :height: 100px
+
+         :Spring 2021:
+
+            Went to GitHub with a personal project – the project name
+            **Bridle** was born – and established the **GitHub workflow**
+            by reusing best practices (as Zephyr and Nordic did and does).
+
+      .. container:: pct33
+
+         .. image:: https://bridle.tiac-systems.net/doc/latest/bridle/_static/images/tiac.png
+            :height: 100px
+
+         :Summer 2021:
+
+            Moved Bridel on GitHub to a **more collaborative workspace**
+            – the virtual organization |TiaC Systems|_ was born –
+            and established the central web space for |online documentation|_
+            and use Zephyr from an **auto-sync Git mirror**.
+
+            First version, |Bridle v2.5.0|_, was released.
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :TiaC: Three is (a) Company – based on
+          Tolkien's |The Fellowship of the Ring|_
+
+.. |nRF Connect SDK v1.2| replace:: :emphasis:`nRF Connect SDK v1.2`
+.. _`nRF Connect SDK v1.2`:
+   https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0
+
+.. |The Fellowship of the Ring|
+   replace:: :emphasis:`The Fellowship of the Ring`
+.. _`The Fellowship of the Ring`:
+   https://tolkiengateway.net/wiki/Three_is_Company
+
+.. |TiaC Systems| replace:: :strong:`TiaC Systems`
+.. _`TiaC Systems`: https://tiac-systems.net/
+
+.. |online documentation| replace:: :strong:`online documentation`
+.. _`online documentation`: https://bridle.tiac-systems.net/
+
+.. |Bridle v2.5.0| replace:: :strong:`Bridle v2.5.0`
+.. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
+
+Where Bridle is today
+---------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-t.b.d
+.. rst-class:: left-justified
 
-Sub-Section Title 1.1.2
------------------------
+   .. container:: flex-container
 
-.. revealjs-section::
-   :data-auto-animate:
+      .. container:: pct100
 
-t.b.d
+         :since 2021 – MAINTENANCE:
 
-Sub-Section Title 1.1.3
------------------------
+            * following Zephyr's major and minor releases in V2 and V3
+            * continuous synchronization with Zephyr upstream regarding
+              tooling (framework)
+            * closely following the progress in Nordic's |nRF Connect SDK|_
+              and the |Zephyr Example Application|_
 
-.. revealjs-section::
-   :data-auto-animate:
+         :2022 – FOUNDING:
 
-t.b.d
+            * growing up the project logistics on GitHub
+            * refine Nordic's idea of doc-sets (more later).
+            * start to establish and document Bridle's |Development Model|_
+            * define a first rudimentary |Contribution Workflow|_
 
-Sub-Section Title 1.1.4
------------------------
+         :2023 – CONTENT:
 
-.. revealjs-section::
-   :data-auto-animate:
+            * *improving*: support of **new boards and shields**, currently not
+              supported by Zephyr upstream
+            * *feasibility*: transpose **system architectural definitions**
+              by using **DeviceTree Nexus Nodes** and **Stacked Shields**
+            * *feasibility*: create **shield test suites** on CMake level
+            * *teaching*: Bridle is now part in the daily work with students
 
-t.b.d
+.. |nRF Connect SDK| replace:: :emphasis:`nRF Connect SDK`
+.. _`nRF Connect SDK`:
+   https://github.com/nrfconnect/sdk-nrf
+
+.. |Zephyr Example Application| replace:: :emphasis:`Zephyr Example Application`
+.. _`Zephyr Example Application`:
+   https://github.com/zephyrproject-rtos/example-application
+
+.. |Development Model| replace:: :emphasis:`Development Model`
+.. _`Development Model`:
+   https://bridle.tiac-systems.net/doc/latest/bridle/ug_dev_model.html
+
+.. |Contribution Workflow| replace:: :emphasis:`Contribution Workflow`
+.. _`Contribution Workflow`:
+   https://bridle.tiac-systems.net/doc/latest/bridle/dm_adding_code.html
 
 .. Local variables:
    coding: utf-8
