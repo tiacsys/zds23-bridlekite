@@ -26,6 +26,7 @@ sphinxcontrib-svgbob = "^0"
 sphinxcontrib-asciinema = "^0"
 sphinxext-remoteliteralinclude = "^0"
 sphinxcontrib-video = {git = "https://github.com/tiacsys/sphinxcontrib-video.git", rev = "iotmplabs"}
+oembedpy = "^0"
 
 
 [tool.poetry.group.dev.dependencies]
