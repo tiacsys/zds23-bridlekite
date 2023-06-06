@@ -219,6 +219,7 @@ needs_extensions = {
     'sphinx_selective_exclude.eager_only':          '1.0.2',
     'sphinx_selective_exclude.modindex_exclude':    '1.0.2',
     'sphinx_selective_exclude.search_auto_exclude': '1.0.2',
+    'oembedpy.ext.sphinx':                          '0.4.0',
 }
 
 extensions = [
@@ -239,6 +240,7 @@ extensions = [
     'sphinx_selective_exclude.eager_only',
     'sphinx_selective_exclude.modindex_exclude',
     'sphinx_selective_exclude.search_auto_exclude',
+    'oembedpy.ext.sphinx',
 ]
 
 # Use additional Sphinx extensions for HTML/Reveal.js builder
