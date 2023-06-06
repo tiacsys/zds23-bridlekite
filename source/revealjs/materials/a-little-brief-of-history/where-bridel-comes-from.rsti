@@ -99,12 +99,12 @@ Where Bridle is today
 
          :2022 – FOUNDING:
 
-            * growing up the **project logistics** on GitHub
+            * growing up the **project logistics** on GitHub (more later).
             * refine Nordic's idea of **doc-sets** (more later).
             * start to establish and document Bridle's |Development Model|_
             * define a first rudimentary |Contribution Workflow|_
 
-         :2023 – CONTENT:
+         :2023 – CONTENT – |Bridle v3.3|_:
 
             * *improving*: support of **new boards and shields**, currently not
               supported by Zephyr upstream
@@ -124,11 +124,14 @@ Where Bridle is today
 
 .. |Development Model| replace:: :emphasis:`Development Model`
 .. _`Development Model`:
-   https://bridle.tiac-systems.net/doc/latest/bridle/ug_dev_model.html
+   https://bridle.tiac-systems.net/doc/3.3/bridle/ug_dev_model.html
 
 .. |Contribution Workflow| replace:: :emphasis:`Contribution Workflow`
 .. _`Contribution Workflow`:
-   https://bridle.tiac-systems.net/doc/latest/bridle/dm_adding_code.html
+   https://bridle.tiac-systems.net/doc/3.3/bridle/dm_adding_code.html
+
+.. |Bridle v3.3| replace:: :strong:`Bridle v3.3`
+.. _`Bridle v3.3`: https://bridle.tiac-systems.net/doc/3.3
 
 .. Local variables:
    coding: utf-8

@@ -1,0 +1,116 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Read-The-Docs
+=============
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.3/bridle/getting_started.html
+
+.. container:: flex-container
+
+   .. container:: pct100
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/3.3/bridle/getting_started.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="600px" width="100%"></iframe>
+
+.. .. oembed:: https://www.youtube.com/watch?v=Oyh8nuaLASA
+   :maxwidth: 1024
+   :maxheight: 768
+
+Installing Bridle manually
+--------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-repositories
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct50
+
+         #. :ref:`tiac-bridle-doc:gs_installing_tools` – refer also the
+            Zephyr documentation: :ref:`tiac-zephyr-doc:installation_linux`
+         #. :ref:`tiac-bridle-doc:gs_installing_toolchain` – refer also the
+            Zephyr documentation: :ref:`tiac-zephyr-doc:toolchain_zephyr_sdk`
+         #. :ref:`tiac-bridle-doc:cloning_the_repositories`
+
+            #. Python Virtual Environment
+            #. West workspace for Bridle
+            #. Export **CMake packages** (Zephyr and Bridle)
+
+         .. rst-class:: left-justified legend
+
+         .. revealjs-code-block:: cmake
+            :caption: CMake messages from Bridle
+            :name: cmake-messages-from-bridle
+            :data-line-numbers: 3-5
+            :emphasize-lines: 3-5
+
+            -- west build: generating a build system
+            Loading Zephyr default modules (Zephyr base).
+            Loading Bridle default modules (Bridle workspace).
+            -- Bridle version: 3.3.0 (…/workspace/bridle)
+            -- Bridle is trying to locate Zephyr SDK 0.15.2.
+            -- Using Zephyr SDK 0.15.2 for building Bridle. (/opt/zephyr-sdk-0.15.2)
+            … … …
+            -- Zephyr version: 3.3.0 (…/workspace/zephyr), build: zephyr-v3.3.0-51-g7ea0860e376d
+            … … …
+            -- Bridle version: 3.3.0 (…/workspace/bridle), build: bridle-v3.3.0-92-gc85e8293d61e
+            … … …
+
+      .. container:: pct50
+
+         .. rst-class:: left-justified legend
+
+            .. container:: asciinema align-center
+               :name: cast-new-west-workspace
+
+               .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
+                  :poster: npt:2:32
+                  :speed: 3.0
+                  :autoplay: 1
+                  :preload: 1
+                  :loop: 1
+
+            :manifest:     https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
+            :requirements: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/requirements.txt
+
+Bridle has its own West Manifest
+--------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+Bridle has its own CMake packages
+---------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+Bridle is a Zephyr Module
+-------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+t.b.d
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
