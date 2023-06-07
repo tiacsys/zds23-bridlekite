@@ -334,7 +334,11 @@ default_role = 'any'
 pygments_style = 'sphinx'
 show_authors = True
 
-numfig = True
+if tags.has('revealjs'):
+    numfig = False
+else:
+    numfig = True
+
 numfig_secnum_depth = 1
 numfig_format = {
     'code-block': 'Listing %s',
