@@ -1,0 +1,359 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Bridle is a Zephyr Module
+=========================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct25
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            :caption: Integration Files
+            :name: zephyr-module-integration-files
+            :language: yaml
+            :lines: 5,7,9
+         .. :lineno-start: 1
+         .. :dedent: 0
+         .. :linenos:
+
+         .. admonition:: Hint:
+            :class: hint
+
+            **Integration files** are **recommended**!
+
+      .. container:: pct25
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            :caption: Build Settings
+            :name: zephyr-module-build-settings
+            :language: yaml
+            :lines: 5,10,12,14,16,18,20
+         .. :lineno-start: 1
+         .. :dedent: 0
+         .. :linenos:
+
+      .. container:: pct25
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            :caption: Twister Directories
+            :name: zephyr-module-twister-directories
+            :language: yaml
+            :lines: 5,7,23-24,27-28,31-32
+         .. :lineno-start: 1
+         .. :dedent: 0
+         .. :linenos:
+
+      .. container:: pct25
+
+         .. code-block:: no-highlight
+            :caption: Binary Blobs
+            :name: zephyr-module-binary-blobs
+
+            blobs:
+              - path: lib/libhonkomat.a
+                sha256: deadbeef
+                type: lib
+                version: '1.0'
+
+   .. container:: flex-container
+
+      .. container:: pct25
+
+         .. rst-class:: legend
+
+            Zephyr module dependencies are not yet supported by Bridle, e.g.:
+
+            .. highlight:: no-highlight
+            .. parsed-literal::
+
+               build:
+                 depends:
+                   - zephyr
+                   - hal_nxp
+                   - littlefs
+                   - …
+
+            .. highlight:: default
+
+      .. container:: pct25
+
+         .. rst-class:: legend
+
+            The SCA tool implementation is not yet supported by Bridle, e.g.:
+
+            .. highlight:: no-highlight
+            .. parsed-literal::
+
+               build:
+                 settings:
+                   sca_root: .
+
+            .. highlight:: default
+
+      .. container:: pct25
+
+         .. rst-class:: legend
+
+            Only useful when Zephyr's GitHub workflow will be used,
+            see the multiple steps **Run Tests with Twister** in:
+            `zephyr/v3.3/.github/workflows/twister.yaml`_
+
+            .. highlight:: no-highlight
+            .. parsed-literal::
+
+               ./zephyr/scripts/zephyr_module.py \\
+                   --twister-out module_tests.args
+
+            .. highlight:: default
+
+      .. container:: pct25
+
+         .. rst-class:: legend
+
+            :red:`Example only!` Binary Blobs are not yet used by Bridle.
+
+.. _`zephyr/v3.3/.github/workflows/twister.yaml`:
+   https://github.com/zephyrproject-rtos/zephyr/blob/v3.3-branch/.github/workflows/twister.yaml#L223
+
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :zephyr/module:: https://github.com/tiacsys/bridle/blob/v3.3-branch/zephyr/module.yml
+
+Zephyr Entry Points into Bridle
+-------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct30
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+               :caption: Zephyr Module File in Bridle
+               :name: zephyr-module-file-in-bridle-integration-cmake
+               :language: txt
+               :dedent: 0
+               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+            .. :linenos:
+
+      .. container:: pct70
+
+         .. rst-class:: left-justified legend
+
+            **CMake** expansions through Zephyr Module **Integration Files**.
+
+         .. container:: flex-container
+
+            .. container:: pct80
+
+               .. rst-class:: allcode
+
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                     :caption: Integration Files
+                     :language: yaml
+                     :dedent: 0
+                     :lines: 5,7,9
+
+            .. container:: pct80
+
+               Bridle Source Code Folder in Local West Workspace:
+
+               .. highlight:: no-highlight
+               .. parsed-literal::
+
+                  ╔═════════════════════╤═══════════════════════════════════════════════════╗
+                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-blue:`services/CMakeLists.txt`          ║
+                  ║ ├── :strong-blue:`include/`        │ workspace/\ :strong:`bridle/`\ services/Kconfig                 ║
+                  ║ ├── :strong-blue:`VERSION`         │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/CMakeLists.txt`            ║
+                  ║ ├── :strong-blue:`version.h.in`    │ workspace/\ :strong:`bridle/`\ subsys/Kconfig                   ║
+                  ║ ├── :strong-red:`CMakeLists.txt`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/CMakeLists.txt`           ║
+                  ║ └── Kconfig.bridle  │ workspace/\ :strong:`bridle/`\ drivers/Kconfig                  ║
+                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/CMakeLists.txt`               ║
+                  ║                     │ workspace/\ :strong:`bridle/`\ lib/Kconfig                      ║
+                  ╚═════════════════════╧═══════════════════════════════════════════════════╝
+
+               .. highlight:: default
+
+         .. container:: flex-container
+
+            .. container:: pct100
+
+               .. rst-class:: left-justified legend
+
+                  https://bridle.tiac-systems.net/doc/3.3/zephyr/build/cmake/index.html
+
+                  :CMakeLists.txt:: https://github.com/tiacsys/bridle/blob/v3.3-branch/CMakeLists.txt
+
+               .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/CMakeLists.txt
+                  :language: cmake
+                  :dedent: 0
+                  :lines: 17-21,23-24,36,39,42,33
+               .. :linenos:
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct30
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+               :caption: Zephyr Module File for Bridle
+               :name: zephyr-module-file-for-bridle-integration-kconfig
+               :language: txt
+               :dedent: 0
+               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+            .. :linenos:
+
+      .. container:: pct70
+
+         .. rst-class:: left-justified legend
+
+            **Kconfig** expansions through Zephyr Module **Integration Files**.
+
+         .. container:: flex-container
+
+            .. container:: pct80
+
+               .. rst-class:: allcode
+
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                     :caption: Integration Files
+                     :language: yaml
+                     :dedent: 0
+                     :lines: 5,7,9
+
+            .. container:: pct80
+
+               Bridle Source Code Folder in Local West Workspace:
+
+               .. highlight:: no-highlight
+               .. parsed-literal::
+
+                  ╔═════════════════════╤═══════════════════════════════════════════════════╗
+                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ services/CMakeLists.txt          ║
+                  ║ ├── include/        │ workspace/\ :strong:`bridle/`\ :strong-blue:`services/Kconfig`                 ║
+                  ║ ├── VERSION         │ workspace/\ :strong:`bridle/`\ subsys/CMakeLists.txt            ║
+                  ║ ├── version.h.in    │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/Kconfig`                   ║
+                  ║ ├── CMakeLists.txt  │ workspace/\ :strong:`bridle/`\ drivers/CMakeLists.txt           ║
+                  ║ └── :strong-red:`Kconfig.bridle`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/Kconfig`                  ║
+                  ║                     │ workspace/\ :strong:`bridle/`\ lib/CMakeLists.txt               ║
+                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/Kconfig`                      ║
+                  ╚═════════════════════╧═══════════════════════════════════════════════════╝
+
+               .. highlight:: default
+
+         .. container:: flex-container
+
+            .. container:: pct100
+
+               .. rst-class:: left-justified legend
+
+                  https://bridle.tiac-systems.net/doc/3.3/zephyr/build/kconfig/index.html
+
+                  :Kconfig.bridle:: https://github.com/tiacsys/bridle/blob/v3.3-branch/Kconfig.bridle
+
+               .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/Kconfig.bridle
+                  :language: cmake
+                  :dedent: 0
+                  :lines: 5-6,8,9,10,11
+               .. :linenos:
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct30
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+               :caption: Zephyr Module File for Bridle
+               :name: zephyr-module-file-for-bridle-build-settings
+               :language: txt
+               :dedent: 0
+               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+            .. :linenos:
+
+      .. container:: pct70
+
+         .. rst-class:: left-justified legend
+
+            **Build System** expansions through Zephyr Module **Build Settings**.
+
+         .. container:: flex-container
+
+            .. container:: pct80
+
+               .. rst-class:: allcode
+
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                     :caption: Build Settings
+                     :language: yaml
+                     :dedent: 0
+                     :lines: 5,10,12,14,16,18,20
+
+            .. container:: pct80
+
+               Bridle Source Code Folder in Local West Workspace:
+
+               .. highlight:: no-highlight
+               .. parsed-literal::
+
+                  ╔═════════════════════╤═══════════════════════════════════════════════════╗
+                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-red:`boards/`\ :strong-blue:`<arch>/<board>/*`          ║
+                  ║ ├── :strong-red:`boards/`         │ workspace/\ :strong:`bridle/`\ :strong-red:`boards/`\ :strong-blue:`shields/<shield>/*`        ║
+                  ║ ├── :strong-red:`dts/`            │ workspace/\ :strong:`bridle/`\ :strong-red:`dts/`\ :strong-blue:`<arch>/*`                     ║
+                  ║ ├── :strong-red:`soc/`            │ workspace/\ :strong:`bridle/`\ :strong-red:`dts/`\ :strong-blue:`bindings/*`                   ║
+                  ║ ├── :strong-red:`arch/`           │ workspace/\ :strong:`bridle/`\ :strong-red:`soc/`\ :strong-blue:`<arch>/<soc>/*`               ║
+                  ║ └── :strong-red:`modules/`        │ workspace/\ :strong:`bridle/`\ :strong-red:`arch/`\ :strong-blue:`<arch>/*`                    ║
+                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-blue:`modules.cmake`            ║
+                  ║ This **folder names**   │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-yellow:`<module>/CMakeLists.txt`  ║
+                  ║ are all **mandatory**!  │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-yellow:`<module>/Kconfig`         ║
+                  ╚═════════════════════╧═══════════════════════════════════════════════════╝
+
+               .. highlight:: default
+
+         .. container:: flex-container
+
+            .. container:: pct100
+
+               .. rst-class:: left-justified legend
+
+                  :boards/<arch>/<board>/:: https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html
+                  :shields/<shield>/::      https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/shields.html
+                  :dts/<arch>/::            https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/index.html
+                  :dts/bindings/::          https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/bindings.html
+                  :soc/<arch>/<soc>::       https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html#soc
+                  :arch/<arch>/::           https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/arch.html
+                  :modules/::               https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html#modules-module-ext-root
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
