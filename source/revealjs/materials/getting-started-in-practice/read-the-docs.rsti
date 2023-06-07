@@ -72,7 +72,7 @@ https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-re
          .. rst-class:: left-justified legend
 
             .. container:: asciinema align-center
-               :name: cast-new-west-workspace
+               :name: cast-bridle-workspace
 
                .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
                   :poster: npt:2:32
@@ -84,13 +84,17 @@ https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-re
             :manifest:     https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
             :requirements: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/requirements.txt
 
-Bridle has its own West Manifest
---------------------------------
+How it works
+------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-t.b.d
+Bridle is a Zephyr downstream project, because it:
+
+* provides THE **West Manifest** for source code organization
+* is itself a **Zephyr Module** to extend the Zephyr framework
+* extends at least **CMake** and **Kconfig**, **West** if required
 
 Bridle has its own CMake packages
 ---------------------------------

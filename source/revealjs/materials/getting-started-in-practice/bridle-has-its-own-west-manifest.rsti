@@ -1,0 +1,221 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Bridle has its own West Manifest
+================================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            :caption: West Manifest part for Bridle itself
+            :name: west-mainifest-part-for-bridle-itself
+            :language: yaml
+            :lines: 21-22,26-27,31-33,99,101,105
+         .. :lineno-start: 1
+         .. :dedent: 0
+         .. :linenos:
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            :caption: West Manifest part to other projects
+            :name: west-mainifest-part-to-other-projects
+            :language: yaml
+            :lines: 21-22,23,39,43-47,48,95-96
+         .. :lineno-start: 11
+         .. :dedent: 0
+         .. :linenos:
+
+      .. container:: pct33
+
+         .. rst-class:: allcode
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest part to nested projects (1)
+               :name: west-mainifest-part-to-nested-projects-1
+               :language: yaml
+               :lines: 21-22,23,39,43,23,50,62,63-78
+            .. :lineno-start: 20
+            .. :dedent: 0
+            .. :linenos:
+
+      .. container:: pct33
+
+         .. rst-class:: allcode
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest part to nested projects (2)
+               :name: west-mainifest-part-to-nested-projects-2
+               :language: yaml
+               :lines: 21-22,23,39,43,23,50,62,23,79-93
+            .. :lineno-start: 43
+            .. :dedent: 0
+            .. :linenos:
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :manifest:: https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
+
+West Workspace Setup from Bridle
+--------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct30
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest from Bridle
+               :name: west-mainifest-from-bridle-init
+               :language: txt
+               :dedent: 0
+               :lines: 21-22,26-27,31-33,99,101,105,39,43-47,48,95-96,50,62,63-80,23,90-93
+            .. :lines: 21-22,26-27,31-33,99,101,105,39,43-47,48,95-96,50,62,63-93
+            .. :linenos:
+
+      .. container:: pct70
+
+         .. rst-class:: left-justified legend
+
+            in a local workspace folder with activated
+            Python Virtual Environment:
+
+            :Workspace INIT:: :code:`west init -m https://github.com/tiacsys/bridle --mr v3.3-branch`
+
+         .. container:: flex-container
+
+            .. container:: pct80
+
+               .. rst-class:: allcode
+
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+                     :caption: Bridle itself
+                     :language: yaml
+                     :dedent: 0
+                     :lines: 21,26-27,31-33,99,101
+
+            .. container:: pct80
+
+               Local West Workspace:
+
+               .. highlight:: no-highlight
+               .. parsed-literal::
+
+                  ╔════════════════════════════════════╤════════════════════════════════════╗
+                  ║ workspace/                         │                                    ║
+                  ║ ├── .venv/                         │                                    ║
+                  ║ ├── :strong:`.west/`                         │ workspace/\ :strong:`.west/`\ :strong-red:`config`             ║
+                  ║ │   └── :strong-red:`config`                     │    :strong-red:`[manifest]`                      ║
+                  ║ └── :strong:`bridle/`                        │    path = :strong:`bridle`                   ║
+                  ║     └── :strong-red:`zephyr/module.yml`          │    file = :strong:`west.yml`                 ║
+                  ╚════════════════════════════════════╧════════════════════════════════════╝
+
+               .. highlight:: default
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct30
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest from Bridle
+               :name: west-mainifest-from-bridle-update
+               :language: txt
+               :dedent: 0
+               :lines: 21-22,26-27,31-33,99,101,105,39,43-47,48,95-96,50,62,63-80,23,90-93
+            .. :lines: 21-22,26-27,31-33,99,101,105,39,43-47,48,95-96,50,62,63-93
+            .. :linenos:
+
+      .. container:: pct70
+
+         .. rst-class:: left-justified legend
+
+            in a local workspace folder with activated
+            Python Virtual Environment and initialized
+            West Workspace:
+
+            :Workspace UPDATE:: :code:`west update`
+
+         .. container:: flex-container
+
+            .. container:: pct80
+
+               .. rst-class:: allcode
+
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+                     :caption: Zephyr and Components
+                     :language: yaml
+                     :dedent: 0
+                     :lines: 21,26-27,31-33,39,43-47,50,62,63-73,23,90-93
+                  .. :lines: 21,26-27,31-33,39,43-47,50,62,63-93
+
+            .. container:: pct80
+
+               Local West Workspace:
+
+               .. highlight:: no-highlight
+               .. parsed-literal::
+
+                  ╔════════════════════════════════════╤════════════════════════════════════╗
+                  ║ workspace/                         │ workspace/bridle/\ :strong-red:`zephyr/module.yml` ║
+                  ║ ├── .venv/                         │                                    ║
+                  ║ ├── .west/                         │                                    ║
+                  ║ ├── bridle/                        │ workspace/\ :strong:`modules/crypto/`          ║
+                  ║ ├── :strong:`modules/`                       │ ├── :strong:`mbedtls/`\ :strong-red:`zephyr/module.yml`      ║
+                  ║ │   ├── :strong:`crypto/`                    │ └── :strong:`tinycrypt/`\ :strong-red:`zephyr/module.yml`    ║
+                  ║ │   ├── :strong:`debug/`                     │                                    ║
+                  ║ │   ├── :strong:`fs/`                        │ workspace/\ :strong:`modules/debug/`           ║
+                  ║ │   ├── :strong:`hal/`                       │ ├── :strong:`mipi-sys-t/`\ :strong-red:`zephyr/module.yml`   ║
+                  ║ │   └── :strong:`lib/`                       │ └── :strong:`segger/`\ :strong-red:`zephyr/module.yml`       ║
+                  ║ ├── :strong:`tools/`                         │                                    ║
+                  ║ │   ├── :strong:`edtt/`                      │ workspace/\ :strong:`modules/fs/`              ║
+                  ║ │   └── :strong:`net-tools/`                 │ ├── :strong:`fatfs/`\ :strong-red:`zephyr/module.yml`        ║
+                  ║ └── :strong:`zephyr/`                        │ └── :strong:`littlefs/`\ :strong-red:`zephyr/module.yml`     ║
+                  ╚════════════════════════════════════╧════════════════════════════════════╝
+
+               .. parsed-literal::
+
+                  ╔════════════════════════════════════╤════════════════════════════════════╗
+                  ║ workspace/\ :strong:`modules/hal/`             │ workspace/\ :strong:`modules/lib/`             ║
+                  ║ ├── :strong:`altera/`\ :strong-red:`zephyr/module.yml`       │ ├── :strong:`canopennode/`\ :strong-red:`zephyr/module.yml`  ║
+                  ║ ├── :strong:`atmel/`\ :strong-red:`zephyr/module.yml`        │ ├── :strong:`chre/`\ :strong-red:`zephyr/module.yml`         ║
+                  ║ ├── :strong:`cmsis/`\ :strong-red:`zephyr/module.yml`        │ ├── :strong:`gui/lvgl/`\ :strong-red:`zephyr/module.yml`     ║
+                  ║ ├── :strong:`espressif/`\ :strong-red:`zephyr/module.yml`    │ ├── :strong:`liblc3/`\ :strong-red:`zephyr/module.yml`       ║
+                  ║ ├── :strong:`libmetal/`\ :strong-red:`zephyr/module.yml`     │ ├── :strong:`loramac-node/`\ :strong-red:`zephyr/module.yml` ║
+                  ║ ├── :strong:`nordic/`\ :strong-red:`zephyr/module.yml`       │ ├── :strong:`open-amp/`\ :strong-red:`zephyr/module.yml`     ║
+                  ║ ├── :strong:`nxp/`\ :strong-red:`zephyr/module.yml`          │ ├── :strong:`openthread/`\ :strong-red:`zephyr/module.yml`   ║
+                  ║ ├── :strong:`rpi_pico/`\ :strong-red:`zephyr/module.yml`     │ └── :strong:`picolibc/`\ :strong-red:`zephyr/module.yml`     ║
+                  ║ ├── :strong:`st/`\ :strong-red:`zephyr/module.yml`           │                                    ║
+                  ║ ├── :strong:`stm32/`\ :strong-red:`zephyr/module.yml`        │                                    ║
+                  ║ └── :strong:`xtensa/`\ :strong-red:`zephyr/module.yml`       │                                    ║
+                  ╚════════════════════════════════════╧════════════════════════════════════╝
+
+               .. highlight:: default
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

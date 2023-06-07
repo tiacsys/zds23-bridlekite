@@ -10,6 +10,7 @@ Getting Started in Practice
    :data-state: title
 
 .. include:: /revealjs/materials/getting-started-in-practice/read-the-docs.rsti
+.. include:: /revealjs/materials/getting-started-in-practice/bridle-has-its-own-west-manifest.rsti
 
 .. Local variables:
    coding: utf-8
