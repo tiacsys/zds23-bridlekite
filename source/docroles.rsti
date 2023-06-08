@@ -11,17 +11,47 @@
 .. role:: black
 .. role:: white
 
+.. role:: strong
+.. role:: strong-red
+   :class: strong red
+.. role:: strong-green
+   :class: strong green
+.. role:: strong-blue
+   :class: strong blue
+.. role:: strong-yellow
+   :class: strong yellow
+.. role:: strong-black
+   :class: strong black
+.. role:: strong-white
+   :class: strong white
+
 .. role:: underline
+.. role:: underline-red
+   :class: underline red
 .. role:: underline-green
    :class: underline green
 .. role:: underline-blue
    :class: underline blue
+.. role:: underline-yellow
+   :class: underline yellow
+.. role:: underline-black
+   :class: underline black
+.. role:: underline-white
+   :class: underline white
 
 .. role:: strikethrough
 .. role:: strikethrough-red
    :class: strikethrough red
+.. role:: strikethrough-green
+   :class: strikethrough green
+.. role:: strikethrough-blue
+   :class: strikethrough blue
 .. role:: strikethrough-yellow
    :class: strikethrough yellow
+.. role:: strikethrough-black
+   :class: strikethrough black
+.. role:: strikethrough-white
+   :class: strikethrough white
 
 .. conditional raw outputs
 
