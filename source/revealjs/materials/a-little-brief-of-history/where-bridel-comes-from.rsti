@@ -34,7 +34,8 @@ Where Bridel comes from
 
          .. rst-class:: left-justified legend
 
-            .. note::
+            .. admonition:: Note:
+               :class: note
 
                |Zephyr Example Application|_ was created too.
 
