@@ -58,13 +58,13 @@ https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-re
             -- west build: generating a build system
             Loading Zephyr default modules (Zephyr base).
             Loading Bridle default modules (Bridle workspace).
-            -- Bridle version: 3.3.0 (…/workspace/bridle)
+            -- Bridle version: 3.3.1 (…/workspace/bridle)
             -- Bridle is trying to locate Zephyr SDK 0.15.2.
             -- Using Zephyr SDK 0.15.2 for building Bridle. (/opt/zephyr-sdk-0.15.2)
             … … …
             -- Zephyr version: 3.3.0 (…/workspace/zephyr), build: zephyr-v3.3.0-51-g7ea0860e376d
             … … …
-            -- Bridle version: 3.3.0 (…/workspace/bridle), build: bridle-v3.3.0-92-gc85e8293d61e
+            -- Bridle version: 3.3.1 (…/workspace/bridle), build: bridle-v3.3.1
             … … …
 
       .. container:: pct50
@@ -93,17 +93,36 @@ https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-re
             :manifest:     https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
             :requirements: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/requirements.txt
 
-How it works
-------------
+Zephyr Downstream Attributes
+----------------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-Bridle is a Zephyr downstream project, because it:
+.. container:: flex-container
 
-* provides THE **West Manifest** for source code organization
-* is itself a **Zephyr Module** to extend the Zephyr framework
-* extends at least **CMake** and **Kconfig**, **West** if required
+   .. container:: pct40
+
+      Bridle is a Zephyr downstream project, because it:
+
+   .. container:: pct60
+
+      * provides THE **West Manifest** for source code organization
+      * is itself a **Zephyr Module** to extend the Zephyr framework
+      * extends at least **CMake** and **Kconfig**, **West** if required
+
+.. container:: flex-container
+
+   .. container:: pct100
+
+      |nbsp|
+
+         :only this is: The |Zephyr Example Application|_.
+         :but:          The |Bridle Downstream Project|_ is more than that.
+
+.. |Bridle Downstream Project| replace:: :emphasis:`Bridle Downstream Project`
+.. _`Bridle Downstream Project`:
+   https://github.com/tiacsys/bridle
 
 Bridle has its own CMake packages
 ---------------------------------

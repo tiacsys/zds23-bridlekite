@@ -69,7 +69,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
          .. rst-class:: legend
 
-            Zephyr module dependencies are not yet supported by Bridle, e.g.:
+            Zephyr module dependencies are not yet used by Bridle, e.g.:
 
             .. highlight:: no-highlight
             .. parsed-literal::
@@ -87,7 +87,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
          .. rst-class:: legend
 
-            The SCA tool implementation is not yet supported by Bridle, e.g.:
+            The SCA tool implementation is not yet used by Bridle, e.g.:
 
             .. highlight:: no-highlight
             .. parsed-literal::
@@ -178,14 +178,12 @@ Zephyr Entry Points into Bridle
                .. parsed-literal::
 
                   ╔═════════════════════╤═══════════════════════════════════════════════════╗
-                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-blue:`services/CMakeLists.txt`          ║
-                  ║ ├── :strong-blue:`include/`        │ workspace/\ :strong:`bridle/`\ services/Kconfig                 ║
-                  ║ ├── :strong-blue:`VERSION`         │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/CMakeLists.txt`            ║
-                  ║ ├── :strong-blue:`version.h.in`    │ workspace/\ :strong:`bridle/`\ subsys/Kconfig                   ║
-                  ║ ├── :strong-red:`CMakeLists.txt`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/CMakeLists.txt`           ║
-                  ║ └── Kconfig.bridle  │ workspace/\ :strong:`bridle/`\ drivers/Kconfig                  ║
-                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/CMakeLists.txt`               ║
-                  ║                     │ workspace/\ :strong:`bridle/`\ lib/Kconfig                      ║
+                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/CMakeLists.txt`            ║
+                  ║ ├── :strong-blue:`include/`        │ workspace/\ :strong:`bridle/`\ subsys/Kconfig                   ║
+                  ║ ├── :strong-blue:`VERSION`         │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/CMakeLists.txt`           ║
+                  ║ ├── :strong-blue:`version.h.in`    │ workspace/\ :strong:`bridle/`\ drivers/Kconfig                  ║
+                  ║ ├── :strong-red:`CMakeLists.txt`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/CMakeLists.txt`               ║
+                  ║ └── Kconfig.bridle  │ workspace/\ :strong:`bridle/`\ lib/Kconfig                      ║
                   ╚═════════════════════╧═══════════════════════════════════════════════════╝
 
                .. highlight:: default
@@ -203,7 +201,7 @@ Zephyr Entry Points into Bridle
                .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/CMakeLists.txt
                   :language: cmake
                   :dedent: 0
-                  :lines: 17-21,23-24,36,39,42,33
+                  :lines: 17-21,23-24,29,33,36,39
                .. :linenos:
 
 .. revealjs-break::
@@ -218,7 +216,7 @@ Zephyr Entry Points into Bridle
          .. rst-class:: left-justified legend
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
-               :caption: Zephyr Module File for Bridle
+               :caption: Zephyr Module File in Bridle
                :name: zephyr-module-file-for-bridle-integration-kconfig
                :language: txt
                :dedent: 0
@@ -251,14 +249,12 @@ Zephyr Entry Points into Bridle
                .. parsed-literal::
 
                   ╔═════════════════════╤═══════════════════════════════════════════════════╗
-                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ services/CMakeLists.txt          ║
-                  ║ ├── include/        │ workspace/\ :strong:`bridle/`\ :strong-blue:`services/Kconfig`                 ║
-                  ║ ├── VERSION         │ workspace/\ :strong:`bridle/`\ subsys/CMakeLists.txt            ║
-                  ║ ├── version.h.in    │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/Kconfig`                   ║
-                  ║ ├── CMakeLists.txt  │ workspace/\ :strong:`bridle/`\ drivers/CMakeLists.txt           ║
-                  ║ └── :strong-red:`Kconfig.bridle`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/Kconfig`                  ║
-                  ║                     │ workspace/\ :strong:`bridle/`\ lib/CMakeLists.txt               ║
-                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/Kconfig`                      ║
+                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ subsys/CMakeLists.txt            ║
+                  ║ ├── include/        │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/Kconfig`                   ║
+                  ║ ├── VERSION         │ workspace/\ :strong:`bridle/`\ drivers/CMakeLists.txt           ║
+                  ║ ├── version.h.in    │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/Kconfig`                  ║
+                  ║ ├── CMakeLists.txt  │ workspace/\ :strong:`bridle/`\ lib/CMakeLists.txt               ║
+                  ║ └── :strong-red:`Kconfig.bridle`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/Kconfig`                      ║
                   ╚═════════════════════╧═══════════════════════════════════════════════════╝
 
                .. highlight:: default
@@ -276,7 +272,7 @@ Zephyr Entry Points into Bridle
                .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/Kconfig.bridle
                   :language: cmake
                   :dedent: 0
-                  :lines: 5-6,8,9,10,11
+                  :lines: 5-6,7,8,9
                .. :linenos:
 
 .. revealjs-break::
@@ -291,7 +287,7 @@ Zephyr Entry Points into Bridle
          .. rst-class:: left-justified legend
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
-               :caption: Zephyr Module File for Bridle
+               :caption: Zephyr Module File in Bridle
                :name: zephyr-module-file-for-bridle-build-settings
                :language: txt
                :dedent: 0
