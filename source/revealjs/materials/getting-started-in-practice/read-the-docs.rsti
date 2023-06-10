@@ -74,12 +74,21 @@ https://bridle.tiac-systems.net/doc/3.3/bridle/gs_installing.html#cloning-the-re
             .. container:: asciinema align-center
                :name: cast-bridle-workspace
 
-               .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
-                  :poster: npt:2:32
-                  :speed: 3.0
-                  :autoplay: 1
-                  :preload: 1
-                  :loop: 1
+               .. only:: statcont
+
+                  .. imagesvg:: /revealjs/materials/getting-started-in-practice/bridle-workspace-static.svg
+                     :tagtype: object
+
+                  "Hello World!" sample with Bridle
+
+               .. only:: not statcont
+
+                  .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
+                     :poster: npt:2:32
+                     :speed: 3.0
+                     :autoplay: 1
+                     :preload: 1
+                     :loop: 1
 
             :manifest:     https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
             :requirements: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/requirements.txt
