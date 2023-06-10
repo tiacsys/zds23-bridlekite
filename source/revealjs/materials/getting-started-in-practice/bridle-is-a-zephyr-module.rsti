@@ -120,15 +120,11 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
             :red:`Example only!` Binary Blobs are not yet used by Bridle.
 
-.. _`zephyr/v3.3/.github/workflows/twister.yaml`:
-   https://github.com/zephyrproject-rtos/zephyr/blob/v3.3-branch/.github/workflows/twister.yaml#L223
-
-
 -----
 
 .. rst-class:: left-justified legend
 
-   :zephyr/module:: https://github.com/tiacsys/bridle/blob/v3.3-branch/zephyr/module.yml
+   :Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.3-branch/zephyr/module.yml
 
 Zephyr Entry Points into Bridle
 -------------------------------

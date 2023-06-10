@@ -71,12 +71,6 @@ On Premise HIL Infrastructure
 
 Next generation – currently work in progress – will use |LabGRID|_ and |USB/IP|_.
 
-.. |LabGRID| replace:: :emphasis:`LabGRID`
-.. _`LabGRID`: https://labgrid.readthedocs.io/
-
-.. |USB/IP| replace:: :emphasis:`USB/IP`
-.. _`USB/IP`: https://usbip.sourceforge.net/
-
 On Premise Web Server
 ---------------------
 

@@ -2,6 +2,56 @@
 
 .. External Links:
 
+.. |The Fellowship of the Ring|
+   replace:: :emphasis:`The Fellowship of the Ring`
+.. _`The Fellowship of the Ring`:
+   https://tolkiengateway.net/wiki/Three_is_Company
+
+.. |LabGRID| replace:: :emphasis:`LabGRID`
+.. _`LabGRID`: https://labgrid.readthedocs.io/
+
+.. |USB/IP| replace:: :emphasis:`USB/IP`
+.. _`USB/IP`: https://usbip.sourceforge.net/
+
+.. |nRF Connect SDK v1.2| replace:: :emphasis:`nRF Connect SDK v1.2`
+.. _`nRF Connect SDK v1.2`:
+   https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0
+
+.. |nRF Connect SDK| replace:: :emphasis:`nRF Connect SDK`
+.. _`nRF Connect SDK`:
+   https://github.com/nrfconnect/sdk-nrf
+
+.. |Zephyr Example Application| replace:: :emphasis:`Zephyr Example Application`
+.. _`Zephyr Example Application`:
+   https://github.com/zephyrproject-rtos/example-application
+
+.. _`zephyr/v3.3/.github/workflows/twister.yaml`:
+   https://github.com/zephyrproject-rtos/zephyr/blob/v3.3-branch/.github/workflows/twister.yaml#L223
+
+.. |TiaC Systems| replace:: :strong:`TiaC Systems`
+.. _`TiaC Systems`: https://tiac-systems.net/
+
+.. |Bridle Downstream Project| replace:: :emphasis:`Bridle Downstream Project`
+.. _`Bridle Downstream Project`:
+   https://github.com/tiacsys/bridle
+
+.. |online documentation| replace:: :strong:`online documentation`
+.. _`online documentation`: https://bridle.tiac-systems.net/
+
+.. |Development Model| replace:: :emphasis:`Development Model`
+.. _`Development Model`:
+   https://bridle.tiac-systems.net/doc/3.3/bridle/ug_dev_model.html
+
+.. |Contribution Workflow| replace:: :emphasis:`Contribution Workflow`
+.. _`Contribution Workflow`:
+   https://bridle.tiac-systems.net/doc/3.3/bridle/dm_adding_code.html
+
+.. |Bridle v2.5.0| replace:: :strong:`Bridle v2.5.0`
+.. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
+
+.. |Bridle v3.3| replace:: :strong:`Bridle v3.3`
+.. _`Bridle v3.3`: https://bridle.tiac-systems.net/doc/3.3
+
 .. Local variables:
    coding: utf-8
    mode: text

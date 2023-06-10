@@ -51,7 +51,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
 
 .. rst-class:: left-justified legend
 
-   :manifest:: https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
+   :West Manifest:: https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
 
 West Workspace Setup from Bridle
 --------------------------------

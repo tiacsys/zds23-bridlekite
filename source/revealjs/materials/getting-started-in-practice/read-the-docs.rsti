@@ -109,7 +109,8 @@ Zephyr Downstream Attributes
 
       * provides THE **West Manifest** for source code organization
       * is itself a **Zephyr Module** to extend the Zephyr framework
-      * extends at least **CMake** and **Kconfig**, **West** if required
+      * provides at least entries for **CMake** and **Kconfig**
+      * extends **West** if required
 
 .. container:: flex-container
 
@@ -119,10 +120,6 @@ Zephyr Downstream Attributes
 
          :only this is: The |Zephyr Example Application|_.
          :but:          The |Bridle Downstream Project|_ is more than that.
-
-.. |Bridle Downstream Project| replace:: :emphasis:`Bridle Downstream Project`
-.. _`Bridle Downstream Project`:
-   https://github.com/tiacsys/bridle
 
 Bridle has its own CMake packages
 ---------------------------------
