@@ -8,6 +8,7 @@ PATH  := $(TOP)tools/asciinema-rec_script/bin:$(PATH)
 TOUCH := touch -cm
 MKDIR := mkdir -pv
 CHDIR := cd -P
+COPY  := cp -vf
 
 # You can set these variables from the command line, and also
 # from the environment for the first two. Please, respect the
@@ -52,11 +53,17 @@ $(ASCREC_RUNDIR):
 #	https://www.gnu.org/software/make/manual/make.html#Special-Variables
 # %.cast: .EXTRA_PREREQS = $(ASCREC_RUNDIR)
 
-ASCREC_SVG := $(addsuffix .svg,$(basename $(ASCREC_CASTS)))
+ASCREC_SVG := $(addsuffix .svg,$(basename $(ASCREC_CASTS))) \
+              $(TOP)source/revealjs/materials/getting-started-in-practice/bridle-workspace-static.svg
 
 .PHONY: asciisvg
 asciisvg: $(ASCREC_SVG)
 
+%/bridle-workspace-static.svg: TOSVGRANGE = --at 157500
+%/bridle-workspace-static.cast: %/bridle-workspace.cast
+	@$(COPY) "$<" "$@"
+
+%/bridle-workspace-static.svg \
 %.svg: %.cast
 	@echo -n "SVG $(@F) from $(<F) ... "
 	@$(TOSVG) $(TOSVGTHEME) $(TOSVGOPTS) $(TOSVGRANGE) \
