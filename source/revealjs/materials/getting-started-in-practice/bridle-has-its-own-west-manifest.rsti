@@ -35,7 +35,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
                :caption: West Manifest part to nested projects (1)
                :name: west-mainifest-part-to-nested-projects-1
                :language: yaml
-               :lines: 22-23,24,40,44,24,51,63,64-79
+               :lines: 22-23,24,40,44,24,51,63,64-65,67-78
 
       .. container:: pct33
 
@@ -45,7 +45,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
                :caption: West Manifest part to nested projects (2)
                :name: west-mainifest-part-to-nested-projects-2
                :language: yaml
-               :lines: 22-23,24,40,44,24,51,63,24,80-94
+               :lines: 22-23,24,40,44,24,51,63,24,79,81-85,87-92,94
 
 -----
 
@@ -72,7 +72,7 @@ West Workspace Setup from Bridle
                :name: west-mainifest-from-bridle-init
                :language: txt
                :dedent: 0
-               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-81,24,92-94
+               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-65,67-79,81-84,24,91,92,94
             .. :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-94
             .. :linenos:
 
@@ -107,14 +107,27 @@ West Workspace Setup from Bridle
                   ╔════════════════════════════════════╤════════════════════════════════════╗
                   ║ workspace/                         │                                    ║
                   ║ ├── .venv/                         │                                    ║
-                  ║ ├── :strong:`.west/`                         │                                    ║
-                  ║ │   └── :strong-red:`config`                     │ workspace/\ :strong:`.west/`\ :strong-red:`config`             ║
-                  ║ ├── :strong:`bridle/`                        │    :strong-red:`[manifest]`                      ║
-                  ║ └── ├── :strong-blue:`submanifests/`              │    path = :strong:`bridle`                   ║
-                  ║     └── :strong-red:`zephyr/module.yml`          │    file = :strong:`west.yml`                 ║
+                  ║ ├── |.west/|                         │ workspace/|.west/|\ |config|             ║
+                  ║ │   └── |config|                     │    |[manifest]|                      ║
+                  ║ ├── |bridle/|                        │    path = |bridle|                   ║
+                  ║ └── ├── |west.yml|                   │    file = |west-yml|                 ║
+                  ║     ├── |submanifests/|              │                                    ║
+                  ║     └── |zephyr/module.yml|          │                                    ║
                   ╚════════════════════════════════════╧════════════════════════════════════╝
 
                .. highlight:: default
+
+         .. container:: flex-container
+
+            .. container:: pct100
+
+               .. rst-class:: left-justified legend
+
+                  :|submanifests/|:
+
+                     * :ref:`tiac-zephyr-doc:west-manifest-ex2.1`
+                     * :ref:`tiac-zephyr-doc:west-manifest-ex2.2`
+                     * :ref:`tiac-zephyr-doc:west-manifest-ex2.3`
 
 .. revealjs-break::
    :data-auto-animate:
@@ -132,7 +145,7 @@ West Workspace Setup from Bridle
                :name: west-mainifest-from-bridle-update
                :language: txt
                :dedent: 0
-               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-81,24,92-94
+               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-65,67-79,81-84,24,91,92,94
             .. :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-94
             .. :linenos:
 
@@ -156,7 +169,7 @@ West Workspace Setup from Bridle
                      :caption: Zephyr and Components
                      :language: yaml
                      :dedent: 0
-                     :lines: 22,27-28,32-34,40,44-48,51,63,64-74,24,92-94
+                     :lines: 22,27-28,32-34,40,44-48,51,63,64-65,67-78,24,91,92,94
                   .. :lines: 22,27-28,32-34,40,44-48,51,63,64-94
 
             .. container:: pct80
@@ -167,37 +180,37 @@ West Workspace Setup from Bridle
                .. parsed-literal::
 
                   ╔════════════════════════════════════╤════════════════════════════════════╗
-                  ║ workspace/                         │ workspace/bridle/\ :strong-red:`zephyr/module.yml` ║
+                  ║ workspace/                         │ workspace/bridle/|zephyr/module.yml| ║
                   ║ ├── .venv/                         │                                    ║
                   ║ ├── .west/                         │                                    ║
-                  ║ ├── bridle/                        │ workspace/\ :strong:`modules/crypto/`          ║
-                  ║ ├── :strong:`modules/`                       │ ├── :strong:`mbedtls/`\ :strong-red:`zephyr/module.yml`      ║
-                  ║ │   ├── :strong:`crypto/`                    │ └── :strong:`tinycrypt/`\ :strong-red:`zephyr/module.yml`    ║
-                  ║ │   ├── :strong:`debug/`                     │                                    ║
-                  ║ │   ├── :strong:`fs/`                        │ workspace/\ :strong:`modules/debug/`           ║
-                  ║ │   ├── :strong:`hal/`                       │ ├── :strong:`mipi-sys-t/`\ :strong-red:`zephyr/module.yml`   ║
-                  ║ │   └── :strong:`lib/`                       │ └── :strong:`segger/`\ :strong-red:`zephyr/module.yml`       ║
-                  ║ ├── :strong:`tools/`                         │                                    ║
-                  ║ │   ├── :strong:`edtt/`                      │ workspace/\ :strong:`modules/fs/`              ║
-                  ║ │   └── :strong:`net-tools/`                 │ ├── :strong:`fatfs/`\ :strong-red:`zephyr/module.yml`        ║
-                  ║ └── :strong:`zephyr/`                        │ └── :strong:`littlefs/`\ :strong-red:`zephyr/module.yml`     ║
+                  ║ ├── bridle/                        │ workspace/|modules/|\ |crypto/|          ║
+                  ║ ├── |modules/|                       │ ├── |mbedtls/|\ |zephyr/module.yml|      ║
+                  ║ │   ├── |crypto/|                    │ └── |tinycrypt/|\ |zephyr/module.yml|    ║
+                  ║ │   ├── |debug/|                     │                                    ║
+                  ║ │   ├── |fs/|                        │ workspace/|modules/|\ |debug/|           ║
+                  ║ │   ├── |hal/|                       │ ├── |mipi-sys-t/|\ |zephyr/module.yml|   ║
+                  ║ │   └── |lib/|                       │ └── |segger/|\ |zephyr/module.yml|       ║
+                  ║ ├── |tools/|                         │                                    ║
+                  ║ │   ├── |edtt/|                      │ workspace/|modules/|\ |fs/|              ║
+                  ║ │   └── |net-tools/|                 │ ├── |fatfs/|\ |zephyr/module.yml|        ║
+                  ║ └── |zephyr/|                        │ └── |littlefs/|\ |zephyr/module.yml|     ║
                   ╚════════════════════════════════════╧════════════════════════════════════╝
 
                .. parsed-literal::
 
                   ╔════════════════════════════════════╤════════════════════════════════════╗
-                  ║ workspace/\ :strong:`modules/hal/`             │ workspace/\ :strong:`modules/lib/`             ║
-                  ║ ├── :strong:`altera/`\ :strong-red:`zephyr/module.yml`       │ ├── :strong:`canopennode/`\ :strong-red:`zephyr/module.yml`  ║
-                  ║ ├── :strong:`atmel/`\ :strong-red:`zephyr/module.yml`        │ ├── :strong:`chre/`\ :strong-red:`zephyr/module.yml`         ║
-                  ║ ├── :strong:`cmsis/`\ :strong-red:`zephyr/module.yml`        │ ├── :strong:`gui/lvgl/`\ :strong-red:`zephyr/module.yml`     ║
-                  ║ ├── :strong:`espressif/`\ :strong-red:`zephyr/module.yml`    │ ├── :strong:`liblc3/`\ :strong-red:`zephyr/module.yml`       ║
-                  ║ ├── :strong:`libmetal/`\ :strong-red:`zephyr/module.yml`     │ ├── :strong:`loramac-node/`\ :strong-red:`zephyr/module.yml` ║
-                  ║ ├── :strong:`nordic/`\ :strong-red:`zephyr/module.yml`       │ ├── :strong:`open-amp/`\ :strong-red:`zephyr/module.yml`     ║
-                  ║ ├── :strong:`nxp/`\ :strong-red:`zephyr/module.yml`          │ ├── :strong:`openthread/`\ :strong-red:`zephyr/module.yml`   ║
-                  ║ ├── :strong:`rpi_pico/`\ :strong-red:`zephyr/module.yml`     │ └── :strong:`picolibc/`\ :strong-red:`zephyr/module.yml`     ║
-                  ║ ├── :strong:`st/`\ :strong-red:`zephyr/module.yml`           │                                    ║
-                  ║ ├── :strong:`stm32/`\ :strong-red:`zephyr/module.yml`        │                                    ║
-                  ║ └── :strong:`xtensa/`\ :strong-red:`zephyr/module.yml`       │                                    ║
+                  ║ workspace/|modules/|\ |hal/|             │ workspace/|modules/|\ |lib/|             ║
+                  ║ ├── |altera/|\ |zephyr/module.yml|       │ ├── |canopennode/|\ |zephyr/module.yml|  ║
+                  ║ ├── |atmel/|\ |zephyr/module.yml|        │ ├── |chre/|\ |zephyr/module.yml|         ║
+                  ║ ├── |cmsis/|\ |zephyr/module.yml|        │ ├── |gui/lvgl/|\ |zephyr/module.yml|     ║
+                  ║ ├── |espressif/|\ |zephyr/module.yml|    │ ├── |liblc3/|\ |zephyr/module.yml|       ║
+                  ║ ├── |libmetal/|\ |zephyr/module.yml|     │ ├── |loramac-node/|\ |zephyr/module.yml| ║
+                  ║ ├── |nordic/|\ |zephyr/module.yml|       │ ├── |open-amp/|\ |zephyr/module.yml|     ║
+                  ║ ├── |nxp/|\ |zephyr/module.yml|          │ ├── |openthread/|\ |zephyr/module.yml|   ║
+                  ║ ├── |rpi_pico/|\ |zephyr/module.yml|     │ └── |picolibc/|\ |zephyr/module.yml|     ║
+                  ║ ├── |st/|\ |zephyr/module.yml|           │                                    ║
+                  ║ ├── |stm32/|\ |zephyr/module.yml|        │                                    ║
+                  ║ └── |xtensa/|\ |zephyr/module.yml|       │                                    ║
                   ╚════════════════════════════════════╧════════════════════════════════════╝
 
                .. highlight:: default

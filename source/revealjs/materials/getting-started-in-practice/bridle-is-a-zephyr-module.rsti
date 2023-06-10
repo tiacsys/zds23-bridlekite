@@ -178,12 +178,12 @@ Zephyr Entry Points into Bridle
                .. parsed-literal::
 
                   ╔═════════════════════╤═══════════════════════════════════════════════════╗
-                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/CMakeLists.txt`            ║
-                  ║ ├── :strong-blue:`include/`        │ workspace/\ :strong:`bridle/`\ subsys/Kconfig                   ║
-                  ║ ├── :strong-blue:`VERSION`         │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/CMakeLists.txt`           ║
-                  ║ ├── :strong-blue:`version.h.in`    │ workspace/\ :strong:`bridle/`\ drivers/Kconfig                  ║
-                  ║ ├── :strong-red:`CMakeLists.txt`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/CMakeLists.txt`               ║
-                  ║ └── Kconfig.bridle  │ workspace/\ :strong:`bridle/`\ lib/Kconfig                      ║
+                  ║ workspace/|bridle/|   │ workspace/|bridle/|\ |subsys/CMakeLists.txt|            ║
+                  ║ ├── |include/|        │ workspace/|bridle/|\ subsys/Kconfig                   ║
+                  ║ ├── |VERSION|         │ workspace/|bridle/|\ |drivers/CMakeLists.txt|           ║
+                  ║ ├── |version.h.in|    │ workspace/|bridle/|\ drivers/Kconfig                  ║
+                  ║ ├── |CMakeLists.txt|  │ workspace/|bridle/|\ |lib/CMakeLists.txt|               ║
+                  ║ └── Kconfig.bridle  │ workspace/|bridle/|\ lib/Kconfig                      ║
                   ╚═════════════════════╧═══════════════════════════════════════════════════╝
 
                .. highlight:: default
@@ -217,7 +217,7 @@ Zephyr Entry Points into Bridle
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
                :caption: Zephyr Module File in Bridle
-               :name: zephyr-module-file-for-bridle-integration-kconfig
+               :name: zephyr-module-file-in-bridle-integration-kconfig
                :language: txt
                :dedent: 0
                :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
@@ -249,12 +249,12 @@ Zephyr Entry Points into Bridle
                .. parsed-literal::
 
                   ╔═════════════════════╤═══════════════════════════════════════════════════╗
-                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ subsys/CMakeLists.txt            ║
-                  ║ ├── include/        │ workspace/\ :strong:`bridle/`\ :strong-blue:`subsys/Kconfig`                   ║
-                  ║ ├── VERSION         │ workspace/\ :strong:`bridle/`\ drivers/CMakeLists.txt           ║
-                  ║ ├── version.h.in    │ workspace/\ :strong:`bridle/`\ :strong-blue:`drivers/Kconfig`                  ║
-                  ║ ├── CMakeLists.txt  │ workspace/\ :strong:`bridle/`\ lib/CMakeLists.txt               ║
-                  ║ └── :strong-red:`Kconfig.bridle`  │ workspace/\ :strong:`bridle/`\ :strong-blue:`lib/Kconfig`                      ║
+                  ║ workspace/|bridle/|   │ workspace/|bridle/|\ subsys/CMakeLists.txt            ║
+                  ║ ├── include/        │ workspace/|bridle/|\ |subsys/Kconfig|                   ║
+                  ║ ├── VERSION         │ workspace/|bridle/|\ drivers/CMakeLists.txt           ║
+                  ║ ├── version.h.in    │ workspace/|bridle/|\ |drivers/Kconfig|                  ║
+                  ║ ├── CMakeLists.txt  │ workspace/|bridle/|\ lib/CMakeLists.txt               ║
+                  ║ └── |Kconfig.bridle|  │ workspace/|bridle/|\ |lib/Kconfig|                      ║
                   ╚═════════════════════╧═══════════════════════════════════════════════════╝
 
                .. highlight:: default
@@ -288,7 +288,7 @@ Zephyr Entry Points into Bridle
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
                :caption: Zephyr Module File in Bridle
-               :name: zephyr-module-file-for-bridle-build-settings
+               :name: zephyr-module-file-in-bridle-build-settings
                :language: txt
                :dedent: 0
                :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
@@ -320,15 +320,15 @@ Zephyr Entry Points into Bridle
                .. parsed-literal::
 
                   ╔═════════════════════╤═══════════════════════════════════════════════════╗
-                  ║ workspace/\ :strong:`bridle/`   │ workspace/\ :strong:`bridle/`\ :strong-red:`boards/`\ :strong-blue:`<arch>/<board>/*`          ║
-                  ║ ├── :strong-red:`boards/`         │ workspace/\ :strong:`bridle/`\ :strong-red:`boards/`\ :strong-blue:`shields/<shield>/*`        ║
-                  ║ ├── :strong-red:`dts/`            │ workspace/\ :strong:`bridle/`\ :strong-red:`dts/`\ :strong-blue:`<arch>/*`                     ║
-                  ║ ├── :strong-red:`soc/`            │ workspace/\ :strong:`bridle/`\ :strong-red:`dts/`\ :strong-blue:`bindings/*`                   ║
-                  ║ ├── :strong-red:`arch/`           │ workspace/\ :strong:`bridle/`\ :strong-red:`soc/`\ :strong-blue:`<arch>/<soc>/*`               ║
-                  ║ └── :strong-red:`modules/`        │ workspace/\ :strong:`bridle/`\ :strong-red:`arch/`\ :strong-blue:`<arch>/*`                    ║
-                  ║                     │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-blue:`modules.cmake`            ║
-                  ║ This **folder names**   │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-yellow:`<module>/CMakeLists.txt`  ║
-                  ║ are all **mandatory**!  │ workspace/\ :strong:`bridle/`\ :strong-red:`modules/`\ :strong-yellow:`<module>/Kconfig`         ║
+                  ║ workspace/|bridle/|   │ workspace/|bridle/|\ |boards/|\ |<arch>/<board>/*|          ║
+                  ║ ├── |boards/|         │ workspace/|bridle/|\ |boards/|\ |shields/<shield>/*|        ║
+                  ║ ├── |dts/|            │ workspace/|bridle/|\ |dts/|\ |<arch>/*|                     ║
+                  ║ ├── |soc/|            │ workspace/|bridle/|\ |dts/|\ |bindings/*|                   ║
+                  ║ ├── |arch/|           │ workspace/|bridle/|\ |soc/|\ |<arch>/<soc>/*|               ║
+                  ║ └── |extmods/|        │ workspace/|bridle/|\ |arch/|\ |<arch>/*|                    ║
+                  ║                     │ workspace/|bridle/|\ |extmods/|\ |modules.cmake|            ║
+                  ║ This **folder names**   │ workspace/|bridle/|\ |extmods/|\ |<module>/CMakeLists.txt|  ║
+                  ║ are all **mandatory**!  │ workspace/|bridle/|\ |extmods/|\ |<module>/Kconfig|         ║
                   ╚═════════════════════╧═══════════════════════════════════════════════════╝
 
                .. highlight:: default
@@ -339,13 +339,13 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: left-justified legend
 
-                  :boards/<arch>/<board>/:: https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html
-                  :shields/<shield>/::      https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/shields.html
-                  :dts/<arch>/::            https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/index.html
-                  :dts/bindings/::          https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/bindings.html
-                  :soc/<arch>/<soc>::       https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html#soc
-                  :arch/<arch>/::           https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/arch.html
-                  :modules/::               https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html#modules-module-ext-root
+                  :|boards/|\ |<arch>/<board>/*|:   https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html
+                  :|boards/|\ |shields/<shield>/*|: https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/shields.html
+                  :|dts/|\ |<arch>/*|:              https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/index.html
+                  :|dts/|\ |bindings/*|:            https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/bindings.html
+                  :|soc/|\ |<arch>/<soc>/*|:        https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html#soc
+                  :|arch/|\ |<arch>/*|:             https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/arch.html
+                  :|extmods/|\ |modules.cmake|:     https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html#modules-module-ext-root
 
 .. Local variables:
    coding: utf-8

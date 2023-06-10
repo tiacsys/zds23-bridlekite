@@ -2,6 +2,85 @@
 
 .. Replacements:
 
+.. |bridle/| replace:: :strong:`bridle/`
+.. |bridle| replace:: :strong:`bridle`
+.. |west-yml| replace:: :strong:`west.yml`
+
+.. |.west/| replace:: :strong:`.west/`
+.. |config| replace:: :strong-red:`config`
+.. |[manifest]| replace:: :strong-red:`[manifest]`
+
+.. |submanifests/| replace:: :strong-blue:`submanifests/`
+.. |west.yml| replace:: :strong-blue:`west.yml`
+.. |zephyr/module.yml| replace:: :strong-red:`zephyr/module.yml`
+
+.. |modules/| replace:: :strong:`modules/`
+.. |crypto/| replace:: :strong:`crypto/`
+.. |mbedtls/| replace:: :strong:`mbedtls/`
+.. |tinycrypt/| replace:: :strong:`tinycrypt/`
+.. |debug/| replace:: :strong:`debug/`
+.. |mipi-sys-t/| replace:: :strong:`mipi-sys-t/`
+.. |segger/| replace:: :strong:`segger/`
+.. |fs/| replace:: :strong:`fs/`
+.. |fatfs/| replace:: :strong:`fatfs/`
+.. |littlefs/| replace:: :strong:`littlefs/`
+.. |hal/| replace:: :strong:`hal/`
+.. |altera/| replace:: :strong:`altera/`
+.. |atmel/| replace:: :strong:`atmel/`
+.. |cmsis/| replace:: :strong:`cmsis/`
+.. |espressif/| replace:: :strong:`espressif/`
+.. |libmetal/| replace:: :strong:`libmetal/`
+.. |nordic/| replace:: :strong:`nordic/`
+.. |nxp/| replace:: :strong:`nxp/`
+.. |rpi_pico/| replace:: :strong:`rpi_pico/`
+.. |st/| replace:: :strong:`st/`
+.. |stm32/| replace:: :strong:`stm32/`
+.. |xtensa/| replace:: :strong:`xtensa/`
+.. |lib/| replace:: :strong:`lib/`
+.. |canopennode/| replace:: :strong:`canopennode/`
+.. |chre/| replace:: :strong:`chre/`
+.. |gui/lvgl/| replace:: :strong:`gui/lvgl/`
+.. |liblc3/| replace:: :strong:`liblc3/`
+.. |loramac-node/| replace:: :strong:`loramac-node/`
+.. |open-amp/| replace:: :strong:`open-amp/`
+.. |openthread/| replace:: :strong:`openthread/`
+.. |picolibc/| replace:: :strong:`picolibc/`
+.. |tools/| replace:: :strong:`tools/`
+.. |edtt/| replace:: :strong:`edtt/`
+.. |net-tools/| replace:: :strong:`net-tools/`
+.. |zephyr/| replace:: :strong:`zephyr/`
+
+.. |CMakeLists.txt| replace:: :strong-red:`CMakeLists.txt`
+.. |Kconfig.bridle| replace:: :strong-red:`Kconfig.bridle`
+
+.. |include/| replace:: :strong-blue:`include/`
+.. |VERSION| replace:: :strong-blue:`VERSION`
+.. |version.h.in| replace:: :strong-blue:`version.h.in`
+
+.. |subsys/CMakeLists.txt| replace:: :strong-blue:`subsys/CMakeLists.txt`
+.. |subsys/Kconfig| replace:: :strong-blue:`subsys/Kconfig`
+
+.. |drivers/CMakeLists.txt| replace:: :strong-blue:`drivers/CMakeLists.txt`
+.. |drivers/Kconfig| replace:: :strong-blue:`drivers/Kconfig`
+
+.. |lib/CMakeLists.txt| replace:: :strong-blue:`lib/CMakeLists.txt`
+.. |lib/Kconfig| replace:: :strong-blue:`lib/Kconfig`
+
+.. |boards/| replace:: :strong-red:`boards/`
+.. |dts/| replace:: :strong-red:`dts/`
+.. |soc/| replace:: :strong-red:`soc/`
+.. |arch/| replace:: :strong-red:`arch/`
+.. |extmods/| replace:: :strong-red:`modules/`
+
+.. |<arch>/<board>/*| replace:: :strong-blue:`<arch>/<board>/*`
+.. |shields/<shield>/*| replace:: :strong-blue:`shields/<shield>/*`
+.. |bindings/*| replace:: :strong-blue:`bindings/*`
+.. |<arch>/<soc>/*| replace:: :strong-blue:`<arch>/<soc>/*`
+.. |<arch>/*| replace:: :strong-blue:`<arch>/*`
+.. |modules.cmake| replace:: :strong-blue:`modules.cmake`
+.. |<module>/CMakeLists.txt| replace:: :strong-yellow:`<module>/CMakeLists.txt`
+.. |<module>/Kconfig| replace:: :strong-yellow:`<module>/Kconfig`
+
 .. Local variables:
    coding: utf-8
    mode: text
