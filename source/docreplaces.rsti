@@ -2,6 +2,12 @@
 
 .. Replacements:
 
+.. |WARNING| replace:: :red:`WARNING`
+
+.. |FindZephyr-sdk.cmake| replace:: Zephyr has :file:`FindZephyr-sdk.cmake`
+.. |FindDoxygen.cmake| replace:: CMake 3.9 has :file:`FindDoxygen.cmake`
+.. |FindSphinx.cmake| replace:: Bridle has :file:`FindSphinx.cmake`
+
 .. |bridle/| replace:: :strong:`bridle/`
 .. |bridle| replace:: :strong:`bridle`
 .. |west-yml| replace:: :strong:`west.yml`

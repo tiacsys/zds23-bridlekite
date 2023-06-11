@@ -1,0 +1,233 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Bridle has its own CMake package
+================================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://cmake.org/cmake/help/book/mastering-cmake/chapter/Finding%20Packages.html
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+     "Local West Workspace"                                                                  "CMake Package Registry"          "Local Application"
+     +--------------------------------------------------------------------------------+               +-------------+ +--------------------------+
+     |   "zephyr/cmake/modules"       "include()" "zephyr/share/"                     |               |             | |                          |
+     |   └─ "zephyr_default.cmake"<------------.  └─ "zephyr-package/cmake/"          |"zephyr-export"|             | |                          |
+     |      :                                  |     ├─ "zephyr_export.cmake" --------+---------------+-> Zephyr<-+-+-+--"find_package(Zephyr)"  |
+     | .~~> o- "FIND ZephyrBuild"------------. '---O ├─ "ZephyrConfig.cmake"  <-------+---------------+-----------' | |                          |
+     | !    :                                |       └─ "ZephyrConfigVersion.cmake"   |               |             | |                          |
+     | !    #- "APPEND ZCM python"           |                                        |               |             | |                          |
+     | !    #- "APPEND ZCM west"             |             "find_package(… PATH ../*)"|               |             | |                          |
+     | !    #- "APPEND ZCM version"          '--------------------------------------. |               |             | |                          |
+     | !    :                                                                       | |               |             | |                          |
+     | !    o- "FOREACH in ZCM include()"                                           | |               |             | |                          |
+     | !    :                                                                       | |               |             | |                          |
+     | !    V          "ZCM := LIST::zephyr_cmake_modules"                          | |               |             | |                          |
+     +~!~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~+               |             | |                          |
+     | ! "bridle/cmake/modules"       "include()" "bridle/share/"                   | |               |             | |                          |
+     | ! └─ "bridle/default.cmake"<------------.  └─ "zephyrbuild-package/cmake/"   | |               |             | |                          |
+     | !    :                                  | .-O └─ "ZephyrBuildConfig.cmake" <-' |               |             | |                          |
+     | !    #- "APPEND ZCM bridle/requirements"| |                                    |               |             | |    .------------------.  |
+     | !    #- "APPEND ZCM bridle/version"     | |                         "include()"|               |             | |    |{r,o} WARNING     |  |
+     | !    #- "APPEND ZCM bridle/toolchain"   | '----------------------------------. |               |             | |    '------------------'  |
+     | !    :                                 ^|  "bridle/share/"                   | |               |             | |    /                     |
+     | '~~~~'                                / |  └─ "bridle-package/cmake/"        | |"bridle-export"|             | |   V                      |
+     |                    .------------------. |     ├─ "bridle_export.cmake" ------|-+---------------+-> Bridle<-+-+-+--"find_package(Bridle)"  |
+     |                    |{r,o} WARNING     | '---O ├─ "BridleConfig.cmake"  <-----*-+---------------+-----------' | |                          |
+     |                    '------------------'       └─ "BridleConfigVersion.cmake"   |               | {g,o}       | |                          |
+     +--------------------------------------------------------------------------------+               +-------------+ +--------------------------+
+
+   # Legend:
+   o = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+   r = { fill: #cd5c5c; stroke-dasharray: 6; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }
+
+.. rst-class:: left-justified legend
+
+   :|WARNING|:: Freestanding mode for Bridle not usable. Bridle back to Zephyr
+                default is not yet implemented, see |[BUG] issue 104|_.
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Zephyr CMake Package:: https://bridle.tiac-systems.net/doc/3.3/zephyr/build/zephyr_cmake_package.html
+   :Bridle CMake Package:: https://bridle.tiac-systems.net/doc/3.3/bridle/west_bridle_cmds.html
+
+Zephyr CMake Modules injected by Bridle
+---------------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/requirements.cmake
+
+.. rst-class:: left-justified
+
+   * determine and set the **required Zephyr SDK** version:
+     :code:`set(BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION …)`
+   * determine and set the **maximum allowed Zephyr SDK** version:
+     :code:`set(BRIDLE_TOOLCHAIN_ZEPHYR_SDK_VERSION …)`
+   * determine and set the **required Doxygen** version:
+     :code:`set(BRIDLE_DOXYGEN_REQUIRED_VERSION …)`
+   * determine and set the **required Sphinx** version:
+     :code:`set(ZEPHYR_SPHINX_REQUIRED_VERSION …)`
+
+.. rst-class:: left-justified legend
+
+   .. container:: flex-container
+
+      .. container:: pct100
+
+         .. list-table::
+            :class: longtable
+            :align: center
+            :widths: 50 30 30 50 30
+            :header-rows: 1
+            :stub-columns: 0
+
+            * - :file:`${BRIDLE_BASE}/scripts/`
+              - Zephyr SDK
+              - Doxygen
+              - :file:`${ZEPHYR_BASE}/scripts/`
+              - Sphinx
+
+            * - :file:`tools-versions-minimum.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-minimum.txt
+                   :language: text
+                   :lines: 8
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-minimum.txt
+                   :language: text
+                   :lines: 10
+              - :file:`requirements-doc.txt`
+              - .. rli:: https://github.com/tiacsys/zephyr/raw/tiacsys/v3.3-branch/scripts/requirements-doc.txt
+                   :language: text
+                   :lines: 4
+
+            * - :file:`tools-versions-linux.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-linux.txt
+                   :language: text
+                   :lines: 11
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-linux.txt
+                   :language: text
+                   :lines: 12
+              -
+              -
+
+            * - :file:`tools-versions-macos.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-macos.txt
+                   :language: text
+                   :lines: 9
+              -
+              -
+              -
+
+            * - :file:`tools-versions-win10.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-win10.txt
+                   :language: text
+                   :lines: 9
+              -
+              -
+              -
+
+.. revealjs-break::
+   :data-auto-animate:
+
+https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/version.cmake
+
+.. rst-class:: left-justified
+
+   * determine this Bridle package version from :file:`${BRIDLE_BASE}/VERSION`
+   * loaded multiple times by :file:`BridleConfigVersion.cmake`
+   * used by :file:`${BRIDLE_BASE}/cmake/gen_version_h.cmake` to auto-generate
+     :file:`generated/version_bridle.h` in :file:`${PROJECT_BINARY_DIR}/include`
+   * setup CMake variables, e.g.:
+
+.. rst-class:: left-justified legend
+
+   .. container:: flex-container
+
+      .. container:: pct80
+
+         .. list-table::
+            :class: longtable
+            :align: center
+            :widths: 50 50 5 50 50
+            :header-rows: 0
+            :stub-columns: 0
+
+            * - :code:`set(PROJECT_VERSION`
+              - :code:`0.2.5.99)`
+
+              - | │
+
+              - :code:`set(BRIDLE_VERSION_STRING`
+              - :code:`"0.2.5-extraver")`
+
+            * - :code:`set(BRIDLE_VERSION_MAJOR`
+              - :code:`0)`
+
+              - | │
+
+              - :code:`set(BRIDLEVERSION`
+              - :code:`0x20563)`
+
+            * - :code:`set(BRIDLE_VERSION_MINOR`
+              - :code:`2)`
+
+              - | │
+
+              - :code:`set(BRIDLE_VERSION_NUMBER`
+              - :code:`0x205)`
+
+            * - :code:`set(BRIDLE_PATCHLEVEL`
+              - :code:`5)`
+
+              - | │
+
+              - :code:`set(BRIDLE_VERSION_CODE`
+              - :code:`517)`
+
+.. revealjs-break::
+   :data-auto-animate:
+
+https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/toolchain.cmake
+
+.. rst-class:: left-justified
+
+   Bridle's version guard for the Zephyr SDK:
+
+   * verify that required variables have been defined, see
+     :file:`cmake/modules/bridle/requirements.cmake` above
+   * verify that the selected toolchain matches the required version range
+   * currently, only the Zephyr SDK is supported
+
+-----
+
+.. admonition:: Note:
+   :class: note
+
+   .. rst-class:: left-justified legend
+
+      :|FindZephyr-sdk.cmake|::
+         :code:`find_package(Zephyr-sdk ${BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION} REQUIRED …)`
+      :|FindDoxygen.cmake|::
+         :code:`find_package(Doxygen ${BRIDLE_DOXYGEN_REQUIRED_VERSION} REQUIRED …)`
+      :|FindSphinx.cmake|::
+         :code:`find_package(Sphinx ${ZEPHYR_SPHINX_REQUIRED_VERSION} REQUIRED …)`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

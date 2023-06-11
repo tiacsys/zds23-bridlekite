@@ -121,14 +121,6 @@ Zephyr Downstream Attributes
          :only this is: The |Zephyr Example Application|_.
          :but:          The |Bridle Downstream Project|_ is more than that.
 
-Bridle has its own CMake packages
----------------------------------
-
-.. revealjs-section::
-   :data-auto-animate:
-
-t.b.d
-
 .. Local variables:
    coding: utf-8
    mode: text

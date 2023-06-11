@@ -1,0 +1,161 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Zephyr Example Application vs. Bridle
+=====================================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. rst-class:: left-justified legend
+
+   .. container:: flex-container
+
+      .. container:: pct100
+
+         .. list-table::
+            :class: longtable
+            :align: center
+            :widths: 50 50 50 5 50 50 50 5 50 50 50
+            :header-rows: 1
+            :stub-columns: 0
+
+            * - :emphasis:`Content`
+              - :emphasis:`Example`
+              - :emphasis:`Bridle`
+
+              - | │
+
+              - :emphasis:`Content`
+              - :emphasis:`Example`
+              - :emphasis:`Bridle`
+
+              - | │
+
+              - :emphasis:`Content`
+              - :emphasis:`Example`
+              - :emphasis:`Bridle`
+
+            * - :file:`.github`
+              - build only
+              - :strong-blue:`HIL/Tests, QA & DOC`
+
+              - | │
+                | │
+
+              - :file:`drivers`
+              - example_sensor
+              - :strong:`multiple`
+
+              - | │
+                | │
+
+              - :file:`scripts` & :file:`.yamllint`
+              - West
+              - :strong-blue:`West` & :strong:`linting`
+
+            * - :file:`applications`
+              - single
+              - prepared
+
+              - | │
+                | │
+
+              - :file:`dts`
+              - binding only
+              - bindings & :strong:`stm32f777xx`
+
+              - | │
+                | │
+
+              - :file:`share`
+              - |---|
+              - :strong-blue:`CMake package`
+
+            * - :file:`arch`
+              - |---|
+              - prepared
+
+              - | │
+                | │
+
+              - :file:`include`
+              - custom_lib
+              - :strong-blue:`versioning`
+
+              - | │
+                | │
+
+              - :file:`soc`
+              - |---|
+              - :strong:`stm32f777xx`
+
+            * - :file:`boards`
+              - custom_plank
+              - :strong:`multiple`
+
+              - | │
+                | │
+
+              - :file:`lib`
+              - custom_lib
+              - :strong-blue:`versioning`
+
+              - | │
+                | │
+
+              - :file:`subsys`
+              - |---|
+              - :strong:`Shell commands`
+
+            * - :file:`cmake`
+              - |---|
+              - :strong-blue:`CMake extensions`
+
+              - | │
+                | │
+
+              - :file:`modules`
+              - |---|
+              - prepared
+
+              - | │
+                | │
+
+              - :file:`tests`
+              - custom_lib
+              - :strong:`multiple`
+
+            * - :file:`doc`
+              - |---|
+              - :strong-blue:`doc-sets`
+
+              - | │
+                | │
+
+              - :file:`samples`
+              - |---|
+              - multiple
+
+              - | │
+                | │
+
+              - :file:`VERSION` & :file:`version.h.in`
+              - |---|
+              - :strong-blue:`versioning`
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Example vs. Bridle::
+
+      https://github.com/zephyrproject-rtos/example-application vs.
+      https://github.com/tiacsys/bridle
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

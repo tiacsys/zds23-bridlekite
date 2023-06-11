@@ -52,6 +52,9 @@
 .. |Bridle v3.3| replace:: :strong:`Bridle v3.3`
 .. _`Bridle v3.3`: https://bridle.tiac-systems.net/doc/3.3
 
+.. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
+.. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104
+
 .. Local variables:
    coding: utf-8
    mode: text

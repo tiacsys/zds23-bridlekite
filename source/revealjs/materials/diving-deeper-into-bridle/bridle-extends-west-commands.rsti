@@ -1,0 +1,213 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Bridle extends West Commands
+============================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/extensions.html
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest (remember)
+               :name: west-mainifest-part-for-bridle-itself-remember-1
+               :language: yaml
+               :lines: 22,100,102,106,40,44-45,96-97
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :name: west-command-spec-in-bridle-1
+               :language: yaml
+               :lines: 5-10
+
+         West Command Extension in Bridle ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. svgbob::
+            :font-family: "DejaVu Sans Condensed"
+            :font-size: 14
+            :scale: 10.0
+            :align: center
+
+            ""
+              "West Manifest"
+             .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+             !                                   ┌──────────────────────────────────────────────┐ !
+             ! ┌────────────────────┐            │"projects(zephyr):path"                       │ !
+             ! │"self:west-commands"│            │"projects(zephyr):userdata:west-commands-path"│ !
+             ! └────────────────────┘            └──────────────────────────────────────────────┘ !
+             '~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!~~~~~'
+                   | "scripts/west-commands.yml"         | "zephyr/scripts/west_commands"   !
+                   V                                     v                                  !
+             ╔═════════════════════════════════╗     ╔════════════════════════════════════════════╗
+             ║"scripts/west_commands/export.py"║<---O║"scripts/west_commands/zephyr_trampoline.py"║
+             ╚═════════════════════════════════╝  \  ╚════════════════════════════════════════════╝
+                   ^                     ^         \                  ^                     !
+                   |                     |     "@zcmake_run_cmake"    |                     !
+                   |                     |                            |                     !
+             .~~~~~|~~~~~~~~~~~~~~~~~~~~~|~~~~~. .~~~~~~~~~~~~~~~~~~~~|~~~~~.               !
+             ! ┌───#─────────┐    ┌──────#───┐ ! !   ┌────────────────#───┐ !  "sys.path"   !
+             ! │"WestCommand"│    │"west.log"│-!-!-->│"zcmake.run_cmake()"│ !<~~~~~~~~~~~~~~'
+             ! └─────────────┘    └──────────┘ ! !   └────────────────────┘ !
+             '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~'
+              "Python Virtual Environment"         "Zephyr Project"
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :West Commands::     https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west-commands.yml
+   :Bridle Export::     https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west_commands/export.py
+   :Zephyr Trampoline:: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+
+West Command bridle-export
+--------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest (remember)
+               :name: west-mainifest-part-for-bridle-itself-remember-2
+               :language: yaml
+               :lines: 22,100,102,106,40,44-45,96-97
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :name: west-command-spec-in-bridle-2
+               :language: yaml
+               :lines: 5-10
+
+      .. container:: pct66
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west_commands/export.py
+            :caption: West Command Implementation for Bridle CMake package export (fragments)
+            :name: west-command-impl-for-bridle-export
+            :language: python
+            :lines: 8-12,24,25-26,33-34,41-42,44,46,47-49,57-58
+
+.. rst-class:: left-justified
+
+This West command in Bridle want to rely on core functionality from Zephyr,
+thus it uses the :python:`@zcmake_run_cmake` decorator provided by Bridle's
+Zephyr Trampoline.
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Bridle Export::     https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west_commands/export.py
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest (remember)
+               :name: west-mainifest-part-for-bridle-itself-remember-3
+               :language: yaml
+               :lines: 22,100,102,106,40,44-45,96-97
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :name: west-command-spec-in-bridle-3
+               :language: yaml
+               :lines: 5-10
+
+         Extend Python :python:`sys.path` on demand only once,
+         provide as decorator ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+            :caption: Bridle's Zephyr Trampoline (fragments) – 1/2
+            :name: bridle-zephyr-trampoline-1
+            :language: python
+            :lines: 9,11-12,14,17-18,26-27,30-31,36-38,42-43
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+            :language: python
+            :lines: 8,46-47,49-50,52,54-55,61-62,68-69,71-72,74
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Zephyr Trampoline:: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+               :caption: West Manifest (remember)
+               :name: west-mainifest-part-for-bridle-itself-remember-4
+               :language: yaml
+               :lines: 22,100,102,106,40,44-45,96-97
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :name: west-command-spec-in-bridle-4
+               :language: yaml
+               :lines: 5-10
+
+         Create :python:`run_cmake()` on demand by reusing Zephyr's
+         :python:`run_cmake()` in module :python:`zcmake`,
+         provide as decorator ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+            :caption: Bridle's Zephyr Trampoline (fragments) – 2/2
+            :name: bridle-zephyr-trampoline-2
+            :language: python
+            :lines: 8-9,11-12,30-31,46-47,49-50,71-72,74
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+            :language: python
+            :lines: 8,75-89
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :Zephyr Trampoline:: https://github.com/tiacsys/bridle/blob/v3.3-branch/scripts/west_commands/zephyr_trampoline.py
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
