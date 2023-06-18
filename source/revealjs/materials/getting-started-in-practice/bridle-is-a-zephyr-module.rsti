@@ -9,6 +9,48 @@ Bridle is a Zephyr Module
 
 https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
+.. container:: flex-container
+
+   .. container:: pct33
+
+      .. rst-class:: left-justified legend
+
+         **Zephyr Framework Expansion**
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
+            :caption: Zephyr Module File in Bridle
+            :name: zephyr-module-file-in-bridle-ws
+            :language: yaml
+            :dedent: 0
+            :lines: 5,7,9,4,10,12,14,18,20,16,22,4,25-26,4,29-30,4,33-34
+         .. :linenos:
+
+   .. container:: pct66
+
+      .. rubric:: Workspace structure
+
+      .. imagesvg:: /_images/revealjs/materials/getting-started-in-practice/bridle-zephyr-module-noglyphs.svg
+         :tagtype: object
+
+      .. rst-class:: left-justified
+
+         The **SCA tools** implementation or **Binary Blobs**
+         are :strong-red:`not yet used` by Bridle.
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :|Bridle v3.4| Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.4-branch/zephyr/module.yml
+
+Zephyr Entry Points into Bridle
+-------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
+
 .. rst-class:: left-justified
 
    .. container:: flex-container
@@ -120,16 +162,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
             :red:`Example only!` Binary Blobs are not yet used by Bridle.
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.4-branch/zephyr/module.yml
-
-Zephyr Entry Points into Bridle
--------------------------------
-
-.. revealjs-section::
+.. revealjs-break::
    :data-auto-animate:
 
 .. rst-class:: left-justified
