@@ -61,6 +61,32 @@
 .. role:: raw-latex(raw)
    :format: latex
 
+.. inline syntax for code with explicit color highlighting
+
+.. role:: code-red(code)
+   :language: console
+   :class: no-highlight red
+
+.. role:: code-green(code)
+   :language: console
+   :class: no-highlight green
+
+.. role:: code-blue(code)
+   :language: console
+   :class: no-highlight blue
+
+.. role:: code-yellow(code)
+   :language: console
+   :class: no-highlight yellow
+
+.. role:: code-black(code)
+   :language: console
+   :class: no-highlight black
+
+.. role:: code-white(code)
+   :language: console
+   :class: no-highlight white
+
 .. inline syntax highlighting for well known languages
 
 .. role:: console(code)
