@@ -7,7 +7,7 @@ Bridle has its own West Manifest
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
+https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
 
 .. rst-class:: left-justified
 
@@ -15,43 +15,43 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/west/manifest.html
 
       .. container:: pct33
 
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
             :caption: West Manifest part for Bridle itself
             :name: west-mainifest-part-for-bridle-itself
             :language: yaml
-            :lines: 22-23,27-28,32-34,100,102,108,106
+            :lines: 22-23,27-28,32-34,96,98,104,102
 
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
             :caption: West Manifest part to other projects
             :name: west-mainifest-part-to-other-projects
             :language: yaml
-            :lines: 22-23,24,40,44-48,49,96-97
+            :lines: 22-23,24,40,44-48,49,92-93
 
       .. container:: pct33
 
          .. rst-class:: allcode
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest part to nested projects (1)
                :name: west-mainifest-part-to-nested-projects-1
                :language: yaml
-               :lines: 22-23,24,40,44,24,51,63,64-65,67-78
+               :lines: 22-23,24,40,44,24,51,63,64-77
 
       .. container:: pct33
 
          .. rst-class:: allcode
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest part to nested projects (2)
                :name: west-mainifest-part-to-nested-projects-2
                :language: yaml
-               :lines: 22-23,24,40,44,24,51,63,24,79,81-85,87-92,94
+               :lines: 22-23,24,40,44,24,51,63,24,78-90
 
 -----
 
 .. rst-class:: left-justified legend
 
-   :West Manifest:: https://github.com/tiacsys/bridle/blob/v3.3-branch/west.yml
+   :|Bridle v3.4| West Manifest:: https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
 
 West Workspace Setup from Bridle
 --------------------------------
@@ -67,13 +67,13 @@ West Workspace Setup from Bridle
 
          .. rst-class:: left-justified legend
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest from Bridle
                :name: west-mainifest-from-bridle-init
                :language: txt
                :dedent: 0
-               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-65,67-79,81-84,24,91,92,94
-            .. :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-94
+               :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-82,24,88-90
+            .. :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-90
             .. :linenos:
 
       .. container:: pct70
@@ -83,7 +83,7 @@ West Workspace Setup from Bridle
             in a local workspace folder with activated
             Python Virtual Environment:
 
-            :Workspace INIT:: :code:`west init -m https://github.com/tiacsys/bridle --mr v3.3-branch`
+            :Workspace INIT:: :code:`west init -m https://github.com/tiacsys/bridle --mr v3.4-branch`
 
          .. container:: flex-container
 
@@ -91,11 +91,11 @@ West Workspace Setup from Bridle
 
                .. rst-class:: allcode
 
-                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                      :caption: Bridle itself
                      :language: yaml
                      :dedent: 0
-                     :lines: 22,27-28,32-34,100,102,108
+                     :lines: 22,27-28,32-34,96,98,104
 
             .. container:: pct80
 
@@ -140,13 +140,13 @@ West Workspace Setup from Bridle
 
          .. rst-class:: left-justified legend
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest from Bridle
                :name: west-mainifest-from-bridle-update
                :language: txt
                :dedent: 0
-               :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-65,67-79,81-84,24,91,92,94
-            .. :lines: 22-23,27-28,32-34,100,102,108,106,40,44-48,49,96-97,51,63,64-94
+               :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-82,24,88-90
+            .. :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-90
             .. :linenos:
 
       .. container:: pct70
@@ -165,11 +165,13 @@ West Workspace Setup from Bridle
 
                .. rst-class:: allcode
 
-                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/west.yml
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                      :caption: Zephyr and Components
                      :language: yaml
                      :dedent: 0
-                     :lines: 22,27-28,32-34,40,44-48,51,63,64-65,67-78,24,91,92,94
+                     :lines: 22,27-28,32-34,40,44-48,51,63,64-77,24,88-90
+                  .. :lines: 22,27-28,32-34,40,44-48,51,63,64-90
+                  .. :lines: 22,27-28,32-34,40,44-48,51,63,64-65,67-78,24,91,92,94
                   .. :lines: 22,27-28,32-34,40,44-48,51,63,64-94
 
             .. container:: pct80

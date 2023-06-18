@@ -59,7 +59,7 @@ ASCREC_SVG := $(addsuffix .svg,$(basename $(ASCREC_CASTS))) \
 .PHONY: asciisvg
 asciisvg: $(ASCREC_SVG)
 
-%/bridle-workspace-static.svg: TOSVGRANGE = --at 157500
+%/bridle-workspace-static.svg: TOSVGRANGE = --at 126500
 %/bridle-workspace-static.cast: %/bridle-workspace.cast
 	@$(COPY) "$<" "$@"
 

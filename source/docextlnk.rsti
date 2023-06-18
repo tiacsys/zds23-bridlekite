@@ -25,8 +25,8 @@
 .. _`Zephyr Example Application`:
    https://github.com/zephyrproject-rtos/example-application
 
-.. _`zephyr/v3.3/.github/workflows/twister.yaml`:
-   https://github.com/zephyrproject-rtos/zephyr/blob/v3.3-branch/.github/workflows/twister.yaml#L223
+.. _`zephyr/v3.4.0/.github/workflows/twister.yaml`:
+   https://github.com/zephyrproject-rtos/zephyr/blob/v3.4.0/.github/workflows/twister.yaml#L237
 
 .. |TiaC Systems| replace:: :strong:`TiaC Systems`
 .. _`TiaC Systems`: https://tiac-systems.net/
@@ -40,17 +40,17 @@
 
 .. |Development Model| replace:: :emphasis:`Development Model`
 .. _`Development Model`:
-   https://bridle.tiac-systems.net/doc/3.3/bridle/ug_dev_model.html
+   https://bridle.tiac-systems.net/doc/3.4/bridle/ug_dev_model.html
 
 .. |Contribution Workflow| replace:: :emphasis:`Contribution Workflow`
 .. _`Contribution Workflow`:
-   https://bridle.tiac-systems.net/doc/3.3/bridle/dm_adding_code.html
+   https://bridle.tiac-systems.net/doc/3.4/bridle/dm_adding_code.html
 
 .. |Bridle v2.5.0| replace:: :strong:`Bridle v2.5.0`
 .. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
 
-.. |Bridle v3.3| replace:: :strong:`Bridle v3.3`
-.. _`Bridle v3.3`: https://bridle.tiac-systems.net/doc/3.3
+.. |Bridle v3.4| replace:: :strong:`Bridle v3.4`
+.. _`Bridle v3.4`: https://bridle.tiac-systems.net/doc/3.4
 
 .. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
 .. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104

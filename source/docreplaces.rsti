@@ -76,6 +76,7 @@
 .. |dts/| replace:: :strong-red:`dts/`
 .. |soc/| replace:: :strong-red:`soc/`
 .. |arch/| replace:: :strong-red:`arch/`
+.. |snippets/| replace:: :strong-red:`snippets/`
 .. |extmods/| replace:: :strong-red:`modules/`
 
 .. |<arch>/<board>/*| replace:: :strong-blue:`<arch>/<board>/*`
@@ -83,6 +84,7 @@
 .. |bindings/*| replace:: :strong-blue:`bindings/*`
 .. |<arch>/<soc>/*| replace:: :strong-blue:`<arch>/<soc>/*`
 .. |<arch>/*| replace:: :strong-blue:`<arch>/*`
+.. |<snippet>/*| replace:: :strong-blue:`<snippet>/*`
 .. |modules.cmake| replace:: :strong-blue:`modules.cmake`
 .. |<module>/CMakeLists.txt| replace:: :strong-yellow:`<module>/CMakeLists.txt`
 .. |<module>/Kconfig| replace:: :strong-yellow:`<module>/Kconfig`

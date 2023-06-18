@@ -7,7 +7,7 @@ Bridle is a Zephyr Module
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
+https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
 .. rst-class:: left-justified
 
@@ -15,7 +15,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
       .. container:: pct25
 
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
             :caption: Integration Files
             :name: zephyr-module-integration-files
             :language: yaml
@@ -31,22 +31,22 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
       .. container:: pct25
 
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
             :caption: Build Settings
             :name: zephyr-module-build-settings
             :language: yaml
-            :lines: 5,10,12,14,16,18,20
+            :lines: 5,10,12,14,18,20,16,22
          .. :lineno-start: 1
          .. :dedent: 0
          .. :linenos:
 
       .. container:: pct25
 
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
             :caption: Twister Directories
             :name: zephyr-module-twister-directories
             :language: yaml
-            :lines: 5,7,23-24,27-28,31-32
+            :lines: 5,7,25-26,29-30,33-34
          .. :lineno-start: 1
          .. :dedent: 0
          .. :linenos:
@@ -103,8 +103,8 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
          .. rst-class:: legend
 
             Only useful when Zephyr's GitHub workflow will be used,
-            see the multiple steps **Run Tests with Twister** in:
-            `zephyr/v3.3/.github/workflows/twister.yaml`_
+            see the multiple steps **Run tests with twister** in:
+            `zephyr/v3.4.0/.github/workflows/twister.yaml`_
 
             .. highlight:: no-highlight
             .. parsed-literal::
@@ -124,7 +124,7 @@ https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html
 
 .. rst-class:: left-justified legend
 
-   :Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.3-branch/zephyr/module.yml
+   :|Bridle v3.4| Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.4-branch/zephyr/module.yml
 
 Zephyr Entry Points into Bridle
 -------------------------------
@@ -140,12 +140,12 @@ Zephyr Entry Points into Bridle
 
          .. rst-class:: left-justified legend
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                :caption: Zephyr Module File in Bridle
                :name: zephyr-module-file-in-bridle-integration-cmake
                :language: txt
                :dedent: 0
-               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+               :lines: 5,7,9,10,12,14,18,20,16,22,25-26,29-30,33-34
             .. :linenos:
 
       .. container:: pct70
@@ -160,7 +160,7 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: allcode
 
-                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                      :caption: Integration Files
                      :language: yaml
                      :dedent: 0
@@ -190,11 +190,11 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: left-justified legend
 
-                  https://bridle.tiac-systems.net/doc/3.3/zephyr/build/cmake/index.html
+                  https://bridle.tiac-systems.net/doc/3.4/zephyr/build/cmake/index.html
 
-                  :CMakeLists.txt:: https://github.com/tiacsys/bridle/blob/v3.3-branch/CMakeLists.txt
+                  :|Bridle v3.4| CMakeLists.txt:: https://github.com/tiacsys/bridle/blob/v3.4-branch/CMakeLists.txt
 
-               .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/CMakeLists.txt
+               .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/CMakeLists.txt
                   :language: cmake
                   :dedent: 0
                   :lines: 17-21,23-24,29,33,36,39
@@ -211,12 +211,12 @@ Zephyr Entry Points into Bridle
 
          .. rst-class:: left-justified legend
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                :caption: Zephyr Module File in Bridle
                :name: zephyr-module-file-in-bridle-integration-kconfig
                :language: txt
                :dedent: 0
-               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+               :lines: 5,7,9,10,12,14,18,20,16,22,25-26,29-30,33-34
             .. :linenos:
 
       .. container:: pct70
@@ -231,7 +231,7 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: allcode
 
-                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                      :caption: Integration Files
                      :language: yaml
                      :dedent: 0
@@ -261,11 +261,11 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: left-justified legend
 
-                  https://bridle.tiac-systems.net/doc/3.3/zephyr/build/kconfig/index.html
+                  https://bridle.tiac-systems.net/doc/3.4/zephyr/build/kconfig/index.html
 
-                  :Kconfig.bridle:: https://github.com/tiacsys/bridle/blob/v3.3-branch/Kconfig.bridle
+                  :|Bridle v3.4| Kconfig.bridle:: https://github.com/tiacsys/bridle/blob/v3.4-branch/Kconfig.bridle
 
-               .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/Kconfig.bridle
+               .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/Kconfig.bridle
                   :language: cmake
                   :dedent: 0
                   :lines: 5-6,7,8,9
@@ -282,12 +282,12 @@ Zephyr Entry Points into Bridle
 
          .. rst-class:: left-justified legend
 
-            .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                :caption: Zephyr Module File in Bridle
                :name: zephyr-module-file-in-bridle-build-settings
                :language: txt
                :dedent: 0
-               :lines: 5,7,9,10,12,14,16,18,20,23-24,27-28,31-32
+               :lines: 5,7,9,10,12,14,18,20,16,22,25-26,29-30,33-34
             .. :linenos:
 
       .. container:: pct70
@@ -302,11 +302,11 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: allcode
 
-                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.3-branch/zephyr/module.yml
+                  .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
                      :caption: Build Settings
                      :language: yaml
                      :dedent: 0
-                     :lines: 5,10,12,14,16,18,20
+                     :lines: 5,10,12,14,18,20,16,22
 
             .. container:: pct80
 
@@ -321,7 +321,8 @@ Zephyr Entry Points into Bridle
                   ║ ├── |dts/|            │ workspace/|bridle/|\ |dts/|\ |<arch>/*|                     ║
                   ║ ├── |soc/|            │ workspace/|bridle/|\ |dts/|\ |bindings/*|                   ║
                   ║ ├── |arch/|           │ workspace/|bridle/|\ |soc/|\ |<arch>/<soc>/*|               ║
-                  ║ └── |extmods/|        │ workspace/|bridle/|\ |arch/|\ |<arch>/*|                    ║
+                  ║ ├── |snippets/|       │ workspace/|bridle/|\ |arch/|\ |<arch>/*|                    ║
+                  ║ └── |extmods/|        │ workspace/|bridle/|\ |snippets/|\ |<snippet>/*|             ║
                   ║                     │ workspace/|bridle/|\ |extmods/|\ |modules.cmake|            ║
                   ║ This **folder names**   │ workspace/|bridle/|\ |extmods/|\ |<module>/CMakeLists.txt|  ║
                   ║ are all **mandatory**!  │ workspace/|bridle/|\ |extmods/|\ |<module>/Kconfig|         ║
@@ -335,13 +336,14 @@ Zephyr Entry Points into Bridle
 
                .. rst-class:: left-justified legend
 
-                  :|boards/|\ |<arch>/<board>/*|:   https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html
-                  :|boards/|\ |shields/<shield>/*|: https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/shields.html
-                  :|dts/|\ |<arch>/*|:              https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/index.html
-                  :|dts/|\ |bindings/*|:            https://bridle.tiac-systems.net/doc/3.3/zephyr/build/dts/bindings.html
-                  :|soc/|\ |<arch>/<soc>/*|:        https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/board_porting.html#soc
-                  :|arch/|\ |<arch>/*|:             https://bridle.tiac-systems.net/doc/3.3/zephyr/hardware/porting/arch.html
-                  :|extmods/|\ |modules.cmake|:     https://bridle.tiac-systems.net/doc/3.3/zephyr/develop/modules.html#modules-module-ext-root
+                  :|boards/|\ |<arch>/<board>/*|:   https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html
+                  :|boards/|\ |shields/<shield>/*|: https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/shields.html
+                  :|dts/|\ |<arch>/*|:              https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/index.html
+                  :|dts/|\ |bindings/*|:            https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/bindings.html
+                  :|soc/|\ |<arch>/<soc>/*|:        https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html#soc
+                  :|arch/|\ |<arch>/*|:             https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/arch.html
+                  :|snippets/|\ |<snippet>/*|:      https://bridle.tiac-systems.net/doc/3.4/zephyr/build/snippets/index.html
+                  :|extmods/|\ |modules.cmake|:     https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html#modules-module-ext-root
 
 .. Local variables:
    coding: utf-8

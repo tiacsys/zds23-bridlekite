@@ -60,8 +60,8 @@ https://cmake.org/cmake/help/book/mastering-cmake/chapter/Finding%20Packages.htm
 
 .. rst-class:: left-justified legend
 
-   :Zephyr CMake Package:: https://bridle.tiac-systems.net/doc/3.3/zephyr/build/zephyr_cmake_package.html
-   :Bridle CMake Package:: https://bridle.tiac-systems.net/doc/3.3/bridle/west_bridle_cmds.html
+   :Zephyr CMake Package:: https://bridle.tiac-systems.net/doc/3.4/zephyr/build/zephyr_cmake_package.html
+   :Bridle CMake Package:: https://bridle.tiac-systems.net/doc/3.4/bridle/west_bridle_cmds.html
 
 Zephyr CMake Modules injected by Bridle
 ---------------------------------------
@@ -69,18 +69,22 @@ Zephyr CMake Modules injected by Bridle
 .. revealjs-section::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/requirements.cmake
+https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/requirements.cmake
 
 .. rst-class:: left-justified
 
    * determine and set the **required Zephyr SDK** version:
-     :code:`set(BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION …)`
-   * determine and set the **maximum allowed Zephyr SDK** version:
-     :code:`set(BRIDLE_TOOLCHAIN_ZEPHYR_SDK_VERSION …)`
+     :code:`set(`\ :code-green:`BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION`
+     :code:`…)`
+   * determine and set the **allowed Zephyr SDK** version:
+     :code:`set(`\ :code-green:`BRIDLE_TOOLCHAIN_ZEPHYR_SDK_VERSION`
+     :code:`…)`
    * determine and set the **required Doxygen** version:
-     :code:`set(BRIDLE_DOXYGEN_REQUIRED_VERSION …)`
+     :code:`set(`\ :code-green:`BRIDLE_DOXYGEN_REQUIRED_VERSION`
+     :code:`…)`
    * determine and set the **required Sphinx** version:
-     :code:`set(ZEPHYR_SPHINX_REQUIRED_VERSION …)`
+     :code:`set(`\ :code-green:`ZEPHYR_SPHINX_REQUIRED_VERSION`
+     :code:`…)`
 
 .. rst-class:: left-justified legend
 
@@ -95,44 +99,44 @@ https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/requirements.
             :header-rows: 1
             :stub-columns: 0
 
-            * - :file:`${BRIDLE_BASE}/scripts/`
+            * - :code-green:`${BRIDLE_BASE}`\ :code:`/scripts/`
               - Zephyr SDK
               - Doxygen
-              - :file:`${ZEPHYR_BASE}/scripts/`
+              - :code-green:`${ZEPHYR_BASE}`\ :code:`/scripts/`
               - Sphinx
 
-            * - :file:`tools-versions-minimum.txt`
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-minimum.txt
+            * - :code-green:`tools-versions-minimum.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-minimum.txt
                    :language: text
                    :lines: 8
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-minimum.txt
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-minimum.txt
                    :language: text
                    :lines: 10
-              - :file:`requirements-doc.txt`
-              - .. rli:: https://github.com/tiacsys/zephyr/raw/tiacsys/v3.3-branch/scripts/requirements-doc.txt
+              - :code-green:`requirements-doc.txt`
+              - .. rli:: https://github.com/tiacsys/zephyr/raw/tiacsys/v3.4-branch/scripts/requirements-doc.txt
                    :language: text
                    :lines: 4
 
-            * - :file:`tools-versions-linux.txt`
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-linux.txt
+            * - :code-green:`tools-versions-linux.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-linux.txt
                    :language: text
                    :lines: 11
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-linux.txt
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-linux.txt
                    :language: text
                    :lines: 12
               -
               -
 
-            * - :file:`tools-versions-macos.txt`
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-macos.txt
+            * - :code-green:`tools-versions-macos.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-macos.txt
                    :language: text
                    :lines: 9
               -
               -
               -
 
-            * - :file:`tools-versions-win10.txt`
-              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.3.1/scripts/tools-versions-win10.txt
+            * - :code-green:`tools-versions-win10.txt`
+              - .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/tools-versions-win10.txt
                    :language: text
                    :lines: 9
               -
@@ -142,14 +146,15 @@ https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/requirements.
 .. revealjs-break::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/version.cmake
+https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/version.cmake
 
 .. rst-class:: left-justified
 
-   * determine this Bridle package version from :file:`${BRIDLE_BASE}/VERSION`
-   * loaded multiple times by :file:`BridleConfigVersion.cmake`
-   * used by :file:`${BRIDLE_BASE}/cmake/gen_version_h.cmake` to auto-generate
-     :file:`generated/version_bridle.h` in :file:`${PROJECT_BINARY_DIR}/include`
+   * determine this **Bridle package version** from
+     :code-green:`${BRIDLE_BASE}/VERSION`
+   * loaded multiple times by :code-green:`BridleConfigVersion.cmake`
+   * used by :code-green:`${BRIDLE_BASE}/cmake/gen_version_h.cmake`
+     to **auto-generate** :code-green:`generated/version_bridle.h`
    * setup CMake variables, e.g.:
 
 .. rst-class:: left-justified legend
@@ -170,45 +175,46 @@ https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/version.cmake
 
               - | │
 
-              - :code:`set(BRIDLE_VERSION_STRING`
+              - :code:`set(`\ :code-green:`BRIDLE_VERSION_STRING`
               - :code:`"0.2.5-extraver")`
 
-            * - :code:`set(BRIDLE_VERSION_MAJOR`
+            * - :code:`set(`\ :code-green:`BRIDLE_VERSION_MAJOR`
               - :code:`0)`
 
               - | │
 
-              - :code:`set(BRIDLEVERSION`
+              - :code:`set(`\ :code-green:`BRIDLEVERSION`
               - :code:`0x20563)`
 
-            * - :code:`set(BRIDLE_VERSION_MINOR`
+            * - :code:`set(`\ :code-green:`BRIDLE_VERSION_MINOR`
               - :code:`2)`
 
               - | │
 
-              - :code:`set(BRIDLE_VERSION_NUMBER`
+              - :code:`set(`\ :code-green:`BRIDLE_VERSION_NUMBER`
               - :code:`0x205)`
 
-            * - :code:`set(BRIDLE_PATCHLEVEL`
+            * - :code:`set(`\ :code-green:`BRIDLE_PATCHLEVEL`
               - :code:`5)`
 
               - | │
 
-              - :code:`set(BRIDLE_VERSION_CODE`
+              - :code:`set(`\ :code-green:`BRIDLE_VERSION_CODE`
               - :code:`517)`
 
 .. revealjs-break::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.3.1/cmake/modules/bridle/toolchain.cmake
+https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/toolchain.cmake
 
 .. rst-class:: left-justified
 
    Bridle's version guard for the Zephyr SDK:
 
    * verify that required variables have been defined, see
-     :file:`cmake/modules/bridle/requirements.cmake` above
-   * verify that the selected toolchain matches the required version range
+     :code-green:`cmake/modules/bridle/requirements.cmake` above
+   * verify that selected toolchain matches the required version range:
+     :code-green:`find_package(Zephyr-sdk` :code:`…)`
    * currently, only the Zephyr SDK is supported
 
 -----

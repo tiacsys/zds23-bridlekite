@@ -38,7 +38,7 @@ Zephyr Example Application vs. Bridle
 
             * - :file:`.github`
               - build only
-              - :strong-blue:`HIL/Tests, QA & DOC`
+              - :strong-red:`HIL/Tests, QA & DOC`
 
               - | │
                 | │
@@ -52,7 +52,7 @@ Zephyr Example Application vs. Bridle
 
               - :file:`scripts` & :file:`.yamllint`
               - West
-              - :strong-blue:`West` & :strong:`linting`
+              - :strong-red:`West` & :strong:`linting`
 
             * - :file:`applications`
               - single
@@ -70,7 +70,7 @@ Zephyr Example Application vs. Bridle
 
               - :file:`share`
               - |---|
-              - :strong-blue:`CMake package`
+              - :strong-red:`CMake package`
 
             * - :file:`arch`
               - |---|
@@ -81,7 +81,7 @@ Zephyr Example Application vs. Bridle
 
               - :file:`include`
               - custom_lib
-              - :strong-blue:`versioning`
+              - :strong-red:`versioning`
 
               - | │
                 | │
@@ -99,7 +99,7 @@ Zephyr Example Application vs. Bridle
 
               - :file:`lib`
               - custom_lib
-              - :strong-blue:`versioning`
+              - :strong-red:`versioning`
 
               - | │
                 | │
@@ -110,7 +110,7 @@ Zephyr Example Application vs. Bridle
 
             * - :file:`cmake`
               - |---|
-              - :strong-blue:`CMake extensions`
+              - :strong-red:`CMake extensions`
 
               - | │
                 | │
@@ -128,7 +128,7 @@ Zephyr Example Application vs. Bridle
 
             * - :file:`doc`
               - |---|
-              - :strong-blue:`doc-sets`
+              - :strong-red:`doc-sets`
 
               - | │
                 | │
@@ -142,7 +142,7 @@ Zephyr Example Application vs. Bridle
 
               - :file:`VERSION` & :file:`version.h.in`
               - |---|
-              - :strong-blue:`versioning`
+              - :strong-red:`versioning`
 
 -----
 
