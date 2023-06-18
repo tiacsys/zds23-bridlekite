@@ -7,7 +7,51 @@ Bridle has its own West Manifest
 .. revealjs-section::
    :data-auto-animate:
 
+https://bridle.tiac-systems.net/doc/3.4/bridle/dm_code_base.html#repository-structure
+
+.. container:: flex-container
+
+   .. container:: pct33
+
+      .. rst-class:: left-justified legend
+
+         **Software Conficuration Management**
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
+            :caption: West Manifest from Bridle
+            :name: west-mainifest-from-bridle-repo
+            :language: yaml
+            :dedent: 0
+            :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-68,24,88-90
+         .. :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-90
+         .. :linenos:
+
+   .. container:: pct66
+
+      .. rubric:: Repository structure
+
+      .. imagesvg:: /_images/revealjs/materials/getting-started-in-practice/bridle-west-repos-noglyphs.svg
+         :tagtype: object
+
+      .. rst-class:: left-justified
+
+         :ref:`T2 Star topology <tiac-zephyr-doc:west-t2>` in the
+         :ref:`west documentation <tiac-zephyr-doc:west-topologies>`
+         – application is the manifest repository.
+
+-----
+
+.. rst-class:: left-justified legend
+
+   :|Bridle v3.4| West Manifest:: https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
+
+West Workspace Setup from Bridle
+--------------------------------
+
 https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
+
+.. revealjs-section::
+   :data-auto-animate:
 
 .. rst-class:: left-justified
 
@@ -47,16 +91,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
                :language: yaml
                :lines: 22-23,24,40,44,24,51,63,24,78-90
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| West Manifest:: https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
-
-West Workspace Setup from Bridle
---------------------------------
-
-.. revealjs-section::
+.. revealjs-break::
    :data-auto-animate:
 
 .. rst-class:: left-justified
