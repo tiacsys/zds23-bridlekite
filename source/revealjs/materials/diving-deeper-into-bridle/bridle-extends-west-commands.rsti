@@ -66,7 +66,7 @@ West Command bridle-export
                :language: yaml
                :lines: 5-10
 
-         Impl. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
+         Imp. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
 
       .. container:: pct66
 
@@ -289,7 +289,7 @@ module pointed to Zephyr by decorators.
                :language: yaml
                :lines: 5-10
 
-         Impl. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
+         Imp. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
 
       .. container:: pct66
 
