@@ -4,6 +4,10 @@
 
 .. |WARNING| replace:: :red:`WARNING`
 
+.. |requirements.cmake| replace:: :code-red:`requirements.cmake`
+.. |toolchain.cmake| replace:: :code-red:`toolchain.cmake`
+.. |version.cmake| replace:: :code-red:`version.cmake`
+
 .. |FindZephyr-sdk.cmake| replace:: Zephyr has :file:`FindZephyr-sdk.cmake`
 .. |FindDoxygen.cmake| replace:: CMake 3.9 has :file:`FindDoxygen.cmake`
 .. |FindSphinx.cmake| replace:: Bridle has :file:`FindSphinx.cmake`

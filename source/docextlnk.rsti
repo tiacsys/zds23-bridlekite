@@ -28,6 +28,9 @@
 .. _`zephyr/v3.4.0/.github/workflows/twister.yaml`:
    https://github.com/zephyrproject-rtos/zephyr/blob/v3.4.0/.github/workflows/twister.yaml#L237
 
+.. |Zephyr v3.4| replace:: :strong:`Zephyr v3.4`
+.. _`Zephyr v3.4`: https://bridle.tiac-systems.net/doc/3.4/zephyr
+
 .. |TiaC Systems| replace:: :strong:`TiaC Systems`
 .. _`TiaC Systems`: https://tiac-systems.net/
 
@@ -50,7 +53,7 @@
 .. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
 
 .. |Bridle v3.4| replace:: :strong:`Bridle v3.4`
-.. _`Bridle v3.4`: https://bridle.tiac-systems.net/doc/3.4
+.. _`Bridle v3.4`: https://bridle.tiac-systems.net/doc/3.4/bridle
 
 .. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
 .. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104

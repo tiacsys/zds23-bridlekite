@@ -7,7 +7,9 @@ Bridle has its own CMake package
 .. revealjs-section::
    :data-auto-animate:
 
-https://cmake.org/cmake/help/book/mastering-cmake/chapter/Finding%20Packages.html
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+.. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages.rsti
 
@@ -16,20 +18,13 @@ https://cmake.org/cmake/help/book/mastering-cmake/chapter/Finding%20Packages.htm
    :|WARNING|:: Freestanding mode for Bridle not usable. Bridle back to Zephyr
                 default is not yet implemented, see |[BUG] issue 104|_.
 
------
-
-.. rst-class:: left-justified legend
-
-   :Zephyr CMake Package:: https://bridle.tiac-systems.net/doc/3.4/zephyr/build/zephyr_cmake_package.html
-   :Bridle CMake Package:: https://bridle.tiac-systems.net/doc/3.4/bridle/west_bridle_cmds.html
-
 Zephyr CMake Modules injected by Bridle
 ---------------------------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/requirements.cmake
+.. include:: /docblocks/bridle-cmake-modules-bridle-requirements-cmake.rsti
 
 .. rst-class:: left-justified
 
@@ -106,7 +101,7 @@ https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/requirements.
 .. revealjs-break::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/version.cmake
+.. include:: /docblocks/bridle-cmake-modules-bridle-version-cmake.rsti
 
 .. rst-class:: left-justified
 
@@ -165,7 +160,7 @@ https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/version.cmake
 .. revealjs-break::
    :data-auto-animate:
 
-https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/toolchain.cmake
+.. include:: /docblocks/bridle-cmake-modules-bridle-toolchain-cmake.rsti
 
 .. rst-class:: left-justified
 

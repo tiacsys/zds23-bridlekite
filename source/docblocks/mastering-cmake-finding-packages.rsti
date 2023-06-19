@@ -1,0 +1,12 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+https://cmake.org/cmake/help/book/mastering-cmake/chapter/Finding%20Packages.html
+
+.. (https://cmake.org/cmake/help/v3.20/command/find_package.html)
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
