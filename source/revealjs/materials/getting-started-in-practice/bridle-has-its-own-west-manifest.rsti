@@ -7,7 +7,8 @@ Bridle has its own West Manifest
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/dm_code_base.html#repository-structure
+.. include:: /docblocks/bridle-dm-code-base-repository-structure.rsti
+.. include:: /docblocks/bridle-west-yml.rsti
 
 .. container:: flex-container
 
@@ -40,19 +41,14 @@ https://bridle.tiac-systems.net/doc/3.4/bridle/dm_code_base.html#repository-stru
          – application is the
          :ref:`manifest <tiac-zephyr-doc:west-manifests>` repository.
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| West Manifest:: https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
-
 West Workspace Setup from Bridle
 --------------------------------
 
-https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
-
 .. revealjs-section::
    :data-auto-animate:
+
+.. include:: /docblocks/zephyr-develop-west-manifest.rsti
+.. include:: /docblocks/bridle-west-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -94,6 +90,8 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
 
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/bridle-west-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -167,6 +165,8 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/manifest.html
 
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/bridle-west-yml.rsti
 
 .. rst-class:: left-justified
 
