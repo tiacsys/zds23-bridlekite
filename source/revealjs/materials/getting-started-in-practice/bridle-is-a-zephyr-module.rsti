@@ -7,7 +7,8 @@ Bridle is a Zephyr Module
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
+.. include:: /docblocks/zephyr-develop-modules.rsti
+.. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. container:: flex-container
 
@@ -37,19 +38,14 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
          The **SCA tools** implementation or **Binary Blobs**
          are :strong-red:`not yet used` by Bridle.
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| Zephyr Module:: https://github.com/tiacsys/bridle/blob/v3.4-branch/zephyr/module.yml
-
 Zephyr Entry Points into Bridle
 -------------------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
+.. include:: /docblocks/zephyr-develop-modules.rsti
+.. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -165,6 +161,9 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 .. revealjs-break::
    :data-auto-animate:
 
+.. include:: /docblocks/zephyr-build-cmake.rsti
+.. include:: /docblocks/bridle-zephyr-module-yml.rsti
+
 .. rst-class:: left-justified
 
    .. container:: flex-container
@@ -221,11 +220,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
             .. container:: pct100
 
-               .. rst-class:: left-justified legend
-
-                  https://bridle.tiac-systems.net/doc/3.4/zephyr/build/cmake/index.html
-
-                  :|Bridle v3.4| CMakeLists.txt:: https://github.com/tiacsys/bridle/blob/v3.4-branch/CMakeLists.txt
+               .. include:: /docblocks/bridle-cmakelists-txt.rsti
 
                .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/CMakeLists.txt
                   :language: cmake
@@ -235,6 +230,9 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/zephyr-build-kconfig.rsti
+.. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -292,11 +290,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
             .. container:: pct100
 
-               .. rst-class:: left-justified legend
-
-                  https://bridle.tiac-systems.net/doc/3.4/zephyr/build/kconfig/index.html
-
-                  :|Bridle v3.4| Kconfig.bridle:: https://github.com/tiacsys/bridle/blob/v3.4-branch/Kconfig.bridle
+               .. include:: /docblocks/bridle-kconfig-bridle.rsti
 
                .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/Kconfig.bridle
                   :language: cmake
@@ -306,6 +300,8 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -367,16 +363,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
 
             .. container:: pct100
 
-               .. rst-class:: left-justified legend
-
-                  :|boards/|\ |<arch>/<board>/*|:   https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html
-                  :|boards/|\ |shields/<shield>/*|: https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/shields.html
-                  :|dts/|\ |<arch>/*|:              https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/index.html
-                  :|dts/|\ |bindings/*|:            https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/bindings.html
-                  :|soc/|\ |<arch>/<soc>/*|:        https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html#soc
-                  :|arch/|\ |<arch>/*|:             https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/arch.html
-                  :|snippets/|\ |<snippet>/*|:      https://bridle.tiac-systems.net/doc/3.4/zephyr/build/snippets/index.html
-                  :|extmods/|\ |modules.cmake|:     https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html#modules-module-ext-root
+               .. include:: /docblocks/bridle-zephyr-module-build-settings.rsti
 
 .. Local variables:
    coding: utf-8

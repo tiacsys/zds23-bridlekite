@@ -1,0 +1,42 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+.. rst-class:: left-justified legend
+
+   :|boards/|\ |<arch>/<board>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html
+
+   :|boards/|\ |shields/<shield>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/shields.html
+
+   :|dts/|\ |<arch>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/index.html
+
+   :|dts/|\ |bindings/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/build/dts/bindings.html
+
+   :|soc/|\ |<arch>/<soc>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/board_porting.html#soc
+
+   :|arch/|\ |<arch>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/hardware/porting/arch.html
+
+   :|snippets/|\ |<snippet>/*|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/build/snippets/index.html
+
+   :|extmods/|\ |modules.cmake|:
+
+      https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html#modules-module-ext-root
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

@@ -1,0 +1,10 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/modules.html
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
