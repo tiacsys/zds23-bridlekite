@@ -20,13 +20,11 @@ Bridle extends West Commands
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
-               :name: west-mainifest-part-for-bridle-itself-remember-1
                :language: yaml
-               :lines: 22,96,98,102,40,44-45,92-93
+               :lines: 22,96,98,102
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
                :caption: West Commands in Bridle
-               :name: west-command-spec-in-bridle-1
                :language: yaml
                :lines: 5-10
 
@@ -34,7 +32,12 @@ Bridle extends West Commands
 
       .. container:: pct66
 
-         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export.rsti
+         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export-1.rsti
+
+.. rst-class:: left-justified
+
+:strong-yellow:`Goal:`
+Export Bridle's CMake package in a manner exactly to Zephyr.
 
 West Command bridle-export
 --------------------------
@@ -55,15 +58,15 @@ West Command bridle-export
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
-               :name: west-mainifest-part-for-bridle-itself-remember-2
                :language: yaml
-               :lines: 22,96,98,102,40,44-45,92-93
+               :lines: 22,96,98,102
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
                :caption: West Commands in Bridle
-               :name: west-command-spec-in-bridle-2
                :language: yaml
                :lines: 5-10
+
+         Impl. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
 
       .. container:: pct66
 
@@ -71,13 +74,118 @@ West Command bridle-export
             :caption: West Command Implementation for Bridle CMake package export (fragments)
             :name: west-command-impl-for-bridle-export
             :language: python
-            :lines: 8-12,24,25-26,33-34,41-42,44,46,47-49,57-58,59-60
+            :lines: 8-10,24,25-26,33-34,41-42,44,46,47,49,57-58,59-60
 
 .. rst-class:: left-justified
 
-This West command in Bridle want to rely on core functionality from Zephyr,
-thus it uses the :code-red:`@zcmake_run_cmake` decorator provided by Bridle's
-trampoline to Zephyr.
+Need my own :code-red:`run_cmake()` implementation! – Why not
+:green:`reuse` the original full fancy :green:`Zephyr implementation`?
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. include:: /docblocks/bridle-west-commands-yml.rsti
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
+               :caption: West Manifest (remember)
+               :language: yaml
+               :lines: 22,96,98,102
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :language: yaml
+               :lines: 5-10
+
+         West Command Extension in Bridle ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export-1.rsti
+
+.. rst-class:: left-justified
+
+Zephyr's :code-green:`run_cmake()` implementation lives in a specific
+sub-folder within the West project :code-green:`zephyr`.
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. include:: /docblocks/bridle-west-commands-yml.rsti
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
+               :caption: West Manifest (remember)
+               :language: yaml
+               :lines: 22,96,98,102
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :language: yaml
+               :lines: 5-10
+
+         West Command Extension in Bridle ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export-2.rsti
+
+.. rst-class:: left-justified
+
+:strong-red:`Challenge:` How can we do
+":code-green:`from zcmake import run_cmake`" without correctly set
+:code-red:`sys.path`?
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. include:: /docblocks/bridle-west-commands-yml.rsti
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
+               :caption: West Manifest (remember)
+               :language: yaml
+               :lines: 22,96,98,102,40,44-45,92-93
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :language: yaml
+               :lines: 5-10
+
+         West Command Extension in Bridle ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export-3.rsti
+
+.. rst-class:: left-justified
+
+:strong-green:`Solution:` a dedicated :emphasis:`"trampoline"`
+module pointed to Zephyr by decorators.
 
 .. revealjs-break::
    :data-auto-animate:
@@ -94,13 +202,11 @@ trampoline to Zephyr.
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
-               :name: west-mainifest-part-for-bridle-itself-remember-3
                :language: yaml
                :lines: 22,96,98,102,40,44-45,92-93
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
                :caption: West Commands in Bridle
-               :name: west-command-spec-in-bridle-3
                :language: yaml
                :lines: 5-10
 
@@ -134,13 +240,11 @@ trampoline to Zephyr.
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
-               :name: west-mainifest-part-for-bridle-itself-remember-4
                :language: yaml
                :lines: 22,96,98,102,40,44-45,92-93
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
                :caption: West Commands in Bridle
-               :name: west-command-spec-in-bridle-4
                :language: yaml
                :lines: 5-10
 
@@ -159,6 +263,47 @@ trampoline to Zephyr.
          .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west_commands/zephyr_trampoline.py
             :language: python
             :lines: 8,75-89
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/bridle-west-commands-export.rsti
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct33
+
+         .. rst-class:: left-justified legend
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
+               :caption: West Manifest (remember)
+               :name: west-mainifest-part-for-bridle-itself-remember
+               :language: yaml
+               :lines: 22,96,98,102,40,44-45,92-93
+
+            .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west-commands.yml
+               :caption: West Commands in Bridle
+               :name: west-command-spec-in-bridle
+               :language: yaml
+               :lines: 5-10
+
+         Impl. of :code:`bridle-export` ⎼⎼⎼⎼⎼▶
+
+      .. container:: pct66
+
+         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west_commands/export.py
+            :caption: West Command Implementation for Bridle CMake package export (fragments)
+            :name: west-command-impl-for-bridle-export-decorated
+            :language: python
+            :lines: 8-12,24,25-26,33-34,41-42,44,46,47-49,57-58,59-60
+
+.. rst-class:: left-justified
+
+:strong-green:`Finally:` This West command in Bridle want to rely on core
+functionality from Zephyr, thus it uses the :code-red:`@zcmake_run_cmake`
+decorator provided by Bridle's trampoline to Zephyr.
 
 .. Local variables:
    coding: utf-8

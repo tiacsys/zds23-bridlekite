@@ -1,0 +1,42 @@
+.. Never add or change more than content, instead edit structure in files:
+   bridle-extends-west-commands.rsti
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+     "West manifest attributes"
+    .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
+    !                                   ┌──────────────────────────────────────────────┐ !
+    ! ┌────────────────────┐            │ {g,o}                                        │ !
+    ! │"self:west-commands"│            │                                              │ !
+    ! └────────────────────┘            └──────────────────────────────────────────────┘ !
+    '~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
+          | "scripts/west-commands.yml"
+          V
+    ╔═════════════════════════════════╗
+    ║"scripts/west_commands/export.py"║
+    ╚═════════════════════════════════╝
+          ^                     ^
+          |                     |
+          |                     |
+    .~~~~~|~~~~~~~~~~~~~~~~~~~~~|~~~~~. .~~~~~~~~~~~~~~~~~~~~~~~~~~.
+    ! ┌───#─────────┐    ┌──────#───┐ ! !   ┌────────────────────┐ !
+    ! │"WestCommand"│    │"west.log"│ ! !   │ {g,o}              │ !
+    ! └─────────────┘    └──────────┘ ! !   └────────────────────┘ !
+    '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~'
+     "Python classes and methods (.venv)"
+
+   # Legend:
+   o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
