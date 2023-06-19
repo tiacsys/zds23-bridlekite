@@ -33,34 +33,7 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/extensions.html
 
       .. container:: pct66
 
-         .. svgbob::
-            :font-family: "DejaVu Sans Condensed"
-            :font-size: 14
-            :scale: 10.0
-            :align: center
-
-            ""
-              "West manifest attributes"
-             .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-             !                                   ┌──────────────────────────────────────────────┐ !
-             ! ┌────────────────────┐            │"projects(zephyr):path"                       │ !
-             ! │"self:west-commands"│            │"projects(zephyr):userdata:west-commands-path"│ !
-             ! └────────────────────┘            └──────────────────────────────────────────────┘ !
-             '~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~!~~~~~'
-                   | "scripts/west-commands.yml"         | "zephyr/scripts/west_commands"   !
-                   V                                     v                                  !
-             ╔═════════════════════════════════╗     ╔════════════════════════════════════════════╗
-             ║"scripts/west_commands/export.py"║<---O║"scripts/west_commands/zephyr_trampoline.py"║
-             ╚═════════════════════════════════╝  \  ╚════════════════════════════════════════════╝
-                   ^                     ^         \                  ^                     !
-                   |                     |     "@zcmake_run_cmake"    |                     !
-                   |                     |                            |                     !
-             .~~~~~|~~~~~~~~~~~~~~~~~~~~~|~~~~~. .~~~~~~~~~~~~~~~~~~~~|~~~~~.               !
-             ! ┌───#─────────┐    ┌──────#───┐ ! !   ┌────────────────#───┐ !  "sys.path"   !
-             ! │"WestCommand"│    │"west.log"│-!-!-->│"zcmake.run_cmake()"│ !<~~~~~~~~~~~~~~'
-             ! └─────────────┘    └──────────┘ ! !   └────────────────────┘ !
-             '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~'
-              "Python classes and methods (.venv)" "Zephyr method to run CMake from the West extensions there"
+         .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export.rsti
 
 -----
 
