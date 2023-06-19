@@ -7,6 +7,10 @@ Zephyr Example Application vs. Bridle
 .. revealjs-section::
    :data-auto-animate:
 
+https://github.com/zephyrproject-rtos/example-application
+|ALTRT|
+https://github.com/tiacsys/bridle
+
 .. rst-class:: left-justified legend
 
    .. container:: flex-container
@@ -143,15 +147,6 @@ Zephyr Example Application vs. Bridle
               - :file:`VERSION` & :file:`version.h.in`
               - |---|
               - :strong-red:`versioning`
-
------
-
-.. rst-class:: left-justified legend
-
-   :Example vs. Bridle::
-
-      https://github.com/zephyrproject-rtos/example-application vs.
-      https://github.com/tiacsys/bridle
 
 .. Local variables:
    coding: utf-8
