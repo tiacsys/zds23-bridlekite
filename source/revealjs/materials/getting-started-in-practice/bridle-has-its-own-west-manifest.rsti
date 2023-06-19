@@ -37,7 +37,8 @@ https://bridle.tiac-systems.net/doc/3.4/bridle/dm_code_base.html#repository-stru
 
          :ref:`T2 Star topology <tiac-zephyr-doc:west-t2>` in the
          :ref:`west documentation <tiac-zephyr-doc:west-topologies>`
-         – application is the manifest repository.
+         – application is the
+         :ref:`manifest <tiac-zephyr-doc:west-manifests>` repository.
 
 -----
 
