@@ -1,0 +1,24 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html
+
+.. container:: flex-container
+
+   .. container:: pct100
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="600px" width="100%"></iframe>
+
+.. .. oembed:: https://www.youtube.com/watch?v=Oyh8nuaLASA
+   :maxwidth: 1024
+   :maxheight: 768
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

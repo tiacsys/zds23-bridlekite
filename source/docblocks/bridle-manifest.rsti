@@ -1,0 +1,14 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+.. rst-class:: left-justified legend
+
+   :manifest:
+
+      https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

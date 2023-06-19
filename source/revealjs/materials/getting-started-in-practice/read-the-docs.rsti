@@ -7,21 +7,7 @@ Read-The-Docs
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html
-
-.. container:: flex-container
-
-   .. container:: pct100
-
-      .. raw:: html
-
-         <iframe src="https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html"
-                 data-animate frameborder="0" allowfullscreen=""
-                 height="600px" width="100%"></iframe>
-
-.. .. oembed:: https://www.youtube.com/watch?v=Oyh8nuaLASA
-   :maxwidth: 1024
-   :maxheight: 768
+.. include:: /docblocks/bridle-getting-started.rsti
 
 Installing Bridle manually
 --------------------------
@@ -29,7 +15,7 @@ Installing Bridle manually
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/gs_installing.html#cloning-the-repositories
+.. include:: /docblocks/bridle-gs-installing-cloning-the-repositories.rsti
 
 .. rst-class:: left-justified
 
@@ -90,8 +76,8 @@ https://bridle.tiac-systems.net/doc/3.4/bridle/gs_installing.html#cloning-the-re
                      :preload: 1
                      :loop: 1
 
-            :manifest:     https://github.com/tiacsys/bridle/blob/v3.4-branch/west.yml
-            :requirements: https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/requirements.txt
+         .. include:: /docblocks/bridle-manifest.rsti
+         .. include:: /docblocks/bridle-requirements.rsti
 
 Zephyr Downstream Attributes
 ----------------------------
