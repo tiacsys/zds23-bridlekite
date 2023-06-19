@@ -1,0 +1,14 @@
+.. Never add or change more than document text blocks (ex. LaTeX formatting).
+
+.. rst-class:: left-justified legend
+
+   :|Bridle v3.4| Export Command::
+
+      https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/export.py
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

@@ -7,7 +7,8 @@ Bridle extends West Commands
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/extensions.html
+.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. include:: /docblocks/bridle-west-commands-yml.rsti
 
 .. rst-class:: left-justified
 
@@ -35,21 +36,14 @@ https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/extensions.html
 
          .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-west-bridle-export.rsti
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| West Commands::        https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west-commands.yml
-   :|Bridle v3.4| Export Command::       https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/export.py
-   :|Bridle v3.4| Trampoline to Zephyr:: https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/zephyr_trampoline.py
-
 West Command bridle-export
 --------------------------
 
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/zephyr/develop/west/extensions.html
+.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. include:: /docblocks/bridle-west-commands-export.rsti
 
 .. rst-class:: left-justified
 
@@ -85,14 +79,10 @@ This West command in Bridle want to rely on core functionality from Zephyr,
 thus it uses the :code-red:`@zcmake_run_cmake` decorator provided by Bridle's
 trampoline to Zephyr.
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| Export Command:: https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/export.py
-
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/bridle-west-commands-zephyr-trampoline.rsti
 
 .. rst-class:: left-justified
 
@@ -129,14 +119,10 @@ trampoline to Zephyr.
             :language: python
             :lines: 8,46-47,49-50,52,54-55,61-62,68-69,71-72,74
 
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| Trampoline to Zephyr:: https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/zephyr_trampoline.py
-
 .. revealjs-break::
    :data-auto-animate:
+
+.. include:: /docblocks/bridle-west-commands-zephyr-trampoline.rsti
 
 .. rst-class:: left-justified
 
@@ -173,12 +159,6 @@ trampoline to Zephyr.
          .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/scripts/west_commands/zephyr_trampoline.py
             :language: python
             :lines: 8,75-89
-
------
-
-.. rst-class:: left-justified legend
-
-   :|Bridle v3.4| Trampoline to Zephyr:: https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/zephyr_trampoline.py
 
 .. Local variables:
    coding: utf-8
