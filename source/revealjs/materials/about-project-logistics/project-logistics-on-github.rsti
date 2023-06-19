@@ -29,45 +29,7 @@ On Premise Web Server
 
    .. container:: pct80
 
-      .. svgbob::
-         :font-family: "DejaVu Sans Condensed"
-         :font-size: 14
-         :scale: 10.0
-         :align: center
-
-         ""
-           .~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-           !"Documentation Build"          "GitHub Workflows"      "Documentation Publish"!
-           !++-------------------------------------++              ++-------------------++!
-           !||  ___________      ________________  ||  _________   || +---------------+ ||!
-           !|| |"<archive>"\    |"monitor_ID.txt"\ || |"doc.zip"\  || |"ROBOT:"       | ||!
-           !|| +------------+   +-----------------+|| +----------+ || |"URL to PR"    | ||!
-           !|| ├─"bridle/"                         |+------------->|| +---------------+ ||!
-           !|| ├─"zephyr/"        "publish2"       ||              ||                   ||!
-           !|| ├─"kconfig/"       "<catalog>"      ||              || +---------------+ ||!
-           !|| ├─"devicetree/"    "<version>"      ||              || |"SCP to INBOX" | ||!
-           !|| ├─"versions.json"  "<archive>"      ||              || |"at Web Server"| ||!
-           !|| └─"index.html"                      ||              || +---------------+ ||!
-           !++-------------------------------------++              ++-----------+-------++!
-           !"<catalog> := {preview|development|approved}"           _________   |         !
-           !"<version> := {latest|<branch>|REF-<branch|tag>}"      |"doc.zip"\  |         !
-           !"<archive> := doc_ID.tgz"                              +----------+ |    {g,o}!
-           '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|~~~~~~~~~'
-                      +---------------------------------------------------------+
-           .~~~~~~~~~~|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~.
-           !          V    "Apache/Let's Encryps Lx-Container w/SSH Daemon"               !
-           !++------------------++          _________      ______                         !
-           !||"monitor cron job"||      .->|"DOCROOT"\  .-|"doc/"\                        !
-           !|+------------------+|      |  +----------+ | +-------+                       !   ===\
-           !||"• unzip"    ( <. ||"SYNC"|  ├─"doc/" ----' ├─"latest/" <-- "main"          !   ===/
-           !||"• parse"     `> )|+------'  ├─"ghpr/"      ├─"3.3/"    <-- "v3.3-branch"   !
-           !||"• sync docroot"  ||         ├─"ghpreview/" ├─"3.3.0/"  <-- "v3.3.0"        !
-           !++------------------++                        ├─"………"                         !
-           '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
-
-         # Legend:
-         o = { fill-opacity: 0.33; stroke-opacity: 0.166 }
-         g = { fill: #d3d3d3; stroke-dasharray: 4; }
+      .. include:: /revealjs/materials/about-project-logistics/svgbob-upload-monitor-on-webserver.rsti
 
       .. rst-class:: left-justified legend
 
