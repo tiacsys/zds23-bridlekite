@@ -1,0 +1,53 @@
+.. Never add or change more than content, instead edit structure in files:
+   bridle-has-its-own-cmake-packages.rsti
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+     "Bridle West Workspace"                                                                 "CMake Package Registry"  "Bridle/Zephyr Application"
+     +--------------------------------------------------------------------------------+               +-------------+     .--.--.----------------.
+     |   "zephyr/cmake/modules"                        +-------------------------+    |               |             |    /  /  / "CMakeLists.txt"|
+     |   └─ "zephyr_default.cmake"                     |"ZephyrConfig"     {z,o} |    |               |             | +-+--+--+------------------+
+     |      :                                          |└─"include(doc)"         | <--+-*~~~~~~~~~~~~~+~~ Zephyr<~~~+~+~~"find_package(Zephyr)"  |
+     | .~~> o- "FIND ZephyrBuild"                      |  │                      |    | |             |             | |                          |
+     | !    :                                          +-------------------------+    | |             | {g,O}       | |                          |
+     | !    #- "APPEND ZCM python"                        │                           | |             +-------------+ +--------------------------+
+     | !    #- "APPEND ZCM west"                          ├─"include(extensions)"     | |
+     | !    #- "APPEND ZCM version"                       ├─"include(python)"         | |
+     | !    :                                             ├─"include(west)"           | |
+     | !    o- "FOREACH in ZCM include()"                 ├─"include(root)"           | |
+     | !    :                                             └─"include(zephyr_module)"  | |
+     | !    V          "ZCM := LIST::zephyr_cmake_modules"                            | |
+     +-!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -----+-|--------------------------------------------------------+
+     | ! "bridle/cmake/modules"                        +-------------------------+      |                .--.--.---------------------------.     |
+     | ! ├─ "bridle/default.cmake"                     |"ZephyrBuildConfig"{g,o} |      |               /  /  / "bridle/doc/CMakeLists.txt"|     |
+     | ! │  :                                          +-------------------------+      |  .-----------+--+--+-----------------------------+.    |
+     | ! │  #- "APPEND ZCM bridle/requirements"                                         |  ! ______________________________________________ !    |
+     | ! │  #- "APPEND ZCM bridle/version"                                              |  !|                                        {z,O} |!    |
+     | ! │  #- "APPEND ZCM bridle/toolchain"           +-------------------------+      '--!|"find_package(Zephyr REQUIRED COMPONENTS doc)"|!    |
+     | ! │  :              .------------------.        |"BridleConfig"     {b,o} |         !|______________________________________________|!    |
+     | '~~~~'              |{b,O}"Bridle int."|        |├─"include(requirements)"|         ! ______________________________________________ !    |
+     |   │               / '------------------'        |└─"include(doc)"         |         !|                                        {b,O} |!    |
+     |   └─ "bridle/doc.cmake"<----------------------- | <---------------------- | <-------!|"find_package(Bridle REQUIRED COMPONENTS doc)"|!    |
+     |      ├─ "doxygen.cmake""include(doxygen)"       +-------------------------+         !|______________________________________________|!    |
+     |      └─ "sphinx.cmake" "include(sphinx)"                                            !                                                !    |
+     +-------------------------------------------------------------------------------------------------------------------------------------------+
+
+   # Legend:
+   O = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+   r = { fill: #cd5c5c; stroke-dasharray: 6; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

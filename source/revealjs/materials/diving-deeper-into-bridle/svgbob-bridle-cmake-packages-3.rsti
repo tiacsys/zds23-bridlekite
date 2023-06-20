@@ -1,0 +1,53 @@
+.. Never add or change more than content, instead edit structure in files:
+   bridle-has-its-own-cmake-packages.rsti
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+     "Bridle West Workspace"                                                                 "CMake Package Registry"  "Bridle/Zephyr Application"
+     +--------------------------------------------------------------------------------+               +-------------+     .--.--.----------------.
+     |   "zephyr/cmake/modules"       "include()" "zephyr/share/"                     |               |             |    /  /  / "CMakeLists.txt"|
+     |   └─ "zephyr_default.cmake"<------------.  └─ "zephyr-package/cmake/"          |"zephyr-export"|             | +-+--+--+------------------+
+     |      :                                  |     ├─ "zephyr_export.cmake" --------+---------------+-> Zephyr<-+-+-+--"find_package(Zephyr)"  |
+     | .~~> o- "FIND ZephyrBuild"------------. '---O ├─ "ZephyrConfig.cmake"  <-------+---------------+-----------' | |  ______________________  |
+     | !    :                                |       └─ "ZephyrConfigVersion.cmake"   |               |             | | |                      | |
+     | !    #- "APPEND ZCM python"           |                                        |               |             | | |"Challenge: How can I"| |
+     | !    #- "APPEND ZCM west"             |             "find_package(… PATH ../*)"|               |             | | |"identify Zephyr with"| |
+     | !    #- "APPEND ZCM version"          '--------------------------------------. |               |             | | |"Bridle?"       {r,O} | |
+     | !    :                                                                       | |               |             | | |______________________| |
+     | !    o- "FOREACH in ZCM include()"                                           | |               |             | |                          |
+     | !    :                                                                       | |               |             | |             |            |
+     | !    V          "ZCM := LIST::zephyr_cmake_modules"                          | |               |             | |             |"elaborate" |
+     +-!--- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ ---|-+               |             | |  "POSSIBLE" V "w/ cond." |
+     | ! "bridle/cmake/modules"       "include()" "bridle/share/"                   | |               |             | |  ______________________  |
+     | ! └─ "bridle/default.cmake"<~~~~~~~~~~~~.  └─ "zephyrbuild-package/cmake/"   | |               |             | | |                {g,o} | |
+     | !    :                                  '~~~O └─ "ZephyrBuildConfig.cmake" <-' |               |             | | |"if (BRIDLE_BASE) …"  | |
+     | !    #- "APPEND ZCM bridle/requirements"                                       |               |             | | |______________________| |
+     | !    #- "APPEND ZCM bridle/version"                                            |               |             | |                          |
+     | !    #- "APPEND ZCM bridle/toolchain"     +----------------------------------+ |               |             | |                          |
+     | !    :                                    |                            {g,o} | |               |             | |                          |
+     | '~~~~'                                    |                                  | |               |             | |                          |
+     |                                           |                                  | |               |             | |                          |
+     |                                           |                                  | |               |             | |                          |
+     |                                           |                                  | |               |             | |                          |
+     |                                           +----------------------------------+ |               | {g,O}       | |                          |
+     +--------------------------------------------------------------------------------+               +-------------+ +--------------------------+
+
+   # Legend:
+   O = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+   r = { fill: #cd5c5c; stroke-dasharray: 6; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

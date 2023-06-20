@@ -49,6 +49,10 @@
 .. _`Contribution Workflow`:
    https://bridle.tiac-systems.net/doc/3.4/bridle/dm_adding_code.html
 
+.. |Bridle Services| replace:: :emphasis:`Bridle Services`
+.. _`Bridle Services`:
+   https://bridle.tiac-systems.net/doc/3.4/bridle/reference/bridle/index.html#bridle-services
+
 .. |Bridle v2.5.0| replace:: :strong:`Bridle v2.5.0`
 .. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
 

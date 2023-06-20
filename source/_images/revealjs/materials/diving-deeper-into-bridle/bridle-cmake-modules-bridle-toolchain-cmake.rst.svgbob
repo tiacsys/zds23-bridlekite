@@ -1,0 +1,21 @@
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 18
+   :scale: 9.0
+   :align: center
+
+   +--------------------------------------+
+   |"bridle/cmake/modules"          {z,O} |
+   |└─ "bridle/default.cmake"             |
+   |   ┊                                  |
+   |   #- "APPEND ZCM bridle/toolchain"   |
+   |   ┊                                  |
+   +--------------------------------------+
+
+   # Legend:
+   O = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+   r = { fill: #cd5c5c; stroke-dasharray: 6; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }

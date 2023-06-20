@@ -9,9 +9,40 @@ Bridle has its own CMake package
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-1.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-2.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-3.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-4.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
 
-.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages.rsti
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-5.rsti
 
 .. rst-class:: left-justified legend
 
@@ -24,9 +55,24 @@ Zephyr CMake Modules injected by Bridle
 .. revealjs-section::
    :data-auto-animate:
 
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-6.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+   :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-requirements-cmake.svg
+   :data-background-position: left 156px top 16px
+   :data-background-size: 353px 110px
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
+
 .. include:: /docblocks/bridle-cmake-modules-bridle-requirements-cmake.rsti
 
 .. rst-class:: left-justified
+
+   Bridle's toolchain requirements converter (TXT |CRT| CMake):
 
    * determine and set the **required Zephyr SDK** version:
      :code:`set(`\ :code-green:`BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION`
@@ -100,10 +146,17 @@ Zephyr CMake Modules injected by Bridle
 
 .. revealjs-break::
    :data-auto-animate:
+   :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-version-cmake.svg
+   :data-background-position: left 156px top 16px
+   :data-background-size: 353px 110px
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
 
 .. include:: /docblocks/bridle-cmake-modules-bridle-version-cmake.rsti
 
 .. rst-class:: left-justified
+
+   Bridle's version generator for the CMake package and |Bridle Services|_ API:
 
    * determine this **Bridle package version** from
      :code-green:`${BRIDLE_BASE}/VERSION`
@@ -159,32 +212,114 @@ Zephyr CMake Modules injected by Bridle
 
 .. revealjs-break::
    :data-auto-animate:
+   :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-toolchain-cmake.svg
+   :data-background-position: left 156px top 16px
+   :data-background-size: 353px 110px
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
 
 .. include:: /docblocks/bridle-cmake-modules-bridle-toolchain-cmake.rsti
 
 .. rst-class:: left-justified
 
-   Bridle's version guard for the Zephyr SDK:
+   Bridle's toolchain version guard for the Zephyr SDK:
 
    * verify that required variables have been defined, see
      :code-green:`cmake/modules/bridle/requirements.cmake` above
-   * verify that selected toolchain matches the required version range:
-     :code-green:`find_package(Zephyr-sdk` :code:`…)`
+   * verify that selected toolchain matches the required version:
+     :code-green:`find_package(Zephyr-sdk ${BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION}` :code:`…)`
    * currently, only the Zephyr SDK is supported
 
 -----
 
-.. admonition:: Note:
-   :class: note
+.. rst-class:: left-justified
 
-   .. rst-class:: left-justified legend
+   .. admonition:: Note:
+      :class: note
 
-      :|FindZephyr-sdk.cmake|::
-         :code:`find_package(Zephyr-sdk ${BRIDLE_TOOLCHAIN_ZEPHYR_SDK_REQUIRED_VERSION} REQUIRED …)`
-      :|FindDoxygen.cmake|::
-         :code:`find_package(Doxygen ${BRIDLE_DOXYGEN_REQUIRED_VERSION} REQUIRED …)`
-      :|FindSphinx.cmake|::
-         :code:`find_package(Sphinx ${ZEPHYR_SPHINX_REQUIRED_VERSION} REQUIRED …)`
+      .. rst-class:: left-justified legend
+
+         :|FindZephyr-sdk.cmake|:: :code:`find_package(Zephyr-sdk …)`
+
+CMake Modules used by Bridle internally
+---------------------------------------
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-7.rsti
+
+.. revealjs-break::
+   :data-auto-animate:
+   :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-doxygen-cmake.svg
+   :data-background-position: left 156px top 16px
+   :data-background-size: 353px 110px
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
+
+.. include:: /docblocks/bridle-cmake-modules-doxygen-cmake.rsti
+
+.. rst-class:: left-justified
+
+   * verify that required variables have been defined, see
+     :code-green:`cmake/modules/bridle/requirements.cmake` above
+   * looking for required Doxygen version:
+     :code-green:`find_package(Doxygen ${BRIDLE_DOXYGEN_REQUIRED_VERSION}` :code:`…` :code-green:`)`
+   * looking for required Doxygen components:
+     :code-green:`find_package(` :code:`…` :code-green:`REQUIRED dot mscgen)`
+   * setup CMake variables to programs found:
+
+     * :code-green:`DOXYGEN_EXECUTABLE`
+     * :code-green:`DOXYGEN_DOT_EXECUTABLE`
+     * :code-green:`DOXYGEN_MSCGEN_EXECUTABLE`
+
+-----
+
+.. rst-class:: left-justified
+
+   .. admonition:: Note:
+      :class: note
+
+      .. rst-class:: left-justified legend
+
+         :|FindDoxygen.cmake|:: :code:`find_package(Doxygen …)`
+
+.. revealjs-break::
+   :data-auto-animate:
+   :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-sphinx-cmake.svg
+   :data-background-position: left 156px top 16px
+   :data-background-size: 353px 110px
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
+
+.. include:: /docblocks/bridle-cmake-modules-sphinx-cmake.rsti
+
+.. rst-class:: left-justified
+
+   * verify that required variables have been defined, see
+     :code-green:`cmake/modules/bridle/requirements.cmake` above
+   * looking for required Sphinx version:
+     :code-green:`find_package(Sphinx ${ZEPHYR_SPHINX_REQUIRED_VERSION}` :code:`…` :code-green:`)`
+   * looking for required Sphinx components:
+     :code-green:`find_package(` :code:`…` :code-green:`REQUIRED build)`
+   * setup CMake variables to programs found:
+
+     * :code-green:`SPHINX_BUILD_EXECUTABLE`
+     * :code-green:`SPHINXBUILD` (deprecated but still used)
+
+-----
+
+.. rst-class:: left-justified
+
+   .. admonition:: Note:
+      :class: note
+
+      .. rst-class:: left-justified legend
+
+         :|FindSphinx.cmake|:: :code:`find_package(Sphinx …)`
 
 .. Local variables:
    coding: utf-8
