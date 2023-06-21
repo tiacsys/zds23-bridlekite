@@ -7,6 +7,11 @@ Questions
 
 .. revealjs-section::
    :data-auto-animate:
+   :data-background-image: _static/static-qr-code-31aa4372e2332c12aaa614fb8cfe6e82.svg
+   :data-background-position: right 1% bottom 13%
+   :data-background-size: 10%
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
 
 .. container:: flex-container
 
