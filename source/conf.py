@@ -452,6 +452,10 @@ extlinks = {
     'wikide': ('https://de.wikipedia.org/wiki/%s', 'German Wikipedia: %s'),
     'wikien': ('https://en.wikipedia.org/wiki/%s', 'English Wikipedia: %s'),
     'elinux': ('https://elinux.org/%s', 'Embedded Linux Wiki: %s'),
+    'tcs.bridle': (
+        'https://bridle.tiac-systems.net/%s',
+        'https://bridle.tiac-systems.net/%s'
+    ),
     'tcs.gxp.dir': (
         gxp_base + gxp_slug + '/%s',
         gxp_name + ': %s'
