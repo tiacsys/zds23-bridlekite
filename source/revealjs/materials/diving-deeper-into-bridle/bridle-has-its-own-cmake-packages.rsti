@@ -45,12 +45,12 @@ Bridle has its own CMake package
    :|WARNING|:: Freestanding mode for Bridle not usable. Bridle back to Zephyr
                 default is not yet implemented, see |[BUG] issue 104|_.
 
-Zephyr CMake Modules injected by Bridle
----------------------------------------
+CMake Modules injected into Zephyr by Bridle
+--------------------------------------------
 
 .. revealjs-section::
 
-.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/mastering-cmake-modules.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-6.rsti
@@ -238,7 +238,7 @@ CMake Modules used by Bridle internally
 
 .. revealjs-section::
 
-.. include:: /docblocks/mastering-cmake-finding-packages.rsti
+.. include:: /docblocks/mastering-cmake-modules.rsti
 .. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-7.rsti
