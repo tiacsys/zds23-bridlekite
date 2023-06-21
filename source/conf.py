@@ -977,7 +977,7 @@ revealjs_script_conf = '''
         highlightTheme: 'solarized-light',
 
         transitionSpeed: 'fast', // default/fast/slow
-        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        transition: 'fade', // none/fade/slide/convex/concave/zoom
         background_transition: 'convex',
 
         helpButtonDisplay: 'first',

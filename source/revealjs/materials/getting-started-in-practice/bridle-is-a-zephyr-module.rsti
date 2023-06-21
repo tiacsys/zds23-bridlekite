@@ -42,7 +42,6 @@ Zephyr Entry Points into Bridle
 -------------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-modules.rsti
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
@@ -159,7 +158,6 @@ Zephyr Entry Points into Bridle
             :red:`Example only!` Binary Blobs are not yet used by Bridle.
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-build-cmake.rsti
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
@@ -229,7 +227,6 @@ Zephyr Entry Points into Bridle
                .. :linenos:
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-build-kconfig.rsti
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
@@ -299,7 +296,6 @@ Zephyr Entry Points into Bridle
                .. :linenos:
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
 

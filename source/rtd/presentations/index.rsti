@@ -5,6 +5,7 @@ Presentations
 =============
 
 .. revealjs-section::
+   :data-auto-animate:
    :data-state: talks
 
 * Zephyr Developer Summit (2023): https://www.zephyrproject.org/zephyr-developer-summit-2023/

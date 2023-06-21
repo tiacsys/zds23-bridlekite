@@ -5,6 +5,7 @@ Documentations
 ==============
 
 .. revealjs-section::
+   :data-auto-animate:
    :data-state: docs
 
 * The Zephyr project documentation: https://docs.zephyrproject.org/latest/

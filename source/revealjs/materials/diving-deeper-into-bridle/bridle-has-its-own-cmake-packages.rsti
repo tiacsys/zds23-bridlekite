@@ -13,7 +13,6 @@ Bridle has its own CMake package
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-1.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
@@ -21,7 +20,6 @@ Bridle has its own CMake package
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-2.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
@@ -29,7 +27,6 @@ Bridle has its own CMake package
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-3.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
@@ -37,7 +34,6 @@ Bridle has its own CMake package
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-4.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
@@ -53,7 +49,6 @@ Zephyr CMake Modules injected by Bridle
 ---------------------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
@@ -61,7 +56,6 @@ Zephyr CMake Modules injected by Bridle
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-6.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-requirements-cmake.svg
    :data-background-position: left 156px top 16px
    :data-background-size: 353px 110px
@@ -145,7 +139,6 @@ Zephyr CMake Modules injected by Bridle
               -
 
 .. revealjs-break::
-   :data-auto-animate:
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-version-cmake.svg
    :data-background-position: left 156px top 16px
    :data-background-size: 353px 110px
@@ -211,7 +204,6 @@ Zephyr CMake Modules injected by Bridle
               - :code:`517)`
 
 .. revealjs-break::
-   :data-auto-animate:
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-toolchain-cmake.svg
    :data-background-position: left 156px top 16px
    :data-background-size: 353px 110px
@@ -245,7 +237,6 @@ CMake Modules used by Bridle internally
 ---------------------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/bridle-west-west-bridle-cmds.rsti
@@ -253,7 +244,6 @@ CMake Modules used by Bridle internally
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-7.rsti
 
 .. revealjs-break::
-   :data-auto-animate:
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-doxygen-cmake.svg
    :data-background-position: left 156px top 16px
    :data-background-size: 353px 110px
@@ -288,7 +278,6 @@ CMake Modules used by Bridle internally
          :|FindDoxygen.cmake|:: :code:`find_package(Doxygen …)`
 
 .. revealjs-break::
-   :data-auto-animate:
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-sphinx-cmake.svg
    :data-background-position: left 156px top 16px
    :data-background-size: 353px 110px

@@ -45,7 +45,6 @@ West Workspace Setup from Bridle
 --------------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-west-manifest.rsti
 .. include:: /docblocks/bridle-west-yml.rsti
@@ -89,7 +88,6 @@ West Workspace Setup from Bridle
                :lines: 22-23,24,40,44,24,51,63,24,78-90
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-west-yml.rsti
 
@@ -164,7 +162,6 @@ West Workspace Setup from Bridle
                      * :ref:`tiac-zephyr-doc:west-manifest-ex2.3`
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-west-yml.rsti
 

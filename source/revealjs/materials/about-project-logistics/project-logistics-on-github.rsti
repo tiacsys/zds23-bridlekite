@@ -13,7 +13,6 @@ On Premise HIL Infrastructure
 -----------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. image:: /_images/revealjs/materials/about-project-logistics/on-premise-hil-infrastructure.*
 
@@ -23,7 +22,6 @@ On Premise Web Server
 ---------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. container:: flex-container
 

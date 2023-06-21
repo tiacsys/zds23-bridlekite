@@ -43,7 +43,6 @@ West Command bridle-export
 --------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-west-extensions.rsti
 .. include:: /docblocks/bridle-west-commands-export.rsti
@@ -82,7 +81,6 @@ Need my own :code-red:`run_cmake()` implementation! – Why not
 :green:`reuse` the original full fancy :green:`Zephyr implementation`?
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-west-extensions.rsti
 .. include:: /docblocks/bridle-west-commands-yml.rsti
@@ -117,7 +115,6 @@ Zephyr's :code-green:`run_cmake()` implementation lives in a specific
 sub-folder within the West project :code-green:`zephyr`.
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-west-extensions.rsti
 .. include:: /docblocks/bridle-west-commands-yml.rsti
@@ -153,7 +150,6 @@ sub-folder within the West project :code-green:`zephyr`.
 :code-red:`sys.path`?
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/zephyr-develop-west-extensions.rsti
 .. include:: /docblocks/bridle-west-commands-yml.rsti
@@ -188,7 +184,6 @@ sub-folder within the West project :code-green:`zephyr`.
 module pointed to Zephyr by decorators.
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-west-commands-zephyr-trampoline.rsti
 
@@ -226,7 +221,6 @@ module pointed to Zephyr by decorators.
             :lines: 8,46-47,49-50,52,54-55,61-62,68-69,71-72,74
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-west-commands-zephyr-trampoline.rsti
 
@@ -265,7 +259,6 @@ module pointed to Zephyr by decorators.
             :lines: 8,75-89
 
 .. revealjs-break::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-west-commands-export.rsti
 

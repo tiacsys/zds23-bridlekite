@@ -13,7 +13,6 @@ Installing Bridle manually
 --------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. include:: /docblocks/bridle-gs-installing-cloning-the-repositories.rsti
 
@@ -83,7 +82,6 @@ Zephyr Downstream Attributes
 ----------------------------
 
 .. revealjs-section::
-   :data-auto-animate:
 
 .. container:: flex-container
 
