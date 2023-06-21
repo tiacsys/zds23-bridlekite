@@ -7,7 +7,49 @@ Bridle highlights
 .. revealjs-section::
    :data-auto-animate:
 
-.. todo:: to be define
+.. container:: flex-container
+
+   .. container:: pct50
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/boards/index.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="635px" width="100%"></iframe>
+
+   .. container:: pct50
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/boards/arm/tiac_magpie/doc/index.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="300px" width="100%"></iframe>
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/boards/shields/grove/doc/index.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="300px" width="100%"></iframe>
+
+.. revealjs-break::
+
+.. container:: flex-container
+
+   .. container:: pct50
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/examples.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="635px" width="100%"></iframe>
+
+   .. container:: pct50
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/reference/index.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="635px" width="100%"></iframe>
 
 .. Local variables:
    coding: utf-8

@@ -7,11 +7,26 @@ Bridle outlook
 .. revealjs-section::
    :data-auto-animate:
 
-.. todo:: to be define
-
 #. short term
+
+   * *fix*: |[BUG] issue 104|_ – CMake freestanding mode for Bridle not usable.
+   * *revice*: build system for documentation – avoid multiple Doxygen runs.
+   * *feasibility*: |Zephyr issue 58882|_ – trace existing test cases back to
+     design specification, e.g. with |Sphinx-Needs|_.
+
 #. mid term
+
+   * *add*: more Seeed Studio **Grove Shields**, e.g. Buzzer, OLED, Sensors
+   * *add*: more popular connector systems similar to Grove, e.g. **PMOD**
+   * *improve*: **PWM channel** mapping over **DeviceTree Nexus Nodes**
+   * *try out*: **ADC/DAC channel** mapping over **DeviceTree Nexus Nodes**
+   * *finalize*: next generation on premise **HIL Infrastructure**
+
 #. long term
+
+   * *feasibility*: Motor / Actuator API (stepper, BLDC, linear, VFD-AC ? …)
+   * *feasibility*: further conceptual domains beside or on top of *Boards*
+     and *Shields*, e.g. *Modules / Units* and *Rigs*
 
 .. Local variables:
    coding: utf-8

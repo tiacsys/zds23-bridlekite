@@ -13,6 +13,9 @@
 .. |USB/IP| replace:: :emphasis:`USB/IP`
 .. _`USB/IP`: https://usbip.sourceforge.net/
 
+.. |Sphinx-Needs| replace:: :strong:`Sphinx-Needs`
+.. _`Sphinx-Needs`: https://www.sphinx-needs.com/
+
 .. |nRF Connect SDK first| replace:: :emphasis:`nRF Connect SDK v1.2`
 .. _`nRF Connect SDK first`:
    https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0
@@ -62,6 +65,9 @@
 
 .. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
 .. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104
+
+.. |Zephyr issue 58882| replace:: :strong:`Zephyr issue 58882`
+.. _`Zephyr issue 58882`: https://github.com/zephyrproject-rtos/zephyr/issues/58882
 
 .. Local variables:
    coding: utf-8
