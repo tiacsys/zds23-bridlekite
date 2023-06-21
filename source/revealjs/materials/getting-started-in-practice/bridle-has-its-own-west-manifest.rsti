@@ -12,7 +12,7 @@ Bridle has its own West Manifest
 
 .. container:: flex-container
 
-   .. container:: pct33
+   .. container:: pct30
 
       .. rst-class:: left-justified legend
 
@@ -27,7 +27,7 @@ Bridle has its own West Manifest
          .. :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-90
          .. :linenos:
 
-   .. container:: pct66
+   .. container:: pct70
 
       .. rubric:: Repository structure
 

@@ -12,7 +12,7 @@ Bridle is a Zephyr Module
 
 .. container:: flex-container
 
-   .. container:: pct33
+   .. container:: pct30
 
       .. rst-class:: left-justified legend
 
@@ -26,7 +26,7 @@ Bridle is a Zephyr Module
             :lines: 5,7,9,4,10,12,14,18,20,16,22,4,25-26,4,29-30,4,33-34
          .. :linenos:
 
-   .. container:: pct66
+   .. container:: pct70
 
       .. rubric:: Workspace structure
 
