@@ -99,7 +99,7 @@ What we want to talk
                 },
                 { "modifier": "text",
                   "parameters": [
-                    "… and some knots\nfor a proper\nBridle Point.", {
+                    "… and some knots\nfor a sane\nBridle Point.", {
                       "id": "my_bridle_point",
                       "opacity": "0",
                       "x": "1880", "y": "160",
@@ -113,7 +113,7 @@ What we want to talk
                 },
                 { "modifier": "text",
                   "parameters": [
-                    "Greate, now I'm\nready for professional\nproduct development\nwith Zephyr.", {
+                    "Great, now I'm\nready for professional\nproduct development\nwith Zephyr.", {
                       "id": "my_product",
                       "opacity": "0",
                       "x": "1880", "y": "120",
@@ -127,7 +127,7 @@ What we want to talk
                 },
                 { "modifier": "text",
                   "parameters": [
-                    "• consequent follow-up the Open-Closed Principle", {
+                    "• consistently following up of the Open-Close Principle", {
                       "id": "bridle_ocp",
                       "opacity": "0",
                       "x": "100", "y": "750",
@@ -225,13 +225,13 @@ What we want to talk
                 [
                   { "element": "#getting_started", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
                   { "element": "#my_ideas", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
-                  { "element": "#apps_loose", "modifier": "opacity", "duration": 6000, "parameters": [ 1 ] },
-                  { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#apps_loose", "modifier": "opacity", "duration": 2000, "parameters": [ 1 ] },
+                  { "element": "#boards_shields_loose", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
                   { "element": "#hals", "modifier": "opacity", "parameters": [ 0.33 ] },
                   { "element": "#bootloader", "modifier": "opacity", "parameters": [ 0.33 ] },
-                  { "element": "#subsys_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#subsys_loose", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
                   { "element": "#libs", "modifier": "opacity", "parameters": [ 0.33 ] },
-                  { "element": "#tools_loose", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
+                  { "element": "#tools_loose", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
                   { "element": "#tools", "modifier": "opacity", "parameters": [ 0.33 ] }
                 ],
                 [
@@ -254,11 +254,11 @@ What we want to talk
                 [
                   { "element": "#my_bridle_point", "modifier": "opacity", "duration": 100, "parameters": [ 0 ] },
                   { "element": "#my_product", "modifier": "opacity", "duration": 100, "parameters": [ 1 ] },
-                  { "element": "#bridle_ocp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-                  { "element": "#bridle_lcm", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-                  { "element": "#bridle_mod", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-                  { "element": "#bridle_ext", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] },
-                  { "element": "#bridle_exp", "modifier": "opacity", "duration": 3000, "parameters": [ 1 ] }
+                  { "element": "#bridle_ocp", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
+                  { "element": "#bridle_lcm", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
+                  { "element": "#bridle_mod", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
+                  { "element": "#bridle_ext", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] },
+                  { "element": "#bridle_exp", "modifier": "opacity", "duration": 1000, "parameters": [ 1 ] }
                 ]
               ]
             }
