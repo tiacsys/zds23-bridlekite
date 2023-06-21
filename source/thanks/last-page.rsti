@@ -1,0 +1,44 @@
+.. Never add or change more than meta informations (ex. LaTeX formatting),
+   instead edit structure and formattings in files:
+   index.rstr
+
+Questions
+=========
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. container:: flex-container
+
+   .. container:: pct20
+
+      .. image:: /_images/qm-noframe.*
+         :alt: Question Mark
+         :width: 190
+         :height: 300
+
+   .. container:: pct80
+
+      * Bridle
+
+        * Git: https://github.com/tiacsys
+        * Git: https://github.com/tiacsys/bridle
+        * Doc: https://bridle.tiac-systems.net/
+        * Web: https://www.tiac-systems.net/
+
+      * Zephyr
+
+        * Git: https://github.com/zephyrproject-rtos/zephyr
+        * Doc: https://docs.zephyrproject.org/
+        * Web: https://www.zephyrproject.org/
+
+      * Zephyr (Downstream) Example Application
+
+        * Git: https://github.com/zephyrproject-rtos/example-application
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

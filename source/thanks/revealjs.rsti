@@ -3,6 +3,8 @@
 
 .. include:: /thanks/index.rsti
 
+.. include:: /thanks/last-page.rsti
+
 .. Local variables:
    coding: utf-8
    mode: text

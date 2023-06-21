@@ -1,0 +1,21 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Bridle outlook
+==============
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. todo:: to be define
+
+#. short term
+#. mid term
+#. long term
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
