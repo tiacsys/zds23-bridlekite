@@ -18,7 +18,7 @@ export LC_TIME
 # You can set these variables from the command line, and also
 # from the environment for the first two.
 SPHINXADDOPTS ?=
-SPHINXTAGS    ?= -t nx $(SPHINXADDOPTS)
+SPHINXTAGS    ?= -t nx -t without_rtd $(SPHINXADDOPTS)
 SPHINXOPTS    ?= -v -W --keep-going
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source

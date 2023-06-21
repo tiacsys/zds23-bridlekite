@@ -8,7 +8,7 @@ if "%SPHINXADDOPTS%" == "" (
 	set SPHINXADDOPTS=
 )
 if "%SPHINXTAGS%" == "" (
-	set SPHINXTAGS=-t nx %SPHINXADDOPTS%
+	set SPHINXTAGS=-t nx -t without_rtd %SPHINXADDOPTS%
 )
 if "%SPHINXOPTS%" == "" (
 	set SPHINXOPTS=-v -W --keep-going
