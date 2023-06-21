@@ -272,9 +272,10 @@ else:
 
 exclude_patterns = [
     '**/.gitkeepdir',
+    '**/*.rst.svgbob',
+    '**/*.drawio',
     'fonts*',
-    'exercises/toyproject*'
-
+    'exercises/toyproject*',
 ]
 
 # Exclude pattern when read-the-docs not envolved
