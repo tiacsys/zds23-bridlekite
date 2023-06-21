@@ -85,6 +85,7 @@ else:
     decktape_pause ='10'  # milliseconds, set to 32000 if needed / final
 
 decktape_size = '1125x795'  # DIN A4
+# decktape_size = '1590x1125'  # DIN A3
 
 # Define basic strings that will be used in the dictionary of external sites.
 # gxp/GXP stands for GitX (Hub/Lab) Pages
@@ -990,8 +991,8 @@ revealjs_script_conf = '''
                 fragments: true,
             }},
             {{
-                width: 850,
-                height: 640,
+                width: 930, // A4:930(850)/A3:1395
+                height: 685, // A4:685(640)/A3:1015
                 minScale: 1.0,
                 maxScale: 1.0,
                 theme: 'tiac-decktape',
