@@ -8,6 +8,12 @@ Thank you for your attention!
 .. revealjs-section::
    :data-auto-animate:
    :data-state: title
+   :data-background-image: _static/static-qr-code-31aa4372e2332c12aaa614fb8cfe6e82.svg
+   :data-background-position: right 1% bottom 13%
+   :data-background-size: 10%
+   :data-background-repeat: no-repeat
+   :data-background-opacity: 1.0
+
 
 Your presenters were:
 
@@ -28,12 +34,23 @@ Your presenters were:
 
 -----
 
-.. rst-class:: left-justified legend
+.. container:: flex-container
 
-   :Organization:  |dm_organization|
-   :Landing:       |dm_landing|
-   :Contact:       |dm_contact|
-   :Address:       |dm_address|
+   .. container:: pct35
+
+      .. rst-class:: left-justified legend
+
+         :Organization:  |dm_organization|
+         :Landing:       |dm_landing|
+         :Contact:       |dm_contact|
+         :Address:       |dm_address|
+
+   .. container:: pct65
+
+      .. rst-class:: left-justified legend
+
+         :online presentation:    :tcs.bridle:`zds23-bridlekite`
+         :printable presentation: :tcs.bridle:`zds23-bridlekite/slides.pdf`
 
 .. Local variables:
    coding: utf-8
