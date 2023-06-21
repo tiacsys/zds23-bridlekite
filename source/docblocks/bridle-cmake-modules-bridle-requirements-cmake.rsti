@@ -2,7 +2,7 @@
 
 .. rst-class:: left-justified legend
 
-   :|Bridle v3.4| |requirements.cmake|::
+   :|Bridle| |requirements.cmake|::
 
       https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/requirements.cmake
 

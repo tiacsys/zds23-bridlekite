@@ -141,7 +141,7 @@ Zephyr entry points into Bridle
 
             Only useful when Zephyr's GitHub workflow will be used,
             see the multiple steps **Run tests with twister** in:
-            `zephyr/v3.4.0/.github/workflows/twister.yaml`_
+            |zephyr/github/workflows/twister.yaml|_
 
             .. highlight:: no-highlight
             .. parsed-literal::

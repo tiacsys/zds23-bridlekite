@@ -2,7 +2,7 @@
 
 .. rst-class:: left-justified legend
 
-   :|Bridle v3.4| Trampoline to Zephyr::
+   :|Bridle| Trampoline to Zephyr::
 
       https://github.com/tiacsys/bridle/blob/v3.4-branch/scripts/west_commands/zephyr_trampoline.py
 

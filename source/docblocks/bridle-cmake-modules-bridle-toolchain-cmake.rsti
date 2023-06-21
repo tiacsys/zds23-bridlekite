@@ -2,7 +2,7 @@
 
 .. rst-class:: left-justified legend
 
-   :|Bridle v3.4| |toolchain.cmake|::
+   :|Bridle| |toolchain.cmake|::
 
       https://github.com/tiacsys/bridle/blob/v3.4.0/cmake/modules/bridle/toolchain.cmake
 

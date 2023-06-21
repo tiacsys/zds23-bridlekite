@@ -19,7 +19,7 @@ Where Bridel comes from
          :2020:
 
             Started with a **Proof-Of-Concept on local machine**, inspirited
-            by Nordic's |nRF Connect SDK v1.2|_.
+            by Nordic's |nRF Connect SDK first|_.
 
       .. container:: pct33
 
@@ -51,7 +51,7 @@ Where Bridel comes from
             and established the central web space for |online documentation|_
             and use Zephyr from an **auto-sync Git mirror**.
 
-            First version, |Bridle v2.5.0|_, was released.
+            First version, |Bridle first|_, was released.
 
 -----
 
@@ -86,7 +86,7 @@ Where Bridle is today
             * start to establish and document Bridle's |Development Model|_
             * define a first rudimentary |Contribution Workflow|_
 
-         :2023 – CONTENT – |Bridle v3.4|_:
+         :2023 – CONTENT – |Bridle|_:
 
             * *improving*: support of **new boards and shields**, currently not
               supported in Zephyr upstream

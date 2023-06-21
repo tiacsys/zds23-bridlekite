@@ -13,8 +13,8 @@
 .. |USB/IP| replace:: :emphasis:`USB/IP`
 .. _`USB/IP`: https://usbip.sourceforge.net/
 
-.. |nRF Connect SDK v1.2| replace:: :emphasis:`nRF Connect SDK v1.2`
-.. _`nRF Connect SDK v1.2`:
+.. |nRF Connect SDK first| replace:: :emphasis:`nRF Connect SDK v1.2`
+.. _`nRF Connect SDK first`:
    https://developer.nordicsemi.com/nRF_Connect_SDK/doc/1.2.0
 
 .. |nRF Connect SDK| replace:: :emphasis:`nRF Connect SDK`
@@ -25,11 +25,12 @@
 .. _`Zephyr Example Application`:
    https://github.com/zephyrproject-rtos/example-application
 
-.. _`zephyr/v3.4.0/.github/workflows/twister.yaml`:
+.. |zephyr/github/workflows/twister.yaml| replace:: zephyr/v3.4.0/.github/workflows/twister.yaml
+.. _`zephyr/github/workflows/twister.yaml`:
    https://github.com/zephyrproject-rtos/zephyr/blob/v3.4.0/.github/workflows/twister.yaml#L237
 
-.. |Zephyr v3.4| replace:: :strong:`Zephyr v3.4`
-.. _`Zephyr v3.4`: https://bridle.tiac-systems.net/doc/3.4/zephyr
+.. |Zephyr| replace:: :strong:`Zephyr v3.4`
+.. _`Zephyr`: https://bridle.tiac-systems.net/doc/3.4/zephyr
 
 .. |TiaC Systems| replace:: :strong:`TiaC Systems`
 .. _`TiaC Systems`: https://tiac-systems.net/
@@ -53,11 +54,11 @@
 .. _`Bridle Services`:
    https://bridle.tiac-systems.net/doc/3.4/bridle/reference/bridle/index.html#bridle-services
 
-.. |Bridle v2.5.0| replace:: :strong:`Bridle v2.5.0`
-.. _`Bridle v2.5.0`: https://bridle.tiac-systems.net/doc/2.5.0
+.. |Bridle first| replace:: :strong:`Bridle v2.5.0`
+.. _`Bridle first`: https://bridle.tiac-systems.net/doc/2.5.0/bridle
 
-.. |Bridle v3.4| replace:: :strong:`Bridle v3.4`
-.. _`Bridle v3.4`: https://bridle.tiac-systems.net/doc/3.4/bridle
+.. |Bridle| replace:: :strong:`Bridle v3.4`
+.. _`Bridle`: https://bridle.tiac-systems.net/doc/3.4/bridle
 
 .. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
 .. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104
