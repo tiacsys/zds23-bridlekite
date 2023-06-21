@@ -70,7 +70,7 @@ jobs:
         run: |
           source $(poetry env info --path)/bin/activate
 
-          make clean && SPHINXADDOPTS="-t statcont" make revealjspdf
+          make clean && make SPHINXADDOPTS="-t statcont" revealjspdf
           mv -vf build/revealjs/slides.pdf build-revealjs-slides.pdf
           make clean && make revealjs
           mv -vf build-revealjs-slides.pdf build/revealjs/slides.pdf
