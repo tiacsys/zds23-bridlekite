@@ -19,6 +19,9 @@ Bridle has its own CMake package
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-2.rsti
 
+:strong-red:`Challenge:` How can we identify the :strong:`correct workspace`,
+:code-red:`based on Bridle`?
+
 .. revealjs-break::
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
@@ -26,12 +29,17 @@ Bridle has its own CMake package
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-3.rsti
 
+:strong-red:`Challenge:` How can we identify the :strong:`correct workspace`,
+:code-red:`based on Bridle`?
+
 .. revealjs-break::
 
 .. include:: /docblocks/mastering-cmake-finding-packages.rsti
 .. include:: /docblocks/zephyr-build-zephyr-cmake-package.rsti
 
 .. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-cmake-packages-4.rsti
+
+:strong-green:`Solution:` Provide our :green:`own CMake Package` and use it.
 
 .. revealjs-break::
 
@@ -57,8 +65,8 @@ CMake Modules injected into Zephyr by Bridle
 
 .. revealjs-break::
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-requirements-cmake.svg
-   :data-background-position: left 156px top 16px
-   :data-background-size: 353px 110px
+   :data-background-position: right 2% top 22%
+   :data-background-size: 20%
    :data-background-repeat: no-repeat
    :data-background-opacity: 1.0
 
@@ -140,8 +148,8 @@ CMake Modules injected into Zephyr by Bridle
 
 .. revealjs-break::
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-version-cmake.svg
-   :data-background-position: left 156px top 16px
-   :data-background-size: 353px 110px
+   :data-background-position: right 2% top 22%
+   :data-background-size: 20%
    :data-background-repeat: no-repeat
    :data-background-opacity: 1.0
 
@@ -205,8 +213,8 @@ CMake Modules injected into Zephyr by Bridle
 
 .. revealjs-break::
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-bridle-toolchain-cmake.svg
-   :data-background-position: left 156px top 16px
-   :data-background-size: 353px 110px
+   :data-background-position: right 2% top 22%
+   :data-background-size: 20%
    :data-background-repeat: no-repeat
    :data-background-opacity: 1.0
 
@@ -245,8 +253,8 @@ CMake Modules used by Bridle internally
 
 .. revealjs-break::
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-doxygen-cmake.svg
-   :data-background-position: left 156px top 16px
-   :data-background-size: 353px 110px
+   :data-background-position: right 2% top 22%
+   :data-background-size: 20%
    :data-background-repeat: no-repeat
    :data-background-opacity: 1.0
 
@@ -279,8 +287,8 @@ CMake Modules used by Bridle internally
 
 .. revealjs-break::
    :data-background-image: _static/revealjs/materials/diving-deeper-into-bridle/bridle-cmake-modules-sphinx-cmake.svg
-   :data-background-position: left 156px top 16px
-   :data-background-size: 353px 110px
+   :data-background-position: right 2% top 22%
+   :data-background-size: 20%
    :data-background-repeat: no-repeat
    :data-background-opacity: 1.0
 
