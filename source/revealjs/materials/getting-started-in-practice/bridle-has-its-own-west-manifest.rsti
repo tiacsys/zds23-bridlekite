@@ -41,7 +41,7 @@ Bridle has its own West Manifest
          – application is the
          :ref:`manifest <tiac-zephyr-doc:west-manifests>` repository.
 
-West Workspace Setup from Bridle
+West Workspace setup from Bridle
 --------------------------------
 
 .. revealjs-section::

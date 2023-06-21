@@ -78,7 +78,7 @@ Installing Bridle manually
          .. include:: /docblocks/bridle-manifest.rsti
          .. include:: /docblocks/bridle-requirements.rsti
 
-Zephyr Downstream Attributes
+Zephyr downstream attributes
 ----------------------------
 
 .. revealjs-section::

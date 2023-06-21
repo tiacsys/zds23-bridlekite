@@ -16,11 +16,11 @@ Bridle is a Zephyr Module
 
       .. rst-class:: left-justified legend
 
-         **Zephyr Framework Expansion**
+         **Zephyr Expansion**
 
          .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
-            :caption: Zephyr Module File in Bridle
-            :name: zephyr-module-file-in-bridle-ws
+            :caption: Zephyr Module file
+            :name: zephyr-module-file
             :language: yaml
             :dedent: 0
             :lines: 5,7,9,4,10,12,14,18,20,16,22,4,25-26,4,29-30,4,33-34
@@ -38,7 +38,7 @@ Bridle is a Zephyr Module
          The **SCA tools** implementation or **Binary Blobs**
          are :strong-red:`not yet used` by Bridle.
 
-Zephyr Entry Points into Bridle
+Zephyr entry points into Bridle
 -------------------------------
 
 .. revealjs-section::
@@ -64,7 +64,7 @@ Zephyr Entry Points into Bridle
          .. admonition:: Hint:
             :class: hint
 
-            **Integration files** are **recommended**!
+            **Integration Files** are **recommended**!
 
       .. container:: pct25
 
@@ -171,7 +171,7 @@ Zephyr Entry Points into Bridle
          .. rst-class:: left-justified legend
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
-               :caption: Zephyr Module File in Bridle
+               :caption: Zephyr Module file in Bridle
                :name: zephyr-module-file-in-bridle-integration-cmake
                :language: txt
                :dedent: 0
@@ -198,7 +198,7 @@ Zephyr Entry Points into Bridle
 
             .. container:: pct80
 
-               Bridle Source Code Folder in Local West Workspace:
+               Bridle source code folder in local West Workspace:
 
                .. highlight:: no-highlight
                .. parsed-literal::
@@ -240,7 +240,7 @@ Zephyr Entry Points into Bridle
          .. rst-class:: left-justified legend
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
-               :caption: Zephyr Module File in Bridle
+               :caption: Zephyr Module file in Bridle
                :name: zephyr-module-file-in-bridle-integration-kconfig
                :language: txt
                :dedent: 0
@@ -267,7 +267,7 @@ Zephyr Entry Points into Bridle
 
             .. container:: pct80
 
-               Bridle Source Code Folder in Local West Workspace:
+               Bridle source code folder in local West Workspace:
 
                .. highlight:: no-highlight
                .. parsed-literal::
@@ -308,7 +308,7 @@ Zephyr Entry Points into Bridle
          .. rst-class:: left-justified legend
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
-               :caption: Zephyr Module File in Bridle
+               :caption: Zephyr Module file in Bridle
                :name: zephyr-module-file-in-bridle-build-settings
                :language: txt
                :dedent: 0
@@ -335,7 +335,7 @@ Zephyr Entry Points into Bridle
 
             .. container:: pct80
 
-               Bridle Source Code Folder in Local West Workspace:
+               Bridle source code folder in local West Workspace:
 
                .. highlight:: no-highlight
                .. parsed-literal::
