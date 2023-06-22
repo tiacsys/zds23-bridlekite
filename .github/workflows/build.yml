@@ -4,7 +4,8 @@ on:
   workflow_dispatch: # And manually on button click
   push:
     tags:
-      - 'v*'
+      - '[0-9]+.[0-9]+.[0-9]+-rc[0-9]+'
+      - '[0-9]+.[0-9]+.[0-9]+'
     branches:
       - main
 
