@@ -7,7 +7,26 @@ Bridle has its own Documentation Set
 .. revealjs-section::
    :data-auto-animate:
 
-.. todo:: to be define
+https://bridle.tiac-systems.net/doc/3.4/bridle/doc_structure.html
+
+.. container:: flex-container
+
+   .. container:: pct100
+
+      .. raw:: html
+
+         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/doc_structure.html"
+                 data-animate frameborder="0" allowfullscreen=""
+                 height="635px" width="100%"></iframe>
+
+Building Bridle documentation
+-----------------------------
+
+.. revealjs-section::
+
+https://bridle.tiac-systems.net/doc/3.4/bridle/doc_build.html
+
+.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-doc-set-1.rsti
 
 .. Local variables:
    coding: utf-8

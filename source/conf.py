@@ -78,10 +78,10 @@ keywords = docnumb + ',' + doctype + ',' + project + ',Zephyr,Bridle'
 
 # Preselect different DeckTape parameters for specific content
 if not tags.has('with_more_notyet'):  # pylint: disable=undefined-variable
-    decktape_slides = '1-52'
+    decktape_slides = '1-53'
     decktape_pause ='10'  # milliseconds, set to 32000 if needed / final
 else:
-    decktape_slides = '1-52'
+    decktape_slides = '1-53'
     decktape_pause ='10'  # milliseconds, set to 32000 if needed / final
 
 decktape_size = '1125x795'  # DIN A4

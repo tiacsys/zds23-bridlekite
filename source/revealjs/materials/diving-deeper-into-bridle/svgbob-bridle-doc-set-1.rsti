@@ -1,0 +1,53 @@
+.. Never add or change more than content, instead edit structure in files:
+   bridle-has-its-own-cmake-packages.rsti
+
+.. svgbob::
+   :font-family: "DejaVu Sans Condensed"
+   :font-size: 14
+   :scale: 10.0
+   :align: center
+
+   ""
+     "Bridle West Workspace"
+     +-------------------------------------------------------------------------------------------------------------------------------------------+
+     |                                                                                                                                           |
+     |                     "cmake -Bbuild/doc -GNinja bridle/doc""ninja -Cbuild/doc bridle"                                                      |
+     |                                          \                  \                                                                             |
+     |   "zephyr/doc"       "bridle/doc"         \                  \                                                                            |
+     |   │                  ├─ "CMakeLists.txt"------->"build/doc"----->"build/doc"------------->"build/doc"                 ===\   "UPLOAD TO"  |
+     |   │                  ├─ "_doxygen"              ├─ "build.ninja" ├─ "doxygen"             └─ "html"                   ===/  "WEB SERVER"  |
+     |   │                  │  ├─ "doxyfile-bridle.in" :     .--------> │  ├─ "bridle"              ├─ "index.html"                              |
+     |   │                  │  └─ "doxyfile-zephyr.in" :     *--------> │  └─ "zephyr"              ├─ "versions.json"                           |
+     |   │                  ├─ "bridle"                      |          ├─ "bridle"         ___     ├─ "bridle"                                  |
+     |   │                  │  └─ "conf.py"                  | .------> │  ├─ "src"        |   |    │  ├─ "doxygen/html/index.html"              |
+     |   │                  ├─ "zephyr"                      | | .----> │  └─ "doctree" <==| i |<== │  ├─ "objects.inv"                          |
+     |   └─ "conf.py"------>│  └─ "conf.py"                  | | |      ├─ "zephyr"        | n |    │  └─ "index.html"                           |
+     |                /     ├─ "kconfig"                     | *-+----> │  ├─ "src"        | t |    ├─ "zephyr"                                  |
+     |               /      │  └─ "conf.py"                  | | *----> │  └─ "doctree" <==| e |    │  ├─ "doxygen/html/index.html"              |
+     |"from sphinx.config"  └─ "devicetree"                  | | |      ├─ "kconfig"       | r |<== │  ├─ "objects.inv"                          |
+     |"import eval_config_file"└─ "conf.py"                  | *-+----> │  ├─ "src"        | s |    │  └─ "index.html"                           |
+     |                                                       | | *----> │  └─ "doctree" <==| p |    ├─ "kconfig"                                 |
+     |"Ninja build targets: doxygen <doxyfile>"       -------' | |      └─ "devicetree"    | h |<== │  ├─ "objects.inv"                          |
+     |                                                         *-+---->    ├─ "src"        | i |    │  └─ "index.html"                           |
+     |"Ninja build targets: sphinx-build -b …"        ---------' *---->    └─ "doctree" <==| n |    └─ "devicetree"                              |
+     |"Sphinx extension: zephyr.external_content"                |                         | x |<==    ├─ "objects.inv"                          |
+     |                                                           |                         |___|       └─ "index.html"                           |
+     |"Ninja build targets: sphinx-build -b inventory"-----------*                           ^                                                   |
+     |"Sphinx extension: bridle.inventory_builder"               |                           |                                                   |
+     |                                                           '---------------------------'                                                   |
+     +-------------------------------------------------------------------------------------------------------------------------------------------+
+
+   # Legend:
+   O = { fill-opacity: 0.33; stroke-opacity: 0.166 }
+   o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
+   g = { fill: #d3d3d3; stroke-dasharray: 4; }
+   r = { fill: #cd5c5c; stroke-dasharray: 6; }
+   z = { fill: #af7fe4; stroke: #7929d2; }
+   b = { fill: #15729d; stroke: #154099; }
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
