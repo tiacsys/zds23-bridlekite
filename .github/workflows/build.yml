@@ -32,15 +32,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Workarounds
+      - name: Fix HOME (is overridden for containers)
         run: |
           # https://github.com/actions/runner/issues/863#issuecomment-1027721398
           echo "HOME=/home/docs" >> ${GITHUB_ENV}
 
-      - name: Environment
+      - name: Add repository path as safe.directory for Git
         run: |
           git config --global --add safe.directory ${GITHUB_WORKSPACE}
 
+      - name: Fix fetched tag (restore annotation and signature)
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          # https://github.com/actions/checkout/issues/649
+          git -c protocol.version=2 fetch --prune --progress \
+              --no-recurse-submodules origin +"${GITHUB_REF}:${GITHUB_REF}"
+
+      - name: Environment
+        run: |
           asdf info
           asdf list
 
