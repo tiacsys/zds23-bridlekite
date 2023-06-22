@@ -1,7 +1,7 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-Where Bridel comes from
+Where Bridle comes from
 =======================
 
 .. revealjs-section::
@@ -46,7 +46,7 @@ Where Bridel comes from
 
          :Summer 2021:
 
-            Moved Bridel on GitHub to a **more collaborative workspace**
+            Bridle moved on GitHub to a **more collaborative workspace**
             – the virtual organization |TiaC Systems|_ was born –
             and established the central web space for |online documentation|_
             and use Zephyr from an **auto-sync Git mirror**.
