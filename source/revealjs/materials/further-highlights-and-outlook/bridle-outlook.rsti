@@ -13,6 +13,8 @@ Bridle outlook
    * *revice*: build system for documentation – avoid multiple Doxygen runs.
    * *feasibility*: |Zephyr issue 58882|_ – trace existing test cases back to
      design specification, e.g. with |Sphinx-Needs|_.
+   * *improve*: documentation – render PDF per documentation set and version.
+   * *improve*: Bridle's |Development Model|_ – release policy and workflow.
 
 #. mid term
 
