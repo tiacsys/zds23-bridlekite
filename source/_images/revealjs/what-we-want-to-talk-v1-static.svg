@@ -5,7 +5,7 @@
    id="svg55"
    width="800.00055"
    height="410.70599"
-   sodipodi:docname="what-we-want-to-talk-static.svg"
+   sodipodi:docname="what-we-want-to-talk-v1-static.svg"
    inkscape:version="1.2.2 (1:1.2.2+202305151915+b0a8486541)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -26,8 +26,8 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="0.41300506"
-     inkscape:cx="1194.9006"
-     inkscape:cy="405.56404"
+     inkscape:cx="836.55149"
+     inkscape:cy="407.98532"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -1525,7 +1525,8 @@
      aria-label="Let's read Zephyrdocumentation."
      id="getting_started"
      style="font-style:italic;font-size:48px;font-family:'DejaVu Sans Condensed';text-anchor:middle;display:none;opacity:0;fill:#b22222"
-     transform="matrix(0.35829213,0,0,0.35829212,6.4170046,1.4170552)">
+     transform="matrix(0.35829213,0,0,0.35829212,6.4170046,1.4170552)"
+     sodipodi:insensitive="true">
     <path
        d="m 1696.3789,207.40781 h 4.2656 l -5.3906,31.05469 h 15.3281 l -0.7031,3.9375 h -19.5937 z"
        id="path652" />
