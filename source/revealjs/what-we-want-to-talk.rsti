@@ -14,14 +14,14 @@ What we want to talk
 
       .. only:: statcont
 
-         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-v1-static.svg
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-v2-static.svg
             :tagtype: object
 
          Overview what Bridle is
 
       .. only:: not statcont
 
-         .. include:: /revealjs/what-we-want-to-talk-v1-data-animate.rsti
+         .. include:: /revealjs/what-we-want-to-talk-v2-data-animate.rsti
 
 .. Local variables:
    coding: utf-8
