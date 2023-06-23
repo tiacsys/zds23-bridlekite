@@ -23,6 +23,127 @@ What we want to talk
 
          .. include:: /revealjs/what-we-want-to-talk-v2-data-animate.rsti
 
+.. revealjs-break::
+   :data-auto-animate:
+
+.. container:: flex-container
+
+   .. container:: pct50
+
+      .. rst-class:: left-justified
+
+         * **System architecture**
+
+           * comprises SW & HW interfaces
+           * structure, behavior, interfaces
+
+         * **Knowledge architecture**
+
+           * big picture entire team knows about
+           * propagation of new information
+
+         * **Collaboration architecture**
+
+           * how work gets done
+           * one's outputs are the other's input
+
+   .. container:: pct50
+
+      .. only:: statcont
+
+         .. imagesvg:: /_images/revealjs/architectures-deps-static.svg
+            :tagtype: object
+
+      .. only:: not statcont
+
+         .. imagesvg:: /_images/revealjs/architectures-deps-noglyphs.svg
+            :tagtype: object
+
+Hopefully you didn't miss our second talk "How I Fell in Love with Zephyr" on Tuesday at 15:50-16:30
+
+.. revealjs-break::
+   :data-auto-animate:
+
+.. container:: flex-container
+
+   .. container:: pct50
+
+      .. rst-class:: left-justified
+
+         .. rubric:: **Architectural Needs**
+
+         * **Collaboration architecture**
+
+           :raw-html:`<div class="fragment" data-fragment-index="10">`
+
+           * Collaboration Models
+           * Compliant Quality Assurance, e.g. IEC 62304
+
+           :raw-html:`</div>`
+
+         * **Knowledge architecture**
+
+           :raw-html:`<div class="fragment" data-fragment-index="20">`
+
+           * Product Documentation in all domains
+           * Support Traceability in all domains, e.g. IEC 62304
+             or ISO 13485/14971
+
+           :raw-html:`</div>`
+
+         * **System architecture**
+
+           :raw-html:`<div class="fragment" data-fragment-index="30">`
+
+           * System Architecture Integration
+           * Configuration Management (SW versions, Toolchain versions)
+
+           :raw-html:`</div>`
+
+   .. container:: pct50
+
+      .. rst-class:: left-justified
+
+         .. rubric:: :strong-blue:`Bridle` :strong:`gives you a`
+                     :strong-blue:`blueprint` :strong:`for:`
+
+         * :raw-html:`<div class="fragment fade-in-then-semi-out" data-fragment-index="10">`
+           :strong-blue:`Project Logistic on GitHub with HIL`
+           :raw-html:`</div>`
+
+           :raw-html:`<div class="fragment" data-fragment-index="10">`
+
+           * loosely coupled with Zephyr (as module)
+           * following your own Life-Cycle (RM)
+
+           :raw-html:`</div>`
+
+         * :raw-html:`<div class="fragment fade-in-then-semi-out" data-fragment-index="20">`
+           :strong-blue:`Document Set per Version`
+           :raw-html:`</div>`
+
+           :raw-html:`<div class="fragment" data-fragment-index="20">`
+
+           * different perspectives
+           * over multiple domains (potentially)
+
+           :raw-html:`</div>`
+
+         * :raw-html:`<div class="fragment fade-in-then-semi-out" data-fragment-index="30">`
+           :strong-blue:`Source and Meta Code`
+           :raw-html:`</div>`
+
+           :raw-html:`<div class="fragment" data-fragment-index="30">`
+
+           * extends the framework (West / CMake / Kconfig)
+           * expands the code base (ARCH / SOC / DTS / boards / drivers / tests / apps)
+
+           :raw-html:`</div>`
+
+         :raw-html:`<div class="fragment" data-fragment-index="40">`
+         :strong-red:`Let's start with a little history and a practical warm up.`
+         :raw-html:`</div>`
+
 .. Local variables:
    coding: utf-8
    mode: text
