@@ -1,0 +1,20 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+:raw-html:`<div class="fragment fade-in-then-semi-out" data-fragment-index="10">`
+:strong-blue:`Project Logistic on GitHub with HIL`
+:raw-html:`</div>`
+
+:raw-html:`<div class="fragment" data-fragment-index="10">`
+
+* loosely coupled with Zephyr (as module)
+* following your own Life-Cycle (RM)
+
+:raw-html:`</div>`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

@@ -1,0 +1,18 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+:strong:`System architecture`
+
+:raw-html:`<div class="fragment" data-fragment-index="30">`
+
+* System Architecture Integration
+* Configuration Management (SW versions, Toolchain versions)
+
+:raw-html:`</div>`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

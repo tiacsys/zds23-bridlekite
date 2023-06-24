@@ -1,0 +1,19 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+:strong:`Knowledge architecture`
+
+:raw-html:`<div class="fragment" data-fragment-index="20">`
+
+* Product Documentation in all domains
+* Support Traceability in all domains, e.g. IEC 62304
+  or ISO 13485/14971
+
+:raw-html:`</div>`
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
