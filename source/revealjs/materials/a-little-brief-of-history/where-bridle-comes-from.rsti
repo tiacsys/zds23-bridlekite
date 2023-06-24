@@ -13,8 +13,7 @@ Where Bridle comes from
 
       .. container:: pct33
 
-         .. image:: https://www.nordicsemi.com/-/media/Images/Products/SDKs/nRFConnectSDK_new.png
-            :height: 100px
+         .. include:: /docblocks/logo-nrf-connect-sdk-h100.rsti
 
          :2020:
 
@@ -23,8 +22,7 @@ Where Bridle comes from
 
       .. container:: pct33
 
-         .. image:: https://bridle.tiac-systems.net/doc/3.4/bridle/_static/images/bridle.png
-            :height: 100px
+         .. include:: /docblocks/logo-bridle-h100.rsti
 
          :Spring 2021:
 
@@ -41,8 +39,7 @@ Where Bridle comes from
 
       .. container:: pct33
 
-         .. image:: https://bridle.tiac-systems.net/doc/3.4/bridle/_static/images/tiac.png
-            :height: 100px
+         .. include:: /docblocks/logo-tiac-h100.rsti
 
          :Summer 2021:
 
@@ -59,42 +56,6 @@ Where Bridle comes from
 
    :TiaC: Three is (a) Company – based on
           Tolkien's |The Fellowship of the Ring|_
-
-Where Bridle is today
----------------------
-
-.. revealjs-section::
-
-.. rst-class:: left-justified
-
-   .. container:: flex-container
-
-      .. container:: pct100
-
-         :since 2021 – MAINTENANCE:
-
-            * following Zephyr's major and minor releases in V2 and V3
-            * continuous synchronization with Zephyr upstream regarding
-              tooling (framework)
-            * closely following the progress in Nordic's |nRF Connect SDK|_
-              and the |Zephyr Example Application|_
-
-         :2022 – FOUNDING:
-
-            * growing up the **project logistics** on GitHub (later more).
-            * refine Nordic's idea of **doc-sets** (later more).
-            * start to establish and document Bridle's |Development Model|_
-            * define a first rudimentary |Contribution Workflow|_
-
-         :2023 – CONTENT – |Bridle|_:
-
-            * *improving*: support of **new boards and shields**, currently not
-              supported in Zephyr upstream
-            * *feasibility*: transpose **system architectural definitions**
-              by using **DeviceTree Nexus Nodes** and **Stacked Shields**
-            * *feasibility*: create **shield test suites** on CMake level
-            * *teaching*: Bridle is now part in trainings and daily work
-              with colleagues, partners and students
 
 .. Local variables:
    coding: utf-8

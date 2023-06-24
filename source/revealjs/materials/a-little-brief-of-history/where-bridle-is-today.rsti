@@ -1,0 +1,46 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+Where Bridle is today
+=====================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. rst-class:: left-justified
+
+   .. container:: flex-container
+
+      .. container:: pct100
+
+         :since 2021 – MAINTENANCE:
+
+            * following Zephyr's major and minor releases in V2 and V3
+            * continuous synchronization with Zephyr upstream regarding
+              tooling (framework)
+            * closely following the progress in Nordic's |nRF Connect SDK|_
+              and the |Zephyr Example Application|_
+
+         :2022 – FOUNDING:
+
+            * growing up the **project logistics** on GitHub (later more).
+            * refine Nordic's idea of **doc-sets** (later more).
+            * start to establish and document Bridle's |Development Model|_
+            * define a first rudimentary |Contribution Workflow|_
+
+         :2023 – CONTENT – |Bridle|_:
+
+            * *improving*: support of **new boards and shields**, currently not
+              supported in Zephyr upstream
+            * *feasibility*: transpose **system architectural definitions**
+              by using **DeviceTree Nexus Nodes** and **Stacked Shields**
+            * *feasibility*: create **shield test suites** on CMake level
+            * *teaching*: Bridle is now part in trainings and daily work
+              with colleagues, partners and students
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
