@@ -3,6 +3,7 @@
 .. Replacements:
 
 .. |WARNING| replace:: :red:`WARNING`
+.. |REMEMBER| replace:: :emphasis:`(REMEMBER)`
 
 .. |Architectural needs| replace:: :strong:`Architectural needs`
 .. |Collaboration architecture| replace:: :strong:`Knowledge architecture`

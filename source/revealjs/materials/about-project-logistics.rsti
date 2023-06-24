@@ -9,29 +9,40 @@ About project logistics
    :data-auto-animate:
    :data-state: title
 
-.. container:: flex-container
+.. revealjs-break::
+   :data-auto-animate:
 
-   .. container:: pct100
+|REMEMBER|
 
-      :emphasis:`(REMEMBER)`
+   .. rst-class:: left-justified
 
-.. container:: flex-container
+      .. container:: flex-container
 
-   .. container:: pct50
+         .. container:: pct50
 
-      .. rst-class:: left-justified
+            .. rubric:: |Architectural needs|
 
-         .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/00-architectural-needs.rsti
+         .. container:: pct50
 
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/10-collaboration-architecture.rsti
+            .. rubric:: |Bridle gives you a blueprint for|
 
-   .. container:: pct50
+:raw-html:`<div class="fragment" data-fragment-index="10">`
 
-      .. rst-class:: left-justified
+.. rst-class:: left-justified legend
 
-         .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/00-bridle-gives-you-a-blueprint.rsti
+   |nbsp|
 
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/10-project-logistic-on-github-with-hil.rsti
+      .. container:: flex-container
+
+         .. container:: pct50
+
+            .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/collaboration-architecture-static.rsti
+
+         .. container:: pct50
+
+            .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/project-logistic-on-github-with-hil-static.rsti
+
+:raw-html:`</div>`
 
 .. include:: /revealjs/materials/about-project-logistics/project-logistics-on-github.rsti
 .. include:: /revealjs/materials/about-project-logistics/on-premise-hil-infrastructure.rsti
