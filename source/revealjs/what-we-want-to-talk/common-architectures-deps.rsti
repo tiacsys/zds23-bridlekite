@@ -7,17 +7,17 @@
 
       .. rst-class:: left-justified
 
-         * **System architecture**
+         * |System architecture|
 
            * comprises SW & HW interfaces
            * structure, behavior, interfaces
 
-         * **Knowledge architecture**
+         * |Knowledge architecture|
 
            * big picture entire team knows about
            * propagation of new information
 
-         * **Collaboration architecture**
+         * |Collaboration architecture|
 
            * how work gets done
            * one's outputs are the other's input

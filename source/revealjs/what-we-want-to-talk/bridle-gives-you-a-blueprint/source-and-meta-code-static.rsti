@@ -1,14 +1,9 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-:strong:`Collaboration architecture`
+|Source and Meta Code|
 
-:raw-html:`<div class="fragment" data-fragment-index="10">`
-
-* Collaboration Models
-* Compliant Quality Assurance, e.g. IEC 62304
-
-:raw-html:`</div>`
+.. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/source-and-meta-code-list.rsti
 
 .. Local variables:
    coding: utf-8

@@ -1,16 +1,8 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-:raw-html:`<div class="fragment fade-in-then-semi-out" data-fragment-index="30">`
-:strong-blue:`Source and Meta Code`
-:raw-html:`</div>`
-
-:raw-html:`<div class="fragment" data-fragment-index="30">`
-
 * extends the framework (West / CMake / Kconfig)
 * expands the code base (ARCH / SOC / DTS / boards / drivers / tests / apps)
-
-:raw-html:`</div>`
 
 .. Local variables:
    coding: utf-8

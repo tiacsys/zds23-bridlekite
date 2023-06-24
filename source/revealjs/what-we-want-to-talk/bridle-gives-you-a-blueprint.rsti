@@ -7,23 +7,25 @@
 
       .. rst-class:: left-justified
 
-         .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/00-architectural-needs.rsti
+         .. rubric:: |Architectural needs|
 
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/10-collaboration-architecture.rsti
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/20-knowledge-architecture.rsti
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/30-system-architecture.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/collaboration-architecture-10.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/knowledge-architecture-20.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/system-architecture-30.rsti
 
    .. container:: pct50
 
       .. rst-class:: left-justified
 
-         .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/00-bridle-gives-you-a-blueprint.rsti
+         .. rubric:: |Bridle gives you a blueprint for|
 
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/10-project-logistic-on-github-with-hil.rsti
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/20-document-set-per-version.rsti
-         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/30-source-and-meta-code.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/project-logistic-on-github-with-hil-10.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/document-set-per-version-20.rsti
+         * .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/source-and-meta-code-30.rsti
 
-         .. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/40-start-with-a-little-history-for-warm-up.rsti
+         :raw-html:`<div class="fragment" data-fragment-index="40">`
+         |Let's start with a little history for warm up.|
+         :raw-html:`</div>`
 
 .. Local variables:
    coding: utf-8

@@ -4,6 +4,21 @@
 
 .. |WARNING| replace:: :red:`WARNING`
 
+.. |Architectural needs| replace:: :strong:`Architectural needs`
+.. |Collaboration architecture| replace:: :strong:`Knowledge architecture`
+.. |Knowledge architecture| replace:: :strong:`Knowledge architecture`
+.. |System architecture| replace:: :strong:`System architecture`
+
+.. |Bridle gives you a blueprint for| replace:: :strong-blue:`Bridle`
+   :strong:`gives you a` :strong-blue:`blueprint` :strong:`for`
+.. |Project Logistic on GitHub with HIL| replace::
+   :strong-blue:`Project Logistic on GitHub with HIL`
+.. |Document Set per Version| replace:: :strong-blue:`Document Set per Version`
+.. |Source and Meta Code| replace:: :strong-blue:`Source and Meta Code`
+
+.. |Let's start with a little history for warm up.| replace::
+   :strong-red:`Let's start with a little history for warm up.`
+
 .. |requirements.cmake| replace:: :code-red:`requirements.cmake`
 .. |toolchain.cmake| replace:: :code-red:`toolchain.cmake`
 .. |version.cmake| replace:: :code-red:`version.cmake`

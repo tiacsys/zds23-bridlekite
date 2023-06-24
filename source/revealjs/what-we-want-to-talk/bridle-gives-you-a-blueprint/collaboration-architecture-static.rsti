@@ -1,0 +1,13 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+|Collaboration architecture|
+
+.. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/collaboration-architecture-list.rsti
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
