@@ -1,0 +1,44 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+.. container:: flex-container
+
+   .. container:: pct50
+
+      .. rst-class:: left-justified
+
+         * **System architecture**
+
+           * comprises SW & HW interfaces
+           * structure, behavior, interfaces
+
+         * **Knowledge architecture**
+
+           * big picture entire team knows about
+           * propagation of new information
+
+         * **Collaboration architecture**
+
+           * how work gets done
+           * one's outputs are the other's input
+
+   .. container:: pct50
+
+      .. only:: statcont
+
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/common-architectures-deps-static.svg
+            :tagtype: object
+
+      .. only:: not statcont
+
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/common-architectures-deps-noglyphs.svg
+            :tagtype: object
+
+Hopefully you didn't miss our second talk "How I Fell in Love with Zephyr" on Tuesday at 15:50-16:30
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :

@@ -1,0 +1,25 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+.. container:: flex-container
+   :name: bridle-overview-downstream
+
+   .. container:: pct95
+
+      .. only:: statcont
+
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/bridle-overview-downstream-v2-static.svg
+            :tagtype: object
+
+         Overview what Bridle is
+
+      .. only:: not statcont
+
+         .. include:: /revealjs/what-we-want-to-talk/html-svg-animate-bridle-overview-downstream-v2.rsti
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
