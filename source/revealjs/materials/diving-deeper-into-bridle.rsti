@@ -9,10 +9,10 @@ Diving deeper into Bridle
    :data-auto-animate:
    :data-state: title
 
-.. include:: /revealjs/materials/diving-deeper-into-bridle/zephyr-example-application-vs-bridle.rsti
-.. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-extends-west-commands.rsti
-.. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-has-its-own-cmake-packages.rsti
 .. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-has-its-own-doc-set.rsti
+.. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-has-its-own-cmake-packages.rsti
+.. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-extends-west-commands.rsti
+.. include:: /revealjs/materials/diving-deeper-into-bridle/zephyr-example-application-vs-bridle.rsti
 
 .. Local variables:
    coding: utf-8
