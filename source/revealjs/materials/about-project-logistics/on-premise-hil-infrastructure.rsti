@@ -1,13 +1,15 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-Project logistics on GitHub
-===========================
+On premise HIL infrastructure
+=============================
 
 .. revealjs-section::
    :data-auto-animate:
 
-.. include:: /revealjs/materials/about-project-logistics/svgbob-tool-landscape-on-github.rsti
+.. image:: /_images/revealjs/materials/about-project-logistics/on-premise-hil-infrastructure.*
+
+Next generation – :strong-red:`currently work in progress` – will use |LabGRID|_ and |USB/IP|_.
 
 .. Local variables:
    coding: utf-8

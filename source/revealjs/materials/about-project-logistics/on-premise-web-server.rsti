@@ -1,0 +1,31 @@
+.. Never add or change more than content, instead edit structure in files:
+   ../part-X.rsti or ../../materials.rsti
+
+On premise Web server
+=====================
+
+.. revealjs-section::
+   :data-auto-animate:
+
+.. container:: flex-container
+
+   .. container:: pct80
+
+      .. include:: /revealjs/materials/about-project-logistics/svgbob-upload-monitor-on-webserver.rsti
+
+      .. rst-class:: left-justified legend
+
+         :build:   https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-build.yml
+         :publish: https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-publish.yml
+         :monitor: https://bridle.tiac-systems.net/.inbox/.note-monitor.txt
+
+   .. container:: pct20
+
+      .. image:: /_images/revealjs/materials/about-project-logistics/on-premise-web-server.*
+
+.. Local variables:
+   coding: utf-8
+   mode: text
+   mode: rst
+   End:
+   vim: fileencoding=utf-8 filetype=rst number :
