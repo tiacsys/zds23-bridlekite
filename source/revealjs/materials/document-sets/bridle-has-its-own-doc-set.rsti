@@ -26,7 +26,7 @@ Building Bridle documentation
 
 https://bridle.tiac-systems.net/doc/3.4/bridle/doc_build.html
 
-.. include:: /revealjs/materials/diving-deeper-into-bridle/svgbob-bridle-doc-set-1.rsti
+.. include:: /revealjs/materials/document-sets/svgbob-bridle-doc-set-v1.rsti
 
 .. Local variables:
    coding: utf-8
