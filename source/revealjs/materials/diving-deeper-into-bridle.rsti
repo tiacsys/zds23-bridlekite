@@ -9,6 +9,41 @@ Diving deeper into Bridle
    :data-auto-animate:
    :data-state: title
 
+.. revealjs-break::
+   :data-auto-animate:
+
+|REMEMBER|
+
+   .. rst-class:: left-justified
+
+      .. container:: flex-container
+
+         .. container:: pct50
+
+            .. rubric:: |Architectural needs|
+
+         .. container:: pct50
+
+            .. rubric:: |Bridle gives you a blueprint for|
+
+:raw-html:`<div class="fragment" data-fragment-index="10">`
+
+.. rst-class:: left-justified legend
+
+   |nbsp|
+
+      .. container:: flex-container
+
+         .. container:: pct50
+
+            .. include:: /revealjs/what-we-want-to-talk-about/bridle-gives-you-a-blueprint/system-architecture-static.rsti
+
+         .. container:: pct50
+
+            .. include:: /revealjs/what-we-want-to-talk-about/bridle-gives-you-a-blueprint/source-and-meta-code-static.rsti
+
+:raw-html:`</div>`
+
 .. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-has-its-own-cmake-packages.rsti
 .. include:: /revealjs/materials/diving-deeper-into-bridle/bridle-extends-west-commands.rsti
 .. include:: /revealjs/materials/diving-deeper-into-bridle/zephyr-example-application-vs-bridle.rsti
