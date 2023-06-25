@@ -7,7 +7,7 @@ On premise HIL infrastructure
 .. revealjs-section::
    :data-auto-animate:
 
-.. image:: /_images/revealjs/materials/about-project-logistics/on-premise-hil-infrastructure.*
+.. image:: /_images/revealjs/materials/project-logistics/on-premise-hil-infrastructure.*
 
 Next generation – :strong-red:`currently work in progress` – will use |LabGRID|_ and |USB/IP|_.
 

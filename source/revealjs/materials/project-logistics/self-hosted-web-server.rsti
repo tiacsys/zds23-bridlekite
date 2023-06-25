@@ -1,8 +1,8 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-On premise Web server
-=====================
+Self hosted Web server
+======================
 
 .. revealjs-section::
    :data-auto-animate:
@@ -11,7 +11,7 @@ On premise Web server
 
    .. container:: pct80
 
-      .. include:: /revealjs/materials/about-project-logistics/svgbob-upload-monitor-on-webserver.rsti
+      .. include:: /revealjs/materials/project-logistics/svgbob-upload-monitor-on-webserver.rsti
 
       .. rst-class:: left-justified legend
 
@@ -21,7 +21,7 @@ On premise Web server
 
    .. container:: pct20
 
-      .. image:: /_images/revealjs/materials/about-project-logistics/on-premise-web-server.*
+      .. image:: /_images/revealjs/materials/project-logistics/self-hosted-web-server.*
 
 .. Local variables:
    coding: utf-8
