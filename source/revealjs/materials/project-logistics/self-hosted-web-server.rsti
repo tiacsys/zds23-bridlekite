@@ -13,11 +13,13 @@ Self hosted Web server
 
       .. include:: /revealjs/materials/project-logistics/svgbob-upload-monitor-on-webserver.rsti
 
-      .. rst-class:: left-justified legend
+      .. only:: statcont
 
-         :build:   https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-build.yml
-         :publish: https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-publish.yml
-         :monitor: https://bridle.tiac-systems.net/.inbox/.note-monitor.txt
+         .. rst-class:: left-justified legend
+
+            :build:   https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-build.yml
+            :publish: https://github.com/tiacsys/bridle/blob/main/.github/workflows/doc-publish.yml
+            :monitor: https://bridle.tiac-systems.net/.inbox/.note-monitor.txt
 
    .. container:: pct20
 
