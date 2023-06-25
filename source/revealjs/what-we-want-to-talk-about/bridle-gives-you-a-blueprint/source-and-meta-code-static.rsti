@@ -1,13 +1,9 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-|Knowledge architecture|
+|Source and Meta Code|
 
-:raw-html:`<div class="fragment" data-fragment-index="20">`
-
-.. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/knowledge-architecture-list.rsti
-
-:raw-html:`</div>`
+.. include:: /revealjs/what-we-want-to-talk-about/bridle-gives-you-a-blueprint/source-and-meta-code-list.rsti
 
 .. Local variables:
    coding: utf-8

@@ -1,9 +1,9 @@
 .. Never add or change more than content, instead edit structure in files:
    ../part-X.rsti or ../../materials.rsti
 
-|Document Set per Version|
+|Project Logistic on GitHub with HIL|
 
-.. include:: /revealjs/what-we-want-to-talk/bridle-gives-you-a-blueprint/document-set-per-version-list.rsti
+.. include:: /revealjs/what-we-want-to-talk-about/bridle-gives-you-a-blueprint/project-logistic-on-github-with-hil-list.rsti
 
 .. Local variables:
    coding: utf-8

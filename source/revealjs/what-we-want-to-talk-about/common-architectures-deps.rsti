@@ -26,12 +26,12 @@
 
       .. only:: statcont
 
-         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/common-architectures-deps-static.svg
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-about/common-architectures-deps-static.svg
             :tagtype: object
 
       .. only:: not statcont
 
-         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/common-architectures-deps-noglyphs.svg
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-about/common-architectures-deps-noglyphs.svg
             :tagtype: object
 
 Hopefully you didn't miss our second talk "How I Fell in Love with Zephyr" on Tuesday at 15:50-16:30

@@ -17,8 +17,8 @@
 .. |Document Set per Version| replace:: :strong-blue:`Document Set per Version`
 .. |Source and Meta Code| replace:: :strong-blue:`Source and Meta Code`
 
-.. |Let's start with a little history for warm up.| replace::
-   :strong-red:`Let's start with a little history for warm up.`
+.. |start with history| replace::
+   :strong-red:`Let's start with a bit of history for warm up.`
 
 .. |requirements.cmake| replace:: :code-red:`requirements.cmake`
 .. |toolchain.cmake| replace:: :code-red:`toolchain.cmake`

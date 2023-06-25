@@ -8,14 +8,14 @@
 
       .. only:: statcont
 
-         .. imagesvg:: /_images/revealjs/what-we-want-to-talk/bridle-overview-downstream-v2-static.svg
+         .. imagesvg:: /_images/revealjs/what-we-want-to-talk-about/bridle-overview-downstream-v2-static.svg
             :tagtype: object
 
          Overview what Bridle is
 
       .. only:: not statcont
 
-         .. include:: /revealjs/what-we-want-to-talk/html-svg-animate-bridle-overview-downstream-v2.rsti
+         .. include:: /revealjs/what-we-want-to-talk-about/html-svg-animate-bridle-overview-downstream-v2.rsti
 
 .. Local variables:
    coding: utf-8

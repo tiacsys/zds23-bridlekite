@@ -1,5 +1,5 @@
 .. Never add or change more than content, instead edit structure in files:
-   what-we-want-to-talk.rsti
+   what-we-want-to-talk-about.rsti
 
 .. raw:: html
 
@@ -9,7 +9,7 @@
    <span class="fragment"></span>
    <span class="fragment"></span>
 
-   <div data-animate data-src="_static/revealjs/what-we-want-to-talk/bridle-overview-downstream-v2-noglyphs.svg">
+   <div data-animate data-src="_static/revealjs/what-we-want-to-talk-about/bridle-overview-downstream-v2-noglyphs.svg">
    <!--
    {
      "setup": [
