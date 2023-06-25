@@ -482,28 +482,28 @@ intersphinx_mapping = {
     #
 
     # python -m sphinx.ext.intersphinx 'https://docs.python.org/3/objects.inv'
-    'python-doc': ('https://docs.python.org/3', None),
+    # 'python-doc': ('https://docs.python.org/3', None),
 
     # python -m sphinx.ext.intersphinx 'https://devguide.python.org/objects.inv'
-    'python-devguide': ('https://devguide.python.org/', None),
+    # 'python-devguide': ('https://devguide.python.org/', None),
 
     # python -m sphinx.ext.intersphinx 'https://www.sphinx-doc.org/en/master/objects.inv'
-    'sphinx-doc': ('https://www.sphinx-doc.org/en/master', None),
+    # 'sphinx-doc': ('https://www.sphinx-doc.org/en/master', None),
 
     # python -m sphinx.ext.intersphinx 'https://rest-sphinx-memo.readthedocs.io/en/stable/objects.inv'
-    'sphinx-memo': ('https://rest-sphinx-memo.readthedocs.io/en/stable/', None),
+    # 'sphinx-memo': ('https://rest-sphinx-memo.readthedocs.io/en/stable/', None),
 
     # python -m sphinx.ext.intersphinx 'https://jbms.github.io/sphinx-immaterial/objects.inv'
-    'sphinx-immaterial': ('https://jbms.github.io/sphinx-immaterial/', None),
+    # 'sphinx-immaterial': ('https://jbms.github.io/sphinx-immaterial/', None),
 
     # python -m sphinx.ext.intersphinx 'https://sphinx-revealjs.readthedocs.io/en/stable/objects.inv'
-    'sphinx-revealjs': ('https://sphinx-revealjs.readthedocs.io/en/stable/', None),
+    # 'sphinx-revealjs': ('https://sphinx-revealjs.readthedocs.io/en/stable/', None),
 
     # python -m sphinx.ext.intersphinx 'https://sphinxcontrib-spelling.readthedocs.io/en/stable/objects.inv'
-    'sphinx-spelling': ('https://sphinxcontrib-spelling.readthedocs.io/en/stable/', None),
+    # 'sphinx-spelling': ('https://sphinxcontrib-spelling.readthedocs.io/en/stable/', None),
 
     # python -m sphinx.ext.intersphinx 'https://docs.zephyrproject.org/latest/objects.inv'
-    'zephyr-doc': ('https://docs.zephyrproject.org/latest/', None),
+    # 'zephyr-doc': ('https://docs.zephyrproject.org/latest/', None),
 
     # python -m sphinx.ext.intersphinx 'https://bridle.tiac-systems.net/doc/latest/bridle/objects.inv'
     'tiac-bridle-doc': ('https://bridle.tiac-systems.net/doc/latest/bridle/', None),
