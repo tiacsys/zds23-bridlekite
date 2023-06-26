@@ -7,7 +7,10 @@ Bridle extends West Commands
 .. revealjs-section::
    :data-auto-animate:
 
-.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-extensions.rsti
+
 .. include:: /docblocks/bridle-west-commands-yml.rsti
 
 .. rst-class:: left-justified
@@ -16,7 +19,7 @@ Bridle extends West Commands
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -36,7 +39,7 @@ Bridle extends West Commands
 
 .. rst-class:: left-justified
 
-:strong-yellow:`Goal:`
+:strong-blue:`Goal:`
 Export Bridle's CMake package in a manner exactly to Zephyr.
 
 West Command bridle-export
@@ -44,7 +47,10 @@ West Command bridle-export
 
 .. revealjs-section::
 
-.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-extensions.rsti
+
 .. include:: /docblocks/bridle-west-commands-export.rsti
 
 .. rst-class:: left-justified
@@ -53,7 +59,7 @@ West Command bridle-export
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -82,7 +88,10 @@ Need my own :code-red:`run_cmake()` implementation! – Why not
 
 .. revealjs-break::
 
-.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-extensions.rsti
+
 .. include:: /docblocks/bridle-west-commands-yml.rsti
 
 .. rst-class:: left-justified
@@ -91,7 +100,7 @@ Need my own :code-red:`run_cmake()` implementation! – Why not
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -116,7 +125,10 @@ sub-folder within the West project :code-green:`zephyr`.
 
 .. revealjs-break::
 
-.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-extensions.rsti
+
 .. include:: /docblocks/bridle-west-commands-yml.rsti
 
 .. rst-class:: left-justified
@@ -125,7 +137,7 @@ sub-folder within the West project :code-green:`zephyr`.
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -151,7 +163,10 @@ sub-folder within the West project :code-green:`zephyr`.
 
 .. revealjs-break::
 
-.. include:: /docblocks/zephyr-develop-west-extensions.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-extensions.rsti
+
 .. include:: /docblocks/bridle-west-commands-yml.rsti
 
 .. rst-class:: left-justified
@@ -160,7 +175,7 @@ sub-folder within the West project :code-green:`zephyr`.
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -193,7 +208,7 @@ module pointed to Zephyr by decorators.
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -230,7 +245,7 @@ module pointed to Zephyr by decorators.
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)
@@ -268,7 +283,7 @@ module pointed to Zephyr by decorators.
 
       .. container:: pct33
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
             .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
                :caption: West Manifest (remember)

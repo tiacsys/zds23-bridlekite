@@ -3,8 +3,8 @@
 
 .. svgbob::
    :font-family: "DejaVu Sans Condensed"
-   :font-size: 14
-   :scale: 10.0
+   :font-size: 24
+   :scale: 12.0
    :align: center
 
    ""
@@ -24,11 +24,11 @@
           |                     |                            |
           |                     |                            | IMPORT ?
     .~~~~~|~~~~~~~~~~~~~~~~~~~~~|~~~~~. .~~~~~~~~~~~~~~~~~~~~|~~~~~.
-    ! ┌───#─────────┐    ┌──────#───┐ ! !   ┌────────────────#───┐ !
-    ! │"WestCommand"│    │"west.log"│-!-!-->│"zcmake.run_cmake()"│ !
-    ! └─────────────┘    └──────────┘ ! !   └────────────────────┘ !
+    ! ┌───#────────────┐ ┌──────#───┐ ! !   ┌────────────────#───┐ !
+    ! │"WestCommand"   │ │"west.log"│-!-!-->│"zcmake.run_cmake()"│ !
+    ! └────────────────┘ └──────────┘ ! !   └────────────────────┘ !
     '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~' '~~~~~~~~~~~~~~~~~~~~~~~~~~'
-     "Python classes and methods (.venv)" "Zephyr method to run CMake from the West extensions there"
+     "Python classes and methods (.venv)" "Zephyr method to run CMake"
 
    # Legend:
    o = { fill-opacity: 0.166; stroke-opacity: 0.083 }
