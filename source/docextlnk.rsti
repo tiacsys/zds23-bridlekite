@@ -63,6 +63,9 @@
 .. |Bridle| replace:: :strong:`Bridle v3.4`
 .. _`Bridle`: https://bridle.tiac-systems.net/doc/3.4/bridle
 
+.. |Bridle latest| replace:: :strong:`Bridle`
+.. _`Bridle latest`: https://bridle.tiac-systems.net/doc/latest/bridle
+
 .. |[BUG] issue 104| replace:: :strong:`[BUG] issue 104`
 .. _`[BUG] issue 104`: https://github.com/tiacsys/bridle/issues/104
 
