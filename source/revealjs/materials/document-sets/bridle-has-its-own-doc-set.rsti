@@ -15,11 +15,21 @@ Bridle has its own Documentation Set
 
    .. container:: pct100
 
-      .. raw:: html
+      .. only:: statcont
 
-         <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/doc_structure.html"
-                 data-animate frameborder="0" allowfullscreen=""
-                 height="635px" width="100%"></iframe>
+         .. raw:: html
+
+            <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/doc_structure.html"
+                    data-animate frameborder="0" allowfullscreen=""
+                    height="635px" width="100%"></iframe>
+
+      .. only:: not statcont
+
+         .. raw:: html
+
+            <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/doc_structure.html"
+                    data-animate frameborder="0" allowfullscreen=""
+                    height="750px" width="100%"></iframe>
 
 Building Bridle documentation
 -----------------------------
