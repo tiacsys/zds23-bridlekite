@@ -3,8 +3,8 @@
 
 .. svgbob::
    :font-family: "DejaVu Sans Condensed"
-   :font-size: 14
-   :scale: 10.0
+   :font-size: 24
+   :scale: 12.5
    :align: center
 
    ""
@@ -12,7 +12,7 @@
      +--------------------------------------------------------------------------------+               +-------------+     .--.--.----------------.
      |   "zephyr/cmake/modules"       "include()" "zephyr/share/"                     |               |             |    /  /  / "CMakeLists.txt"|
      |   └─ "zephyr_default.cmake"<------------.  └─ "zephyr-package/cmake/"          |"zephyr-export"|             | +-+--+--+------------------+
-     |      :                                  |     ├─ "zephyr_export.cmake" --------+---------------+-> Zephyr<-+-+-+--"find_package(Zephyr)"  |
+     |      :                                  |     ├─ "zephyr_export.cmake" --------+---------------+->Zephyr <-+-+-+--"find_package(Zephyr)"  |
      | .~~> o- "FIND ZephyrBuild"------------. '---O ├─ "ZephyrConfig.cmake"  <-------+---------------+-----------' | |  ______________________  |
      | !    :                                |       └─ "ZephyrConfigVersion.cmake"   |               |             | | |                      | |
      | !    #- "APPEND ZCM python"           |                                        |               |             | | |"Challenge: How can I"| |
@@ -31,7 +31,7 @@
      | !    #- "APPEND ZCM bridle/toolchain"     +----------------------------------+ |               |             | |  "BETTER"   V   "w/ find"|
      | !    :                                    |"bridle/share/"             {g,o} | |               |             | |  ______________________  |
      | '~~~~'                                    |└─ "bridle-package/cmake/"        | |"bridle-export"|             | | |                {b,o} | |
-     |                                           |   ├─ "bridle_export.cmake"       | |---------------+-> Bridle<-+-+-| |"find_package(Bridle)"| |
+     |                                           |   ├─ "bridle_export.cmake"       | |---------------+->Bridle <-+-+-| |"find_package(Bridle)"| |
      |                                           |   ├─ "BridleConfig.cmake"        | |<--------------+-----------' | | |______________________| |
      |                                           |   └─ "BridleConfigVersion.cmake" | |               |             | |                          |
      |                                           +----------------------------------+ |               | {g,O}       | |                          |
