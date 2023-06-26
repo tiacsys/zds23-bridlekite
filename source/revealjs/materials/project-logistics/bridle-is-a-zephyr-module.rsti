@@ -7,30 +7,19 @@ Bridle is a Zephyr Module
 .. revealjs-section::
    :data-auto-animate:
 
-.. include:: /docblocks/zephyr-develop-modules.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-modules.rsti
+
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. container:: flex-container
 
-   .. container:: pct30
+   .. container:: pct100
 
-      .. rst-class:: left-justified legend
+      .. rubric:: **Workspace structure** |CRT| **Zephyr Expansion**
 
-         **Zephyr Expansion**
-
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/zephyr/module.yml
-            :caption: Zephyr Module file
-            :name: zephyr-module-file
-            :language: yaml
-            :dedent: 0
-            :lines: 5,7,9,4,10,12,14,18,20,16,22,4,25-26,4,29-30,4,33-34
-         .. :linenos:
-
-   .. container:: pct70
-
-      .. rubric:: Workspace structure
-
-      .. imagesvg:: /_images/revealjs/materials/getting-started-in-practice/bridle-zephyr-module-noglyphs.svg
+      .. imagesvg:: /_images/revealjs/materials/project-logistics/bridle-zephyr-module-noglyphs.svg
          :tagtype: object
 
       .. rst-class:: left-justified
@@ -43,7 +32,10 @@ Zephyr entry points into Bridle
 
 .. revealjs-section::
 
-.. include:: /docblocks/zephyr-develop-modules.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-modules.rsti
+
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified
@@ -159,7 +151,10 @@ Zephyr entry points into Bridle
 
 .. revealjs-break::
 
-.. include:: /docblocks/zephyr-build-cmake.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-build-cmake.rsti
+
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified
@@ -228,7 +223,10 @@ Zephyr entry points into Bridle
 
 .. revealjs-break::
 
-.. include:: /docblocks/zephyr-build-kconfig.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-build-kconfig.rsti
+
 .. include:: /docblocks/bridle-zephyr-module-yml.rsti
 
 .. rst-class:: left-justified

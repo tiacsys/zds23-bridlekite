@@ -7,31 +7,19 @@ Bridle has its own West Manifest
 .. revealjs-section::
    :data-auto-animate:
 
-.. include:: /docblocks/bridle-dm-code-base-repository-structure.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/bridle-dm-code-base-repository-structure.rsti
+
 .. include:: /docblocks/bridle-west-yml.rsti
 
 .. container:: flex-container
 
-   .. container:: pct30
+   .. container:: pct100
 
-      .. rst-class:: left-justified legend
+      .. rubric:: **Repository structure** |CRT| **Software Conficuration Management**
 
-         **Software Conficuration Management**
-
-         .. rli:: https://github.com/tiacsys/bridle/raw/v3.4.0/west.yml
-            :caption: West Manifest from Bridle
-            :name: west-mainifest-from-bridle-repo
-            :language: yaml
-            :dedent: 0
-            :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-68,24,88-90
-         .. :lines: 22-23,27-28,32-34,96,98,104,102,40,44-48,49,92-93,51,63,64-90
-         .. :linenos:
-
-   .. container:: pct70
-
-      .. rubric:: Repository structure
-
-      .. imagesvg:: /_images/revealjs/materials/getting-started-in-practice/bridle-west-repos-noglyphs.svg
+      .. imagesvg:: /_images/revealjs/materials/project-logistics/bridle-west-repos-noglyphs.svg
          :tagtype: object
 
       .. rst-class:: left-justified
@@ -46,7 +34,10 @@ West Workspace setup from Bridle
 
 .. revealjs-section::
 
-.. include:: /docblocks/zephyr-develop-west-manifest.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/zephyr-develop-west-manifest.rsti
+
 .. include:: /docblocks/bridle-west-yml.rsti
 
 .. rst-class:: left-justified

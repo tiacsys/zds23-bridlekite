@@ -47,6 +47,8 @@ Project logistics
 .. include:: /revealjs/materials/project-logistics/project-logistics-on-github.rsti
 .. include:: /revealjs/materials/project-logistics/on-premise-hil-infrastructure.rsti
 .. include:: /revealjs/materials/project-logistics/self-hosted-web-server.rsti
+.. include:: /revealjs/materials/project-logistics/bridle-has-its-own-west-manifest.rsti
+.. include:: /revealjs/materials/project-logistics/bridle-is-a-zephyr-module.rsti
 
 .. Local variables:
    coding: utf-8
