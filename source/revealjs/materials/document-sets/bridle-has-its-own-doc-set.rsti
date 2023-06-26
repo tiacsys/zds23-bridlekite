@@ -7,7 +7,9 @@ Bridle has its own Documentation Set
 .. revealjs-section::
    :data-auto-animate:
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/doc_structure.html
+.. only:: statcont
+
+   https://bridle.tiac-systems.net/doc/3.4/bridle/doc_structure.html
 
 .. container:: flex-container
 
@@ -24,7 +26,9 @@ Building Bridle documentation
 
 .. revealjs-section::
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/doc_build.html
+.. only:: statcont
+
+   https://bridle.tiac-systems.net/doc/3.4/bridle/doc_build.html
 
 .. include:: /revealjs/materials/document-sets/svgbob-bridle-doc-set-v1.rsti
 
