@@ -1,16 +1,28 @@
 .. Never add or change more than document text blocks (ex. LaTeX formatting).
 
-https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html
+.. only:: statcont
+
+   https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html
 
 .. container:: flex-container
 
    .. container:: pct100
 
-      .. raw:: html
+      .. only:: statcont
 
-         <iframe src="https://bridle.tiac-systems.net/doc/3.4/bridle/getting_started.html"
-                 data-animate frameborder="0" allowfullscreen=""
-                 height="600px" width="100%"></iframe>
+         .. raw:: html
+
+            <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/getting_started.html"
+                    data-animate frameborder="0" allowfullscreen=""
+                    height="635px" width="100%"></iframe>
+
+      .. only:: not statcont
+
+         .. raw:: html
+
+            <iframe src="https://bridle.tiac-systems.net/doc/latest/bridle/getting_started.html"
+                    data-animate frameborder="0" allowfullscreen=""
+                    height="750px" width="100%"></iframe>
 
 .. .. oembed:: https://www.youtube.com/watch?v=Oyh8nuaLASA
    :maxwidth: 1024

@@ -14,7 +14,9 @@ Installing Bridle manually
 
 .. revealjs-section::
 
-.. include:: /docblocks/bridle-gs-installing-cloning-the-repositories.rsti
+.. only:: statcont
+
+   .. include:: /docblocks/bridle-gs-installing-cloning-the-repositories.rsti
 
 .. rst-class:: left-justified
 
@@ -32,7 +34,7 @@ Installing Bridle manually
             #. West workspace for Bridle
             #. Export **CMake packages** (Zephyr and Bridle)
 
-         .. rst-class:: left-justified legend
+         .. rst-class:: left-justified
 
          .. revealjs-code-block:: cmake
             :caption: CMake messages from Bridle
@@ -54,34 +56,91 @@ Installing Bridle manually
 
       .. container:: pct50
 
-         .. rst-class:: left-justified legend
+         .. .. code-block:: no-highlight
+               :caption: Python Virtual Environment Setup
+               :name: bridle-python-virtual-environment-setup
 
-            .. container:: asciinema align-center
-               :name: cast-bridle-workspace
+               python3 -m venv --clear --copies .env
+               source .env/bin/activate
 
-               .. only:: statcont
+         .. .. |nbsp|
 
-                  .. imagesvg:: /revealjs/materials/getting-started-in-practice/bridle-workspace-static.svg
-                     :tagtype: object
+         .. code-block:: no-highlight
+            :caption: West Workspace Setup from Bridle
+            :name: bridle-west-worspace-setup
 
-                  "Hello World!" sample with Bridle
+            west init -m https://github.com/tiacsys/bridle --mr v3.4-branch
+            west update
 
-               .. only:: not statcont
+         |nbsp|
 
-                  .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
-                     :poster: npt:2:06
-                     :speed: 3.0
-                     :autoplay: 1
-                     :preload: 1
-                     :loop: 1
+         .. only:: statcont
 
-         .. include:: /docblocks/bridle-manifest.rsti
-         .. include:: /docblocks/bridle-requirements.rsti
+            .. include:: /docblocks/bridle-manifest.rsti
+
+            |nbsp|
+
+         .. code-block:: no-highlight
+            :caption: Python Virtual Environment Setup
+            :name: bridle-python-virtual-environment-setup
+
+            pip3 install --upgrade --requirement zephyr\scripts\requirements.txt
+            pip3 install --upgrade --requirement bridle\scripts\requirements.txt
+
+         |nbsp|
+
+         .. only:: statcont
+
+            .. include:: /docblocks/bridle-requirements.rsti
+
+            |nbsp|
+
+         .. code-block:: no-highlight
+            :caption: CMake Package Export
+            :name: bridle-cmake-package-export
+
+            west zephyr-export
+            west bridle-export
+
+         |nbsp|
+
+         .. code-block:: no-highlight
+            :caption: "Hello World!" sample on QEMU
+            :name: bridle-hello-world-on-qemu
+
+            west build -p always -b qemu_cortex_m3 zephyr/samples/hello_world
+            west build -t run
+
+.. revealjs-break::
+
+.. container:: flex-container
+
+   .. container:: pct100
+
+      .. container:: asciinema align-center
+         :name: cast-bridle-workspace
+
+         .. only:: statcont
+
+            .. imagesvg:: /revealjs/materials/getting-started-in-practice/bridle-workspace-static.svg
+               :tagtype: object
+
+            "Hello World!" sample with Bridle
+
+         .. only:: not statcont
+
+            .. asciinema:: /revealjs/materials/getting-started-in-practice/bridle-workspace.cast
+               :poster: npt:2:06
+               :speed: 3.0
+               :autoplay: 1
+               :preload: 1
+               :loop: 1
 
 Zephyr downstream attributes
-----------------------------
+============================
 
 .. revealjs-section::
+   :data-auto-animate:
 
 .. container:: flex-container
 
