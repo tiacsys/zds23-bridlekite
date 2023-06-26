@@ -10,9 +10,10 @@ Read-The-Docs
 .. include:: /docblocks/bridle-getting-started.rsti
 
 Installing Bridle manually
---------------------------
+==========================
 
 .. revealjs-section::
+   :data-auto-animate:
 
 .. only:: statcont
 
@@ -111,7 +112,10 @@ Installing Bridle manually
             west build -p always -b qemu_cortex_m3 zephyr/samples/hello_world
             west build -t run
 
-.. revealjs-break::
+"Hello World!" sample on QEMU
+-----------------------------
+
+.. revealjs-section::
 
 .. container:: flex-container
 
