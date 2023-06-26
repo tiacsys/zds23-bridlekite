@@ -32,9 +32,10 @@ Bridle has its own Documentation Set
                     height="750px" width="100%"></iframe>
 
 Building Bridle documentation
------------------------------
+=============================
 
 .. revealjs-section::
+   :data-auto-animate:
 
 .. only:: statcont
 
