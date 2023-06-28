@@ -27,8 +27,8 @@
      inkscape:document-units="pt"
      showgrid="false"
      inkscape:zoom="1.2734236"
-     inkscape:cx="319.21821"
-     inkscape:cy="244.61617"
+     inkscape:cx="370.26171"
+     inkscape:cy="199.06966"
      inkscape:window-width="1920"
      inkscape:window-height="1016"
      inkscape:window-x="0"
@@ -1399,35 +1399,35 @@
        style="fill:#6b8cbd;fill-opacity:1;fill-rule:nonzero;stroke:#6b8cbd;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33000001;stroke:none;stroke-width:0.75"
-       x="409.38766"
-       y="18.754881"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66;stroke:none;stroke-width:0.75"
+       x="406.87399"
+       y="18.754883"
        id="text853"><tspan
          sodipodi:role="line"
          id="tspan851"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Thin';-inkscape-font-specification:'Clear Sans Thin, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.33000001;stroke-width:0.75"
-         x="409.38766"
-         y="18.754881">vendor/product</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66;stroke-width:0.75"
+         x="406.87399"
+         y="18.754883">vendor/product</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="414.8974"
        y="55.59903"
        id="text907"><tspan
          sodipodi:role="line"
          id="tspan905"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;fill:#000000;fill-opacity:0.5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;fill:#000000;fill-opacity:0.66000003"
          x="414.8974"
          y="55.59903">Mirror</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33000001;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="408.7301"
        y="118.16216"
        id="text911"><tspan
          sodipodi:role="line"
          id="tspan909"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Clear Sans Light';-inkscape-font-specification:'Clear Sans Light, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.33000001;stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;font-family:'Clear Sans Light';-inkscape-font-specification:'Clear Sans Light, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
          x="408.7301"
          y="118.16216">tiacsys/product</tspan></text>
     <text
@@ -1443,13 +1443,13 @@
          y="59.614166">tiacsys/bridle</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="451.81442"
        y="76.151215"
        id="text919"><tspan
          sodipodi:role="line"
          id="tspan917"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.5;stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
          x="451.81442"
          y="76.151215">+ Zephyr Module</tspan></text>
     <text
@@ -1465,24 +1465,24 @@
          y="55.59903">Mirror</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
-       x="35.939445"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="32.209953"
        y="11.522259"
        id="text1481"><tspan
          sodipodi:role="line"
          id="tspan1479"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Thin';-inkscape-font-specification:'Clear Sans Thin, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-         x="35.939445"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
+         x="32.209953"
          y="11.522259">zephyrproject-rtos/zephyr</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="182.3974"
        y="306.09903"
        id="text1485"><tspan
          sodipodi:role="line"
          id="tspan1483"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.5;stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:12px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
          x="182.3974"
          y="306.09903">Mirror</tspan></text>
     <text
@@ -1520,7 +1520,7 @@
          y="84.09903">optional</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;line-height:1.25;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="451.81442"
        y="91.151207"
        id="text1286"><tspan
@@ -1541,70 +1541,70 @@
          y="285.09903">optional</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.5;stroke:none;stroke-width:0.75"
+       style="font-style:normal;font-weight:normal;font-size:30px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
        x="181.81442"
        y="322.15121"
        id="text1368"><tspan
          sodipodi:role="line"
          id="tspan1366"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.5;stroke-width:0.75"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:semi-condensed;font-size:10px;font-family:'DejaVu Sans';-inkscape-font-specification:'DejaVu Sans, Semi-Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
          x="181.81442"
          y="322.15121">+ Patches</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33000001;stroke:none;stroke-width:0.75"
-       x="425.69165"
-       y="175.95801"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
+       x="410.13867"
+       y="176.92477"
        id="text3295"><tspan
          sodipodi:role="line"
          id="tspan3293"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;fill:#000000;fill-opacity:0.33000001"
-         x="425.69165"
-         y="175.95801">tiacsys/magic-tool</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
+         x="410.13867"
+         y="176.92477">tiacsys/magic-tool</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33000001;stroke:none;stroke-width:0.75"
-       x="276.63623"
-       y="308.96582"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66;stroke:none;stroke-width:0.75"
+       x="260.85931"
+       y="309.93292"
        id="text3299"><tspan
          sodipodi:role="line"
          id="tspan3297"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;fill:#000000;fill-opacity:0.33000001"
-         x="276.63623"
-         y="308.96582">tiacsys/&lt;project&gt;</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66;stroke-width:0.75"
+         x="260.85931"
+         y="309.93292">tiacsys/&lt;project&gt;</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
-       x="92.601303"
-       y="255.04587"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="80.463852"
+       y="255.46335"
        id="text3303"><tspan
          sodipodi:role="line"
          id="tspan3301"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-         x="92.601303"
-         y="255.04587">zephyrproject-rtos/&lt;project&gt;</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
+         x="80.463852"
+         y="255.46335">zephyrproject-rtos/&lt;project&gt;</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
-       x="63.841541"
-       y="283.80368"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.75"
+       x="50.575169"
+       y="284.22116"
        id="text3307"><tspan
          sodipodi:role="line"
          id="tspan3305"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
-         x="63.841541"
-         y="283.80368">zephyrproject-rtos/&lt;project&gt;</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
+         x="50.575169"
+         y="284.22116">zephyrproject-rtos/&lt;project&gt;</tspan></text>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33000001;stroke:none;stroke-width:0.75"
-       x="27.894278"
-       y="312.56149"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
+       x="17.469194"
+       y="313.34042"
        id="text3311"><tspan
          sodipodi:role="line"
          id="tspan3309"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75;fill:#000000;fill-opacity:0.33000001"
-         x="27.894278"
-         y="312.56149">zephyrproject-rtos/&lt;project&gt;</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
+         x="17.469194"
+         y="313.34042">zephyrproject-rtos/&lt;project&gt;</tspan></text>
     <path
        id="path620"
        transform="matrix(0.718963,0,0,0.718963,0.359482,0.359482)"
@@ -1620,15 +1620,15 @@
        style="fill:#6b8cbd;fill-opacity:0.6588;fill-rule:nonzero;stroke:none" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33;stroke:none;stroke-width:0.75"
-       x="410.69165"
-       y="220.95801"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
+       x="400.00336"
+       y="223.98692"
        id="text3634"><tspan
          sodipodi:role="line"
          id="tspan3632"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.33;stroke-width:0.75"
-         x="410.69165"
-         y="220.95801">tiacsys/b2b-tests</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
+         x="400.00336"
+         y="223.98692">tiacsys/b2b-tests</tspan></text>
     <path
        id="path3636"
        d="m 355.82031,249.25 h 120.78906 c 0.28125,0 0.5625,0.0273 0.83985,0.082 0.27734,0.0547 0.54687,0.13672 0.80859,0.24609 0.26172,0.10938 0.51172,0.24219 0.7461,0.39844 0.23437,0.15625 0.45312,0.33594 0.65234,0.53906 0.20312,0.19922 0.37891,0.41797 0.53906,0.65235 0.15625,0.23437 0.28906,0.48437 0.39844,0.74609 0.10937,0.26172 0.19141,0.53125 0.24609,0.8086 0.0547,0.27734 0.082,0.55859 0.082,0.83984 v 20.13281 c 0,0.28125 -0.0273,0.5625 -0.082,0.83985 -0.0547,0.27734 -0.13672,0.55078 -0.24609,0.8125 -0.10938,0.26171 -0.24219,0.50781 -0.39844,0.74218 -0.16015,0.23828 -0.33594,0.45703 -0.53906,0.65625 -0.19922,0.19922 -0.41797,0.37891 -0.65234,0.53516 -0.23438,0.15625 -0.48438,0.28906 -0.7461,0.39844 -0.26172,0.10937 -0.53125,0.1914 -0.80859,0.24609 -0.27735,0.0547 -0.5586,0.082 -0.83985,0.082 H 355.82031 c -0.28125,0 -0.5625,-0.0273 -0.83984,-0.082 -0.27735,-0.0547 -0.54688,-0.13672 -0.8086,-0.24609 -0.26171,-0.10938 -0.51171,-0.24219 -0.74609,-0.39844 -0.23437,-0.15625 -0.45312,-0.33594 -0.65234,-0.53516 -0.20313,-0.19922 -0.38282,-0.41797 -0.53907,-0.65625 -0.15625,-0.23437 -0.28906,-0.48047 -0.39843,-0.74218 -0.10938,-0.26172 -0.19141,-0.53516 -0.2461,-0.8125 -0.0547,-0.27735 -0.082,-0.5586 -0.082,-0.83985 V 253.5625 c 0,-0.28125 0.0274,-0.5625 0.082,-0.83984 0.0547,-0.27735 0.13672,-0.54688 0.2461,-0.8086 0.10937,-0.26172 0.24218,-0.51172 0.39843,-0.74609 0.15625,-0.23438 0.33594,-0.45313 0.53907,-0.65235 0.19922,-0.20312 0.41797,-0.38281 0.65234,-0.53906 0.23438,-0.15625 0.48438,-0.28906 0.74609,-0.39844 0.26172,-0.10937 0.53125,-0.1914 0.8086,-0.24609 0.27734,-0.0547 0.55859,-0.082 0.83984,-0.082 z m 0,0"
@@ -1639,15 +1639,15 @@
        style="fill:#6b8cbd;fill-opacity:0.6588;fill-rule:nonzero;stroke:none" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.33;stroke:none;stroke-width:0.75"
-       x="380.69165"
-       y="265.95801"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;line-height:1.25;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:0.66000003;stroke:none;stroke-width:0.75"
+       x="357.33105"
+       y="266.9248"
        id="text3642"><tspan
          sodipodi:role="line"
          id="tspan3640"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Arial;-inkscape-font-specification:'Arial, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.33;stroke-width:0.75"
-         x="380.69165"
-         y="265.95801">tiacsys/product-apps</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12px;font-family:'Clear Sans Medium';-inkscape-font-specification:'Clear Sans Medium, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:0.66000003;stroke-width:0.75"
+         x="357.33105"
+         y="266.9248">tiacsys/product-apps</tspan></text>
     <path
        id="path3644"
        d="m 324.08883,159.40518 54.47656,57.95108"
