@@ -20,8 +20,7 @@ Bridle outlook
 
    * *add*: more Seeed Studio **Grove Shields**, e.g. Buzzer, OLED, Sensors
    * *add*: more popular connector systems similar to Grove, e.g. **PMOD**
-   * *improve*: **PWM channel** mapping over **DeviceTree Nexus Nodes**
-   * *try out*: **ADC/DAC channel** mapping over **DeviceTree Nexus Nodes**
+   * *improve (try out)*: **PWM (ADC/DAC) channel** mapping over **DeviceTree Nexus Nodes**
    * *finalize*: next generation on premise **HIL Infrastructure**
 
 #. long term
